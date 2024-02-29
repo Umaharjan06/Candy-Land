@@ -31,6 +31,10 @@
       End If
   End Function
 
+    Function playerturn() As String
+        'display name of player whos turn it is using a for loop 
+    End Function
+
     Private Sub Lblgivenumber_Click(sender As Object, e As EventArgs) Handles Lblgivenumber.Click
 
     End Sub
