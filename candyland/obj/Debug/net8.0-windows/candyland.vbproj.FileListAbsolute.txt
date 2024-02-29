@@ -1,0 +1,17 @@
+C:\Users\unnat\OneDrive\Desktop\candyland\bin\Debug\net8.0-windows\candyland.exe
+C:\Users\unnat\OneDrive\Desktop\candyland\bin\Debug\net8.0-windows\candyland.deps.json
+C:\Users\unnat\OneDrive\Desktop\candyland\bin\Debug\net8.0-windows\candyland.runtimeconfig.json
+C:\Users\unnat\OneDrive\Desktop\candyland\bin\Debug\net8.0-windows\candyland.dll
+C:\Users\unnat\OneDrive\Desktop\candyland\bin\Debug\net8.0-windows\candyland.pdb
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.Form1.resources
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.vbproj.GenerateResource.cache
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.AssemblyInfoInputs.cache
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.AssemblyInfo.vb
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.vbproj.CoreCompileInputs.cache
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.dll
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\refint\candyland.dll
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.pdb
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.genruntimeconfig.cache
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\ref\candyland.dll
+C:\Users\unnat\OneDrive\Desktop\candyland\obj\Debug\net8.0-windows\candyland.Resources.resources
