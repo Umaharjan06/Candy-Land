@@ -23,7 +23,7 @@ Partial Class frmCandyLandMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         btn1 = New Button()
-        Btn2 = New Button()
+        btn2 = New Button()
         btn3 = New Button()
         btn4 = New Button()
         btn5 = New Button()
@@ -43,7 +43,7 @@ Partial Class frmCandyLandMain
         btn17 = New Button()
         btn16 = New Button()
         btn25 = New Button()
-        btn224 = New Button()
+        btn24 = New Button()
         btn23 = New Button()
         btn22 = New Button()
         btn21 = New Button()
@@ -185,727 +185,808 @@ Partial Class frmCandyLandMain
         ' btn1
         ' 
         btn1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn1.Location = New Point(28, 891)
+        btn1.Location = New Point(60, 1827)
+        btn1.Margin = New Padding(6, 6, 6, 6)
         btn1.Name = "btn1"
-        btn1.Size = New Size(50, 50)
+        btn1.Size = New Size(106, 102)
         btn1.TabIndex = 0
         btn1.UseVisualStyleBackColor = False
         ' 
-        ' Btn2
+        ' btn2
         ' 
-        Btn2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        Btn2.Location = New Point(84, 891)
-        Btn2.Name = "Btn2"
-        Btn2.Size = New Size(50, 50)
-        Btn2.TabIndex = 1
-        Btn2.UseVisualStyleBackColor = False
+        btn2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        btn2.Location = New Point(178, 1827)
+        btn2.Margin = New Padding(6, 6, 6, 6)
+        btn2.Name = "btn2"
+        btn2.Size = New Size(106, 102)
+        btn2.TabIndex = 1
+        btn2.UseVisualStyleBackColor = False
         ' 
         ' btn3
         ' 
         btn3.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn3.Location = New Point(140, 891)
+        btn3.Location = New Point(298, 1827)
+        btn3.Margin = New Padding(6, 6, 6, 6)
         btn3.Name = "btn3"
-        btn3.Size = New Size(50, 50)
+        btn3.Size = New Size(106, 102)
         btn3.TabIndex = 2
         btn3.UseVisualStyleBackColor = False
         ' 
         ' btn4
         ' 
         btn4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn4.Location = New Point(196, 891)
+        btn4.Location = New Point(416, 1827)
+        btn4.Margin = New Padding(6, 6, 6, 6)
         btn4.Name = "btn4"
-        btn4.Size = New Size(50, 50)
+        btn4.Size = New Size(106, 102)
         btn4.TabIndex = 3
         btn4.UseVisualStyleBackColor = False
         ' 
         ' btn5
         ' 
         btn5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn5.Location = New Point(252, 891)
+        btn5.Location = New Point(536, 1827)
+        btn5.Margin = New Padding(6, 6, 6, 6)
         btn5.Name = "btn5"
-        btn5.Size = New Size(50, 50)
+        btn5.Size = New Size(106, 102)
         btn5.TabIndex = 4
         btn5.UseVisualStyleBackColor = False
         ' 
         ' btn10
         ' 
         btn10.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn10.Location = New Point(532, 891)
+        btn10.Location = New Point(1130, 1827)
+        btn10.Margin = New Padding(6, 6, 6, 6)
         btn10.Name = "btn10"
-        btn10.Size = New Size(50, 50)
+        btn10.Size = New Size(106, 102)
         btn10.TabIndex = 9
         btn10.UseVisualStyleBackColor = False
         ' 
         ' btn9
         ' 
         btn9.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn9.Location = New Point(476, 891)
+        btn9.Location = New Point(1012, 1827)
+        btn9.Margin = New Padding(6, 6, 6, 6)
         btn9.Name = "btn9"
-        btn9.Size = New Size(50, 50)
+        btn9.Size = New Size(106, 102)
         btn9.TabIndex = 8
         btn9.UseVisualStyleBackColor = False
         ' 
         ' btn8
         ' 
         btn8.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn8.Location = New Point(420, 891)
+        btn8.Location = New Point(892, 1827)
+        btn8.Margin = New Padding(6, 6, 6, 6)
         btn8.Name = "btn8"
-        btn8.Size = New Size(50, 50)
+        btn8.Size = New Size(106, 102)
         btn8.TabIndex = 7
         btn8.UseVisualStyleBackColor = False
         ' 
         ' btn7
         ' 
         btn7.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn7.Location = New Point(364, 891)
+        btn7.Location = New Point(774, 1827)
+        btn7.Margin = New Padding(6, 6, 6, 6)
         btn7.Name = "btn7"
-        btn7.Size = New Size(50, 50)
+        btn7.Size = New Size(106, 102)
         btn7.TabIndex = 6
         btn7.UseVisualStyleBackColor = False
         ' 
         ' btn6
         ' 
         btn6.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn6.Location = New Point(308, 891)
+        btn6.Location = New Point(654, 1827)
+        btn6.Margin = New Padding(6, 6, 6, 6)
         btn6.Name = "btn6"
-        btn6.Size = New Size(50, 50)
+        btn6.Size = New Size(106, 102)
         btn6.TabIndex = 5
         btn6.UseVisualStyleBackColor = False
         ' 
         ' btn15
         ' 
         btn15.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn15.Location = New Point(809, 891)
+        btn15.Location = New Point(1719, 1827)
+        btn15.Margin = New Padding(6, 6, 6, 6)
         btn15.Name = "btn15"
-        btn15.Size = New Size(50, 50)
+        btn15.Size = New Size(106, 102)
         btn15.TabIndex = 14
         btn15.UseVisualStyleBackColor = False
         ' 
         ' btn14
         ' 
         btn14.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn14.Location = New Point(753, 891)
+        btn14.Location = New Point(1600, 1827)
+        btn14.Margin = New Padding(6, 6, 6, 6)
         btn14.Name = "btn14"
-        btn14.Size = New Size(50, 50)
+        btn14.Size = New Size(106, 102)
         btn14.TabIndex = 13
         btn14.UseVisualStyleBackColor = False
         ' 
         ' btn13
         ' 
         btn13.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn13.Location = New Point(697, 891)
+        btn13.Location = New Point(1481, 1827)
+        btn13.Margin = New Padding(6, 6, 6, 6)
         btn13.Name = "btn13"
-        btn13.Size = New Size(50, 50)
+        btn13.Size = New Size(106, 102)
         btn13.TabIndex = 12
         btn13.UseVisualStyleBackColor = False
         ' 
         ' btn12
         ' 
         btn12.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn12.Location = New Point(641, 891)
+        btn12.Location = New Point(1362, 1827)
+        btn12.Margin = New Padding(6, 6, 6, 6)
         btn12.Name = "btn12"
-        btn12.Size = New Size(50, 50)
+        btn12.Size = New Size(106, 102)
         btn12.TabIndex = 11
         btn12.UseVisualStyleBackColor = False
         ' 
         ' btn11
         ' 
         btn11.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn11.Location = New Point(585, 891)
+        btn11.Location = New Point(1243, 1827)
+        btn11.Margin = New Padding(6, 6, 6, 6)
         btn11.Name = "btn11"
-        btn11.Size = New Size(50, 50)
+        btn11.Size = New Size(106, 102)
         btn11.TabIndex = 10
         btn11.UseVisualStyleBackColor = False
         ' 
         ' btn20
         ' 
         btn20.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn20.Location = New Point(1095, 891)
+        btn20.Location = New Point(2327, 1827)
+        btn20.Margin = New Padding(6, 6, 6, 6)
         btn20.Name = "btn20"
-        btn20.Size = New Size(50, 50)
+        btn20.Size = New Size(106, 102)
         btn20.TabIndex = 19
         btn20.UseVisualStyleBackColor = False
         ' 
         ' btn19
         ' 
         btn19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn19.Location = New Point(1039, 891)
+        btn19.Location = New Point(2208, 1827)
+        btn19.Margin = New Padding(6, 6, 6, 6)
         btn19.Name = "btn19"
-        btn19.Size = New Size(50, 50)
+        btn19.Size = New Size(106, 102)
         btn19.TabIndex = 18
         btn19.UseVisualStyleBackColor = False
         ' 
         ' btn18
         ' 
         btn18.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn18.Location = New Point(977, 891)
+        btn18.Location = New Point(2076, 1827)
+        btn18.Margin = New Padding(6, 6, 6, 6)
         btn18.Name = "btn18"
-        btn18.Size = New Size(50, 50)
+        btn18.Size = New Size(106, 102)
         btn18.TabIndex = 17
         btn18.UseVisualStyleBackColor = False
         ' 
         ' btn17
         ' 
         btn17.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn17.Location = New Point(921, 891)
+        btn17.Location = New Point(1957, 1827)
+        btn17.Margin = New Padding(6, 6, 6, 6)
         btn17.Name = "btn17"
-        btn17.Size = New Size(50, 50)
+        btn17.Size = New Size(106, 102)
         btn17.TabIndex = 16
         btn17.UseVisualStyleBackColor = False
         ' 
         ' btn16
         ' 
         btn16.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn16.Location = New Point(865, 891)
+        btn16.Location = New Point(1838, 1827)
+        btn16.Margin = New Padding(6, 6, 6, 6)
         btn16.Name = "btn16"
-        btn16.Size = New Size(50, 50)
+        btn16.Size = New Size(106, 102)
         btn16.TabIndex = 15
         btn16.UseVisualStyleBackColor = False
         ' 
         ' btn25
         ' 
         btn25.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn25.Location = New Point(927, 779)
+        btn25.Location = New Point(1970, 1597)
+        btn25.Margin = New Padding(6, 6, 6, 6)
         btn25.Name = "btn25"
-        btn25.Size = New Size(50, 50)
+        btn25.Size = New Size(106, 102)
         btn25.TabIndex = 24
         btn25.UseVisualStyleBackColor = False
         ' 
-        ' btn224
+        ' btn24
         ' 
-        btn224.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn224.Location = New Point(983, 779)
-        btn224.Name = "btn224"
-        btn224.Size = New Size(50, 50)
-        btn224.TabIndex = 23
-        btn224.UseVisualStyleBackColor = False
+        btn24.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        btn24.Location = New Point(2089, 1597)
+        btn24.Margin = New Padding(6, 6, 6, 6)
+        btn24.Name = "btn24"
+        btn24.Size = New Size(106, 102)
+        btn24.TabIndex = 23
+        btn24.UseVisualStyleBackColor = False
         ' 
         ' btn23
         ' 
         btn23.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn23.Location = New Point(1039, 779)
+        btn23.Location = New Point(2208, 1597)
+        btn23.Margin = New Padding(6, 6, 6, 6)
         btn23.Name = "btn23"
-        btn23.Size = New Size(50, 50)
+        btn23.Size = New Size(106, 102)
         btn23.TabIndex = 22
         btn23.UseVisualStyleBackColor = False
         ' 
         ' btn22
         ' 
         btn22.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn22.Location = New Point(1095, 779)
+        btn22.Location = New Point(2327, 1597)
+        btn22.Margin = New Padding(6, 6, 6, 6)
         btn22.Name = "btn22"
-        btn22.Size = New Size(50, 50)
+        btn22.Size = New Size(106, 102)
         btn22.TabIndex = 21
         btn22.UseVisualStyleBackColor = False
         ' 
         ' btn21
         ' 
         btn21.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn21.Location = New Point(1095, 835)
+        btn21.Location = New Point(2327, 1712)
+        btn21.Margin = New Padding(6, 6, 6, 6)
         btn21.Name = "btn21"
-        btn21.Size = New Size(50, 50)
+        btn21.Size = New Size(106, 102)
         btn21.TabIndex = 20
         btn21.UseVisualStyleBackColor = False
         ' 
         ' btn30
         ' 
         btn30.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn30.Location = New Point(641, 779)
+        btn30.Location = New Point(1362, 1597)
+        btn30.Margin = New Padding(6, 6, 6, 6)
         btn30.Name = "btn30"
-        btn30.Size = New Size(50, 50)
+        btn30.Size = New Size(106, 102)
         btn30.TabIndex = 29
         btn30.UseVisualStyleBackColor = False
         ' 
         ' btn29
         ' 
         btn29.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn29.Location = New Point(703, 779)
+        btn29.Location = New Point(1494, 1597)
+        btn29.Margin = New Padding(6, 6, 6, 6)
         btn29.Name = "btn29"
-        btn29.Size = New Size(50, 50)
+        btn29.Size = New Size(106, 102)
         btn29.TabIndex = 28
         btn29.UseVisualStyleBackColor = False
         ' 
         ' btn28
         ' 
         btn28.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn28.Location = New Point(759, 779)
+        btn28.Location = New Point(1613, 1597)
+        btn28.Margin = New Padding(6, 6, 6, 6)
         btn28.Name = "btn28"
-        btn28.Size = New Size(50, 50)
+        btn28.Size = New Size(106, 102)
         btn28.TabIndex = 27
         btn28.UseVisualStyleBackColor = False
         ' 
         ' btn27
         ' 
         btn27.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn27.Location = New Point(809, 779)
+        btn27.Location = New Point(1719, 1597)
+        btn27.Margin = New Padding(6, 6, 6, 6)
         btn27.Name = "btn27"
-        btn27.Size = New Size(50, 50)
+        btn27.Size = New Size(106, 102)
         btn27.TabIndex = 26
         btn27.UseVisualStyleBackColor = False
         ' 
         ' btn26
         ' 
         btn26.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn26.Location = New Point(871, 779)
+        btn26.Location = New Point(1851, 1597)
+        btn26.Margin = New Padding(6, 6, 6, 6)
         btn26.Name = "btn26"
-        btn26.Size = New Size(50, 50)
+        btn26.Size = New Size(106, 102)
         btn26.TabIndex = 25
         btn26.UseVisualStyleBackColor = False
         ' 
         ' btn35
         ' 
         btn35.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn35.Location = New Point(809, 667)
+        btn35.Location = New Point(1719, 1367)
+        btn35.Margin = New Padding(6, 6, 6, 6)
         btn35.Name = "btn35"
-        btn35.Size = New Size(50, 50)
+        btn35.Size = New Size(106, 102)
         btn35.TabIndex = 34
         btn35.UseVisualStyleBackColor = False
         ' 
         ' btn34
         ' 
         btn34.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn34.Location = New Point(753, 667)
+        btn34.Location = New Point(1600, 1367)
+        btn34.Margin = New Padding(6, 6, 6, 6)
         btn34.Name = "btn34"
-        btn34.Size = New Size(50, 50)
+        btn34.Size = New Size(106, 102)
         btn34.TabIndex = 33
         btn34.UseVisualStyleBackColor = False
         ' 
         ' btn33
         ' 
         btn33.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn33.Location = New Point(697, 667)
+        btn33.Location = New Point(1481, 1367)
+        btn33.Margin = New Padding(6, 6, 6, 6)
         btn33.Name = "btn33"
-        btn33.Size = New Size(50, 50)
+        btn33.Size = New Size(106, 102)
         btn33.TabIndex = 32
         btn33.UseVisualStyleBackColor = False
         ' 
         ' btn32
         ' 
         btn32.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn32.Location = New Point(641, 667)
+        btn32.Location = New Point(1362, 1367)
+        btn32.Margin = New Padding(6, 6, 6, 6)
         btn32.Name = "btn32"
-        btn32.Size = New Size(50, 50)
+        btn32.Size = New Size(106, 102)
         btn32.TabIndex = 31
         btn32.UseVisualStyleBackColor = False
         ' 
         ' btn31
         ' 
         btn31.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn31.Location = New Point(641, 723)
+        btn31.Location = New Point(1362, 1482)
+        btn31.Margin = New Padding(6, 6, 6, 6)
         btn31.Name = "btn31"
-        btn31.Size = New Size(50, 50)
+        btn31.Size = New Size(106, 102)
         btn31.TabIndex = 30
         btn31.UseVisualStyleBackColor = False
         ' 
         ' btn40
         ' 
         btn40.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn40.Location = New Point(1095, 667)
+        btn40.Location = New Point(2327, 1367)
+        btn40.Margin = New Padding(6, 6, 6, 6)
         btn40.Name = "btn40"
-        btn40.Size = New Size(50, 50)
+        btn40.Size = New Size(106, 102)
         btn40.TabIndex = 39
         btn40.UseVisualStyleBackColor = False
         ' 
         ' btn39
         ' 
         btn39.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn39.Location = New Point(1039, 667)
+        btn39.Location = New Point(2208, 1367)
+        btn39.Margin = New Padding(6, 6, 6, 6)
         btn39.Name = "btn39"
-        btn39.Size = New Size(50, 50)
+        btn39.Size = New Size(106, 102)
         btn39.TabIndex = 38
         btn39.UseVisualStyleBackColor = False
         ' 
         ' btn38
         ' 
         btn38.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn38.Location = New Point(983, 667)
+        btn38.Location = New Point(2089, 1367)
+        btn38.Margin = New Padding(6, 6, 6, 6)
         btn38.Name = "btn38"
-        btn38.Size = New Size(50, 50)
+        btn38.Size = New Size(106, 102)
         btn38.TabIndex = 37
         btn38.UseVisualStyleBackColor = False
         ' 
         ' btn37
         ' 
         btn37.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn37.Location = New Point(927, 667)
+        btn37.Location = New Point(1970, 1367)
+        btn37.Margin = New Padding(6, 6, 6, 6)
         btn37.Name = "btn37"
-        btn37.Size = New Size(50, 50)
+        btn37.Size = New Size(106, 102)
         btn37.TabIndex = 36
         btn37.UseVisualStyleBackColor = False
         ' 
         ' btn36
         ' 
         btn36.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn36.Location = New Point(871, 667)
+        btn36.Location = New Point(1851, 1367)
+        btn36.Margin = New Padding(6, 6, 6, 6)
         btn36.Name = "btn36"
-        btn36.Size = New Size(50, 50)
+        btn36.Size = New Size(106, 102)
         btn36.TabIndex = 35
         btn36.UseVisualStyleBackColor = False
         ' 
         ' btn45
         ' 
         btn45.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn45.Location = New Point(927, 555)
+        btn45.Location = New Point(1970, 1138)
+        btn45.Margin = New Padding(6, 6, 6, 6)
         btn45.Name = "btn45"
-        btn45.Size = New Size(50, 50)
+        btn45.Size = New Size(106, 102)
         btn45.TabIndex = 44
         btn45.UseVisualStyleBackColor = False
         ' 
         ' btn44
         ' 
         btn44.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn44.Location = New Point(983, 555)
+        btn44.Location = New Point(2089, 1138)
+        btn44.Margin = New Padding(6, 6, 6, 6)
         btn44.Name = "btn44"
-        btn44.Size = New Size(50, 50)
+        btn44.Size = New Size(106, 102)
         btn44.TabIndex = 43
         btn44.UseVisualStyleBackColor = False
         ' 
         ' btn43
         ' 
         btn43.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn43.Location = New Point(1039, 555)
+        btn43.Location = New Point(2208, 1138)
+        btn43.Margin = New Padding(6, 6, 6, 6)
         btn43.Name = "btn43"
-        btn43.Size = New Size(50, 50)
+        btn43.Size = New Size(106, 102)
         btn43.TabIndex = 42
         btn43.UseVisualStyleBackColor = False
         ' 
         ' btn42
         ' 
         btn42.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn42.Location = New Point(1095, 555)
+        btn42.Location = New Point(2327, 1138)
+        btn42.Margin = New Padding(6, 6, 6, 6)
         btn42.Name = "btn42"
-        btn42.Size = New Size(50, 50)
+        btn42.Size = New Size(106, 102)
         btn42.TabIndex = 41
         btn42.UseVisualStyleBackColor = False
         ' 
         ' btn41
         ' 
         btn41.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn41.Location = New Point(1095, 611)
+        btn41.Location = New Point(2327, 1253)
+        btn41.Margin = New Padding(6, 6, 6, 6)
         btn41.Name = "btn41"
-        btn41.Size = New Size(50, 50)
+        btn41.Size = New Size(106, 102)
         btn41.TabIndex = 40
         btn41.UseVisualStyleBackColor = False
         ' 
         ' btn50
         ' 
         btn50.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn50.Location = New Point(641, 555)
+        btn50.Location = New Point(1362, 1138)
+        btn50.Margin = New Padding(6, 6, 6, 6)
         btn50.Name = "btn50"
-        btn50.Size = New Size(50, 50)
+        btn50.Size = New Size(106, 102)
         btn50.TabIndex = 49
         btn50.UseVisualStyleBackColor = False
         ' 
         ' btn49
         ' 
         btn49.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn49.Location = New Point(697, 555)
+        btn49.Location = New Point(1481, 1138)
+        btn49.Margin = New Padding(6, 6, 6, 6)
         btn49.Name = "btn49"
-        btn49.Size = New Size(50, 50)
+        btn49.Size = New Size(106, 102)
         btn49.TabIndex = 48
         btn49.UseVisualStyleBackColor = False
         ' 
         ' btn48
         ' 
         btn48.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn48.Location = New Point(753, 555)
+        btn48.Location = New Point(1600, 1138)
+        btn48.Margin = New Padding(6, 6, 6, 6)
         btn48.Name = "btn48"
-        btn48.Size = New Size(50, 50)
+        btn48.Size = New Size(106, 102)
         btn48.TabIndex = 47
         btn48.UseVisualStyleBackColor = False
         ' 
         ' btn47
         ' 
         btn47.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn47.Location = New Point(815, 555)
+        btn47.Location = New Point(1732, 1138)
+        btn47.Margin = New Padding(6, 6, 6, 6)
         btn47.Name = "btn47"
-        btn47.Size = New Size(50, 50)
+        btn47.Size = New Size(106, 102)
         btn47.TabIndex = 46
         btn47.UseVisualStyleBackColor = False
         ' 
         ' btn46
         ' 
         btn46.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn46.Location = New Point(871, 555)
+        btn46.Location = New Point(1851, 1138)
+        btn46.Margin = New Padding(6, 6, 6, 6)
         btn46.Name = "btn46"
-        btn46.Size = New Size(50, 50)
+        btn46.Size = New Size(106, 102)
         btn46.TabIndex = 45
         btn46.UseVisualStyleBackColor = False
         ' 
         ' btn55
         ' 
         btn55.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn55.Location = New Point(532, 723)
+        btn55.Location = New Point(1130, 1482)
+        btn55.Margin = New Padding(6, 6, 6, 6)
         btn55.Name = "btn55"
-        btn55.Size = New Size(50, 50)
+        btn55.Size = New Size(106, 102)
         btn55.TabIndex = 54
         btn55.UseVisualStyleBackColor = False
         ' 
         ' btn54
         ' 
         btn54.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn54.Location = New Point(532, 667)
+        btn54.Location = New Point(1130, 1367)
+        btn54.Margin = New Padding(6, 6, 6, 6)
         btn54.Name = "btn54"
-        btn54.Size = New Size(50, 50)
+        btn54.Size = New Size(106, 102)
         btn54.TabIndex = 53
         btn54.UseVisualStyleBackColor = False
         ' 
         ' btn53
         ' 
         btn53.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn53.Location = New Point(529, 611)
+        btn53.Location = New Point(1124, 1253)
+        btn53.Margin = New Padding(6, 6, 6, 6)
         btn53.Name = "btn53"
-        btn53.Size = New Size(50, 50)
+        btn53.Size = New Size(106, 102)
         btn53.TabIndex = 52
         btn53.UseVisualStyleBackColor = False
         ' 
         ' btn52
         ' 
         btn52.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn52.Location = New Point(529, 555)
+        btn52.Location = New Point(1124, 1138)
+        btn52.Margin = New Padding(6, 6, 6, 6)
         btn52.Name = "btn52"
-        btn52.Size = New Size(50, 50)
+        btn52.Size = New Size(106, 102)
         btn52.TabIndex = 51
         btn52.UseVisualStyleBackColor = False
         ' 
         ' btn51
         ' 
         btn51.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn51.Location = New Point(585, 555)
+        btn51.Location = New Point(1243, 1138)
+        btn51.Margin = New Padding(6, 6, 6, 6)
         btn51.Name = "btn51"
-        btn51.Size = New Size(50, 50)
+        btn51.Size = New Size(106, 102)
         btn51.TabIndex = 50
         btn51.UseVisualStyleBackColor = False
         ' 
         ' btn61
         ' 
         btn61.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn61.Location = New Point(190, 723)
+        btn61.Location = New Point(404, 1482)
+        btn61.Margin = New Padding(6, 6, 6, 6)
         btn61.Name = "btn61"
-        btn61.Size = New Size(50, 50)
+        btn61.Size = New Size(106, 102)
         btn61.TabIndex = 64
         btn61.UseVisualStyleBackColor = False
         ' 
         ' btn60
         ' 
         btn60.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn60.Location = New Point(246, 723)
+        btn60.Location = New Point(523, 1482)
+        btn60.Margin = New Padding(6, 6, 6, 6)
         btn60.Name = "btn60"
-        btn60.Size = New Size(50, 50)
+        btn60.Size = New Size(106, 102)
         btn60.TabIndex = 63
         btn60.UseVisualStyleBackColor = False
         ' 
         ' btn59
         ' 
         btn59.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn59.Location = New Point(302, 723)
+        btn59.Location = New Point(642, 1482)
+        btn59.Margin = New Padding(6, 6, 6, 6)
         btn59.Name = "btn59"
-        btn59.Size = New Size(50, 50)
+        btn59.Size = New Size(106, 102)
         btn59.TabIndex = 62
         btn59.UseVisualStyleBackColor = False
         ' 
         ' btn558
         ' 
         btn558.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn558.Location = New Point(358, 723)
+        btn558.Location = New Point(761, 1482)
+        btn558.Margin = New Padding(6, 6, 6, 6)
         btn558.Name = "btn558"
-        btn558.Size = New Size(50, 50)
+        btn558.Size = New Size(106, 102)
         btn558.TabIndex = 61
         btn558.UseVisualStyleBackColor = False
         ' 
         ' btn57
         ' 
         btn57.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn57.Location = New Point(420, 723)
+        btn57.Location = New Point(892, 1482)
+        btn57.Margin = New Padding(6, 6, 6, 6)
         btn57.Name = "btn57"
-        btn57.Size = New Size(50, 50)
+        btn57.Size = New Size(106, 102)
         btn57.TabIndex = 60
         btn57.UseVisualStyleBackColor = False
         ' 
         ' btn56
         ' 
         btn56.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn56.Location = New Point(476, 723)
+        btn56.Location = New Point(1012, 1482)
+        btn56.Margin = New Padding(6, 6, 6, 6)
         btn56.Name = "btn56"
-        btn56.Size = New Size(50, 50)
+        btn56.Size = New Size(106, 102)
         btn56.TabIndex = 59
         btn56.UseVisualStyleBackColor = False
         ' 
         ' btn65
         ' 
         btn65.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn65.Location = New Point(16, 667)
+        btn65.Location = New Point(34, 1367)
+        btn65.Margin = New Padding(6, 6, 6, 6)
         btn65.Name = "btn65"
-        btn65.Size = New Size(50, 50)
+        btn65.Size = New Size(106, 102)
         btn65.TabIndex = 68
         btn65.UseVisualStyleBackColor = False
         ' 
         ' btn64
         ' 
         btn64.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn64.Location = New Point(16, 723)
+        btn64.Location = New Point(34, 1482)
+        btn64.Margin = New Padding(6, 6, 6, 6)
         btn64.Name = "btn64"
-        btn64.Size = New Size(50, 50)
+        btn64.Size = New Size(106, 102)
         btn64.TabIndex = 67
         btn64.UseVisualStyleBackColor = False
         ' 
         ' btn63
         ' 
         btn63.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn63.Location = New Point(72, 723)
+        btn63.Location = New Point(153, 1482)
+        btn63.Margin = New Padding(6, 6, 6, 6)
         btn63.Name = "btn63"
-        btn63.Size = New Size(50, 50)
+        btn63.Size = New Size(106, 102)
         btn63.TabIndex = 66
         btn63.UseVisualStyleBackColor = False
         ' 
         ' btn62
         ' 
         btn62.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn62.Location = New Point(134, 723)
+        btn62.Location = New Point(285, 1482)
+        btn62.Margin = New Padding(6, 6, 6, 6)
         btn62.Name = "btn62"
-        btn62.Size = New Size(50, 50)
+        btn62.Size = New Size(106, 102)
         btn62.TabIndex = 65
         btn62.UseVisualStyleBackColor = False
         ' 
         ' btn69
         ' 
         btn69.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn69.Location = New Point(16, 443)
+        btn69.Location = New Point(34, 908)
+        btn69.Margin = New Padding(6, 6, 6, 6)
         btn69.Name = "btn69"
-        btn69.Size = New Size(50, 50)
+        btn69.Size = New Size(106, 102)
         btn69.TabIndex = 73
         btn69.UseVisualStyleBackColor = False
         ' 
         ' btn68
         ' 
         btn68.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn68.Location = New Point(16, 499)
+        btn68.Location = New Point(34, 1023)
+        btn68.Margin = New Padding(6, 6, 6, 6)
         btn68.Name = "btn68"
-        btn68.Size = New Size(50, 50)
+        btn68.Size = New Size(106, 102)
         btn68.TabIndex = 72
         btn68.UseVisualStyleBackColor = False
         ' 
         ' btn67
         ' 
         btn67.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn67.Location = New Point(16, 555)
+        btn67.Location = New Point(34, 1138)
+        btn67.Margin = New Padding(6, 6, 6, 6)
         btn67.Name = "btn67"
-        btn67.Size = New Size(50, 50)
+        btn67.Size = New Size(106, 102)
         btn67.TabIndex = 71
         btn67.UseVisualStyleBackColor = False
         ' 
         ' btn66
         ' 
         btn66.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn66.Location = New Point(16, 611)
+        btn66.Location = New Point(34, 1253)
+        btn66.Margin = New Padding(6, 6, 6, 6)
         btn66.Name = "btn66"
-        btn66.Size = New Size(50, 50)
+        btn66.Size = New Size(106, 102)
         btn66.TabIndex = 70
         btn66.UseVisualStyleBackColor = False
         ' 
         ' btn79
         ' 
         btn79.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn79.Location = New Point(579, 443)
+        btn79.Location = New Point(1230, 908)
+        btn79.Margin = New Padding(6, 6, 6, 6)
         btn79.Name = "btn79"
-        btn79.Size = New Size(50, 50)
+        btn79.Size = New Size(106, 102)
         btn79.TabIndex = 83
         btn79.UseVisualStyleBackColor = False
         ' 
         ' btn78
         ' 
         btn78.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn78.Location = New Point(523, 443)
+        btn78.Location = New Point(1111, 908)
+        btn78.Margin = New Padding(6, 6, 6, 6)
         btn78.Name = "btn78"
-        btn78.Size = New Size(50, 50)
+        btn78.Size = New Size(106, 102)
         btn78.TabIndex = 82
         btn78.UseVisualStyleBackColor = False
         ' 
         ' btn77
         ' 
         btn77.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn77.Location = New Point(467, 443)
+        btn77.Location = New Point(992, 908)
+        btn77.Margin = New Padding(6, 6, 6, 6)
         btn77.Name = "btn77"
-        btn77.Size = New Size(50, 50)
+        btn77.Size = New Size(106, 102)
         btn77.TabIndex = 81
         btn77.UseVisualStyleBackColor = False
         ' 
         ' btn76
         ' 
         btn76.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn76.Location = New Point(411, 443)
+        btn76.Location = New Point(873, 908)
+        btn76.Margin = New Padding(6, 6, 6, 6)
         btn76.Name = "btn76"
-        btn76.Size = New Size(50, 50)
+        btn76.Size = New Size(106, 102)
         btn76.TabIndex = 80
         btn76.UseVisualStyleBackColor = False
         ' 
         ' btn75
         ' 
         btn75.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn75.Location = New Point(358, 443)
+        btn75.Location = New Point(761, 908)
+        btn75.Margin = New Padding(6, 6, 6, 6)
         btn75.Name = "btn75"
-        btn75.Size = New Size(50, 50)
+        btn75.Size = New Size(106, 102)
         btn75.TabIndex = 79
         btn75.UseVisualStyleBackColor = False
         ' 
         ' btn74
         ' 
         btn74.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn74.Location = New Point(302, 443)
+        btn74.Location = New Point(642, 908)
+        btn74.Margin = New Padding(6, 6, 6, 6)
         btn74.Name = "btn74"
-        btn74.Size = New Size(50, 50)
+        btn74.Size = New Size(106, 102)
         btn74.TabIndex = 78
         btn74.UseVisualStyleBackColor = False
         ' 
         ' btn73
         ' 
         btn73.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn73.Location = New Point(246, 443)
+        btn73.Location = New Point(523, 908)
+        btn73.Margin = New Padding(6, 6, 6, 6)
         btn73.Name = "btn73"
-        btn73.Size = New Size(50, 50)
+        btn73.Size = New Size(106, 102)
         btn73.TabIndex = 77
         btn73.UseVisualStyleBackColor = False
         ' 
         ' btn72
         ' 
         btn72.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn72.Location = New Point(190, 443)
+        btn72.Location = New Point(404, 908)
+        btn72.Margin = New Padding(6, 6, 6, 6)
         btn72.Name = "btn72"
-        btn72.Size = New Size(50, 50)
+        btn72.Size = New Size(106, 102)
         btn72.TabIndex = 76
         btn72.UseVisualStyleBackColor = False
         ' 
         ' btn71
         ' 
         btn71.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn71.Location = New Point(134, 443)
+        btn71.Location = New Point(285, 908)
+        btn71.Margin = New Padding(6, 6, 6, 6)
         btn71.Name = "btn71"
-        btn71.Size = New Size(50, 50)
+        btn71.Size = New Size(106, 102)
         btn71.TabIndex = 75
         btn71.UseVisualStyleBackColor = False
         ' 
         ' btn70
         ' 
         btn70.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn70.Location = New Point(78, 443)
+        btn70.Location = New Point(166, 908)
+        btn70.Margin = New Padding(6, 6, 6, 6)
         btn70.Name = "btn70"
-        btn70.Size = New Size(50, 50)
+        btn70.Size = New Size(106, 102)
         btn70.TabIndex = 74
         btn70.UseVisualStyleBackColor = False
         ' 
         ' btn80
         ' 
         btn80.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn80.Location = New Point(641, 443)
+        btn80.Location = New Point(1362, 908)
+        btn80.Margin = New Padding(6, 6, 6, 6)
         btn80.Name = "btn80"
-        btn80.Size = New Size(50, 50)
+        btn80.Size = New Size(106, 102)
         btn80.TabIndex = 84
         btn80.UseVisualStyleBackColor = False
         ' 
         ' Button81
         ' 
         Button81.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        Button81.Location = New Point(809, 443)
+        Button81.Location = New Point(1719, 908)
+        Button81.Margin = New Padding(6, 6, 6, 6)
         Button81.Name = "Button81"
         Button81.Size = New Size(0, 0)
         Button81.TabIndex = 88
@@ -915,7 +996,8 @@ Partial Class frmCandyLandMain
         ' Button82
         ' 
         Button82.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        Button82.Location = New Point(523, 256)
+        Button82.Location = New Point(1111, 525)
+        Button82.Margin = New Padding(6, 6, 6, 6)
         Button82.Name = "Button82"
         Button82.Size = New Size(0, 0)
         Button82.TabIndex = 87
@@ -925,7 +1007,8 @@ Partial Class frmCandyLandMain
         ' Button83
         ' 
         Button83.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        Button83.Location = New Point(579, 256)
+        Button83.Location = New Point(1230, 525)
+        Button83.Margin = New Padding(6, 6, 6, 6)
         Button83.Name = "Button83"
         Button83.Size = New Size(0, 0)
         Button83.TabIndex = 86
@@ -935,7 +1018,8 @@ Partial Class frmCandyLandMain
         ' Button84
         ' 
         Button84.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        Button84.Location = New Point(635, 256)
+        Button84.Location = New Point(1349, 525)
+        Button84.Margin = New Padding(6, 6, 6, 6)
         Button84.Name = "Button84"
         Button84.Size = New Size(0, 0)
         Button84.TabIndex = 85
@@ -945,664 +1029,737 @@ Partial Class frmCandyLandMain
         ' btn100
         ' 
         btn100.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn100.Location = New Point(523, 331)
+        btn100.Location = New Point(1111, 679)
+        btn100.Margin = New Padding(6, 6, 6, 6)
         btn100.Name = "btn100"
-        btn100.Size = New Size(50, 50)
+        btn100.Size = New Size(106, 102)
         btn100.TabIndex = 94
         btn100.UseVisualStyleBackColor = False
         ' 
         ' btn99
         ' 
         btn99.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn99.Location = New Point(579, 331)
+        btn99.Location = New Point(1230, 679)
+        btn99.Margin = New Padding(6, 6, 6, 6)
         btn99.Name = "btn99"
-        btn99.Size = New Size(50, 50)
+        btn99.Size = New Size(106, 102)
         btn99.TabIndex = 93
         btn99.UseVisualStyleBackColor = False
         ' 
         ' btn98
         ' 
         btn98.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn98.Location = New Point(635, 331)
+        btn98.Location = New Point(1349, 679)
+        btn98.Margin = New Padding(6, 6, 6, 6)
         btn98.Name = "btn98"
-        btn98.Size = New Size(50, 50)
+        btn98.Size = New Size(106, 102)
         btn98.TabIndex = 92
         btn98.UseVisualStyleBackColor = False
         ' 
         ' btn97
         ' 
         btn97.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn97.Location = New Point(697, 331)
+        btn97.Location = New Point(1481, 679)
+        btn97.Margin = New Padding(6, 6, 6, 6)
         btn97.Name = "btn97"
-        btn97.Size = New Size(50, 50)
+        btn97.Size = New Size(106, 102)
         btn97.TabIndex = 91
         btn97.UseVisualStyleBackColor = False
         ' 
         ' btn81
         ' 
         btn81.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn81.Location = New Point(697, 443)
+        btn81.Location = New Point(1481, 908)
+        btn81.Margin = New Padding(6, 6, 6, 6)
         btn81.Name = "btn81"
-        btn81.Size = New Size(50, 50)
+        btn81.Size = New Size(106, 102)
         btn81.TabIndex = 90
         btn81.UseVisualStyleBackColor = False
         ' 
         ' btn105
         ' 
         btn105.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn105.Location = New Point(467, 219)
+        btn105.Location = New Point(992, 449)
+        btn105.Margin = New Padding(6, 6, 6, 6)
         btn105.Name = "btn105"
-        btn105.Size = New Size(50, 50)
+        btn105.Size = New Size(106, 102)
         btn105.TabIndex = 99
         btn105.UseVisualStyleBackColor = False
         ' 
         ' btn104
         ' 
         btn104.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn104.Location = New Point(411, 219)
+        btn104.Location = New Point(873, 449)
+        btn104.Margin = New Padding(6, 6, 6, 6)
         btn104.Name = "btn104"
-        btn104.Size = New Size(50, 50)
+        btn104.Size = New Size(106, 102)
         btn104.TabIndex = 98
         btn104.UseVisualStyleBackColor = False
         ' 
         ' btn103
         ' 
         btn103.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn103.Location = New Point(408, 275)
+        btn103.Location = New Point(867, 564)
+        btn103.Margin = New Padding(6, 6, 6, 6)
         btn103.Name = "btn103"
-        btn103.Size = New Size(50, 50)
+        btn103.Size = New Size(106, 102)
         btn103.TabIndex = 97
         btn103.UseVisualStyleBackColor = False
         ' 
         ' btn102
         ' 
         btn102.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn102.Location = New Point(408, 331)
+        btn102.Location = New Point(867, 679)
+        btn102.Margin = New Padding(6, 6, 6, 6)
         btn102.Name = "btn102"
-        btn102.Size = New Size(50, 50)
+        btn102.Size = New Size(106, 102)
         btn102.TabIndex = 96
         btn102.UseVisualStyleBackColor = False
         ' 
         ' btn101
         ' 
         btn101.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn101.Location = New Point(467, 331)
+        btn101.Location = New Point(992, 679)
+        btn101.Margin = New Padding(6, 6, 6, 6)
         btn101.Name = "btn101"
-        btn101.Size = New Size(50, 50)
+        btn101.Size = New Size(106, 102)
         btn101.TabIndex = 95
         btn101.UseVisualStyleBackColor = False
         ' 
         ' btn110
         ' 
         btn110.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn110.Location = New Point(753, 219)
+        btn110.Location = New Point(1600, 449)
+        btn110.Margin = New Padding(6, 6, 6, 6)
         btn110.Name = "btn110"
-        btn110.Size = New Size(50, 50)
+        btn110.Size = New Size(106, 102)
         btn110.TabIndex = 104
         btn110.UseVisualStyleBackColor = False
         ' 
         ' btn109
         ' 
         btn109.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn109.Location = New Point(691, 219)
+        btn109.Location = New Point(1468, 449)
+        btn109.Margin = New Padding(6, 6, 6, 6)
         btn109.Name = "btn109"
-        btn109.Size = New Size(50, 50)
+        btn109.Size = New Size(106, 102)
         btn109.TabIndex = 103
         btn109.UseVisualStyleBackColor = False
         ' 
         ' btn108
         ' 
         btn108.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn108.Location = New Point(635, 219)
+        btn108.Location = New Point(1349, 449)
+        btn108.Margin = New Padding(6, 6, 6, 6)
         btn108.Name = "btn108"
-        btn108.Size = New Size(50, 50)
+        btn108.Size = New Size(106, 102)
         btn108.TabIndex = 102
         btn108.UseVisualStyleBackColor = False
         ' 
         ' btn107
         ' 
         btn107.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn107.Location = New Point(579, 219)
+        btn107.Location = New Point(1230, 449)
+        btn107.Margin = New Padding(6, 6, 6, 6)
         btn107.Name = "btn107"
-        btn107.Size = New Size(50, 50)
+        btn107.Size = New Size(106, 102)
         btn107.TabIndex = 101
         btn107.UseVisualStyleBackColor = False
         ' 
         ' btn106
         ' 
         btn106.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn106.Location = New Point(523, 219)
+        btn106.Location = New Point(1111, 449)
+        btn106.Margin = New Padding(6, 6, 6, 6)
         btn106.Name = "btn106"
-        btn106.Size = New Size(50, 50)
+        btn106.Size = New Size(106, 102)
         btn106.TabIndex = 100
         btn106.UseVisualStyleBackColor = False
         ' 
         ' btn115
         ' 
         btn115.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn115.Location = New Point(1039, 219)
+        btn115.Location = New Point(2208, 449)
+        btn115.Margin = New Padding(6, 6, 6, 6)
         btn115.Name = "btn115"
-        btn115.Size = New Size(50, 50)
+        btn115.Size = New Size(106, 102)
         btn115.TabIndex = 109
         btn115.UseVisualStyleBackColor = False
         ' 
         ' btn114
         ' 
         btn114.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn114.Location = New Point(983, 219)
+        btn114.Location = New Point(2089, 449)
+        btn114.Margin = New Padding(6, 6, 6, 6)
         btn114.Name = "btn114"
-        btn114.Size = New Size(50, 50)
+        btn114.Size = New Size(106, 102)
         btn114.TabIndex = 108
         btn114.UseVisualStyleBackColor = False
         ' 
         ' btn113
         ' 
         btn113.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn113.Location = New Point(927, 219)
+        btn113.Location = New Point(1970, 449)
+        btn113.Margin = New Padding(6, 6, 6, 6)
         btn113.Name = "btn113"
-        btn113.Size = New Size(50, 50)
+        btn113.Size = New Size(106, 102)
         btn113.TabIndex = 107
         btn113.UseVisualStyleBackColor = False
         ' 
         ' btn112
         ' 
         btn112.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn112.Location = New Point(871, 219)
+        btn112.Location = New Point(1851, 449)
+        btn112.Margin = New Padding(6, 6, 6, 6)
         btn112.Name = "btn112"
-        btn112.Size = New Size(50, 50)
+        btn112.Size = New Size(106, 102)
         btn112.TabIndex = 106
         btn112.UseVisualStyleBackColor = False
         ' 
         ' btn111
         ' 
         btn111.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn111.Location = New Point(815, 219)
+        btn111.Location = New Point(1732, 449)
+        btn111.Margin = New Padding(6, 6, 6, 6)
         btn111.Name = "btn111"
-        btn111.Size = New Size(50, 50)
+        btn111.Size = New Size(106, 102)
         btn111.TabIndex = 105
         btn111.UseVisualStyleBackColor = False
         ' 
         ' btn120
         ' 
         btn120.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn120.Location = New Point(1039, 51)
+        btn120.Location = New Point(2208, 105)
+        btn120.Margin = New Padding(6, 6, 6, 6)
         btn120.Name = "btn120"
-        btn120.Size = New Size(50, 50)
+        btn120.Size = New Size(106, 102)
         btn120.TabIndex = 114
         btn120.UseVisualStyleBackColor = False
         ' 
         ' btn119
         ' 
         btn119.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn119.Location = New Point(1095, 51)
+        btn119.Location = New Point(2327, 105)
+        btn119.Margin = New Padding(6, 6, 6, 6)
         btn119.Name = "btn119"
-        btn119.Size = New Size(50, 50)
+        btn119.Size = New Size(106, 102)
         btn119.TabIndex = 113
         btn119.UseVisualStyleBackColor = False
         ' 
         ' btn117
         ' 
         btn117.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn117.Location = New Point(1095, 163)
+        btn117.Location = New Point(2327, 334)
+        btn117.Margin = New Padding(6, 6, 6, 6)
         btn117.Name = "btn117"
-        btn117.Size = New Size(50, 50)
+        btn117.Size = New Size(106, 102)
         btn117.TabIndex = 112
         btn117.UseVisualStyleBackColor = False
         ' 
         ' btn118
         ' 
         btn118.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn118.Location = New Point(1095, 107)
+        btn118.Location = New Point(2327, 219)
+        btn118.Margin = New Padding(6, 6, 6, 6)
         btn118.Name = "btn118"
-        btn118.Size = New Size(50, 50)
+        btn118.Size = New Size(106, 102)
         btn118.TabIndex = 111
         btn118.UseVisualStyleBackColor = False
         ' 
         ' btn116
         ' 
         btn116.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn116.Location = New Point(1095, 219)
+        btn116.Location = New Point(2327, 449)
+        btn116.Margin = New Padding(6, 6, 6, 6)
         btn116.Name = "btn116"
-        btn116.Size = New Size(50, 50)
+        btn116.Size = New Size(106, 102)
         btn116.TabIndex = 110
         btn116.UseVisualStyleBackColor = False
         ' 
         ' btn125
         ' 
         btn125.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn125.Location = New Point(759, 51)
+        btn125.Location = New Point(1613, 105)
+        btn125.Margin = New Padding(6, 6, 6, 6)
         btn125.Name = "btn125"
-        btn125.Size = New Size(50, 50)
+        btn125.Size = New Size(106, 102)
         btn125.TabIndex = 119
         btn125.UseVisualStyleBackColor = False
         ' 
         ' btn124
         ' 
         btn124.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn124.Location = New Point(821, 51)
+        btn124.Location = New Point(1745, 105)
+        btn124.Margin = New Padding(6, 6, 6, 6)
         btn124.Name = "btn124"
-        btn124.Size = New Size(50, 50)
+        btn124.Size = New Size(106, 102)
         btn124.TabIndex = 118
         btn124.UseVisualStyleBackColor = False
         ' 
         ' btn123
         ' 
         btn123.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn123.Location = New Point(877, 51)
+        btn123.Location = New Point(1864, 105)
+        btn123.Margin = New Padding(6, 6, 6, 6)
         btn123.Name = "btn123"
-        btn123.Size = New Size(50, 50)
+        btn123.Size = New Size(106, 102)
         btn123.TabIndex = 117
         btn123.UseVisualStyleBackColor = False
         ' 
         ' btn122
         ' 
         btn122.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn122.Location = New Point(927, 51)
+        btn122.Location = New Point(1970, 105)
+        btn122.Margin = New Padding(6, 6, 6, 6)
         btn122.Name = "btn122"
-        btn122.Size = New Size(50, 50)
+        btn122.Size = New Size(106, 102)
         btn122.TabIndex = 116
         btn122.UseVisualStyleBackColor = False
         ' 
         ' btn121
         ' 
         btn121.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn121.Location = New Point(983, 51)
+        btn121.Location = New Point(2089, 105)
+        btn121.Margin = New Padding(6, 6, 6, 6)
         btn121.Name = "btn121"
-        btn121.Size = New Size(50, 50)
+        btn121.Size = New Size(106, 102)
         btn121.TabIndex = 115
         btn121.UseVisualStyleBackColor = False
         ' 
         ' btn130
         ' 
         btn130.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn130.Location = New Point(467, 51)
+        btn130.Location = New Point(992, 105)
+        btn130.Margin = New Padding(6, 6, 6, 6)
         btn130.Name = "btn130"
-        btn130.Size = New Size(50, 50)
+        btn130.Size = New Size(106, 102)
         btn130.TabIndex = 124
         btn130.UseVisualStyleBackColor = False
         ' 
         ' btn129
         ' 
         btn129.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn129.Location = New Point(523, 51)
+        btn129.Location = New Point(1111, 105)
+        btn129.Margin = New Padding(6, 6, 6, 6)
         btn129.Name = "btn129"
-        btn129.Size = New Size(50, 50)
+        btn129.Size = New Size(106, 102)
         btn129.TabIndex = 123
         btn129.UseVisualStyleBackColor = False
         ' 
         ' btn128
         ' 
         btn128.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn128.Location = New Point(579, 51)
+        btn128.Location = New Point(1230, 105)
+        btn128.Margin = New Padding(6, 6, 6, 6)
         btn128.Name = "btn128"
-        btn128.Size = New Size(50, 50)
+        btn128.Size = New Size(106, 102)
         btn128.TabIndex = 122
         btn128.UseVisualStyleBackColor = False
         ' 
         ' btn127
         ' 
         btn127.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn127.Location = New Point(635, 51)
+        btn127.Location = New Point(1349, 105)
+        btn127.Margin = New Padding(6, 6, 6, 6)
         btn127.Name = "btn127"
-        btn127.Size = New Size(50, 50)
+        btn127.Size = New Size(106, 102)
         btn127.TabIndex = 121
         btn127.UseVisualStyleBackColor = False
         ' 
         ' btn126
         ' 
         btn126.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn126.Location = New Point(697, 51)
+        btn126.Location = New Point(1481, 105)
+        btn126.Margin = New Padding(6, 6, 6, 6)
         btn126.Name = "btn126"
-        btn126.Size = New Size(50, 50)
+        btn126.Size = New Size(106, 102)
         btn126.TabIndex = 120
         btn126.UseVisualStyleBackColor = False
         ' 
         ' btn135
         ' 
         btn135.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn135.Location = New Point(296, 163)
+        btn135.Location = New Point(629, 334)
+        btn135.Margin = New Padding(6, 6, 6, 6)
         btn135.Name = "btn135"
-        btn135.Size = New Size(50, 50)
+        btn135.Size = New Size(106, 102)
         btn135.TabIndex = 129
         btn135.UseVisualStyleBackColor = False
         ' 
         ' btn134
         ' 
         btn134.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn134.Location = New Point(296, 107)
+        btn134.Location = New Point(629, 219)
+        btn134.Margin = New Padding(6, 6, 6, 6)
         btn134.Name = "btn134"
-        btn134.Size = New Size(50, 50)
+        btn134.Size = New Size(106, 102)
         btn134.TabIndex = 128
         btn134.UseVisualStyleBackColor = False
         ' 
         ' btn133
         ' 
         btn133.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn133.Location = New Point(296, 51)
+        btn133.Location = New Point(629, 105)
+        btn133.Margin = New Padding(6, 6, 6, 6)
         btn133.Name = "btn133"
-        btn133.Size = New Size(50, 50)
+        btn133.Size = New Size(106, 102)
         btn133.TabIndex = 127
         btn133.UseVisualStyleBackColor = False
         ' 
         ' btn132
         ' 
         btn132.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn132.Location = New Point(352, 51)
+        btn132.Location = New Point(748, 105)
+        btn132.Margin = New Padding(6, 6, 6, 6)
         btn132.Name = "btn132"
-        btn132.Size = New Size(50, 50)
+        btn132.Size = New Size(106, 102)
         btn132.TabIndex = 126
         btn132.UseVisualStyleBackColor = False
         ' 
         ' btn131
         ' 
         btn131.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn131.Location = New Point(408, 51)
+        btn131.Location = New Point(867, 105)
+        btn131.Margin = New Padding(6, 6, 6, 6)
         btn131.Name = "btn131"
-        btn131.Size = New Size(50, 50)
+        btn131.Size = New Size(106, 102)
         btn131.TabIndex = 125
         btn131.UseVisualStyleBackColor = False
         ' 
         ' btn140
         ' 
         btn140.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn140.Location = New Point(187, 329)
+        btn140.Location = New Point(397, 674)
+        btn140.Margin = New Padding(6, 6, 6, 6)
         btn140.Name = "btn140"
-        btn140.Size = New Size(50, 50)
+        btn140.Size = New Size(106, 102)
         btn140.TabIndex = 134
         btn140.UseVisualStyleBackColor = False
         ' 
         ' btn139
         ' 
         btn139.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn139.Location = New Point(239, 329)
+        btn139.Location = New Point(508, 674)
+        btn139.Margin = New Padding(6, 6, 6, 6)
         btn139.Name = "btn139"
-        btn139.Size = New Size(50, 50)
+        btn139.Size = New Size(106, 102)
         btn139.TabIndex = 133
         btn139.UseVisualStyleBackColor = False
         ' 
         ' btn138
         ' 
         btn138.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn138.Location = New Point(295, 329)
+        btn138.Location = New Point(627, 674)
+        btn138.Margin = New Padding(6, 6, 6, 6)
         btn138.Name = "btn138"
-        btn138.Size = New Size(50, 50)
+        btn138.Size = New Size(106, 102)
         btn138.TabIndex = 132
         btn138.UseVisualStyleBackColor = False
         ' 
         ' btn137
         ' 
         btn137.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn137.Location = New Point(296, 275)
+        btn137.Location = New Point(629, 564)
+        btn137.Margin = New Padding(6, 6, 6, 6)
         btn137.Name = "btn137"
-        btn137.Size = New Size(50, 50)
+        btn137.Size = New Size(106, 102)
         btn137.TabIndex = 131
         btn137.UseVisualStyleBackColor = False
         ' 
         ' btn136
         ' 
         btn136.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn136.Location = New Point(296, 219)
+        btn136.Location = New Point(629, 449)
+        btn136.Margin = New Padding(6, 6, 6, 6)
         btn136.Name = "btn136"
-        btn136.Size = New Size(50, 50)
+        btn136.Size = New Size(106, 102)
         btn136.TabIndex = 130
         btn136.UseVisualStyleBackColor = False
         ' 
         ' btn145
         ' 
         btn145.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn145.Location = New Point(74, 163)
+        btn145.Location = New Point(157, 334)
+        btn145.Margin = New Padding(6, 6, 6, 6)
         btn145.Name = "btn145"
-        btn145.Size = New Size(50, 50)
+        btn145.Size = New Size(106, 102)
         btn145.TabIndex = 139
         btn145.UseVisualStyleBackColor = False
         ' 
         ' btn144
         ' 
         btn144.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn144.Location = New Point(74, 219)
+        btn144.Location = New Point(157, 449)
+        btn144.Margin = New Padding(6, 6, 6, 6)
         btn144.Name = "btn144"
-        btn144.Size = New Size(50, 50)
+        btn144.Size = New Size(106, 102)
         btn144.TabIndex = 138
         btn144.UseVisualStyleBackColor = False
         ' 
         ' btn143
         ' 
         btn143.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn143.Location = New Point(74, 275)
+        btn143.Location = New Point(157, 564)
+        btn143.Margin = New Padding(6, 6, 6, 6)
         btn143.Name = "btn143"
-        btn143.Size = New Size(50, 50)
+        btn143.Size = New Size(106, 102)
         btn143.TabIndex = 137
         btn143.UseVisualStyleBackColor = False
         ' 
         ' btn142
         ' 
         btn142.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn142.Location = New Point(74, 329)
+        btn142.Location = New Point(157, 674)
+        btn142.Margin = New Padding(6, 6, 6, 6)
         btn142.Name = "btn142"
-        btn142.Size = New Size(50, 50)
+        btn142.Size = New Size(106, 102)
         btn142.TabIndex = 136
         btn142.UseVisualStyleBackColor = False
         ' 
         ' btn141
         ' 
         btn141.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn141.Location = New Point(130, 329)
+        btn141.Location = New Point(276, 674)
+        btn141.Margin = New Padding(6, 6, 6, 6)
         btn141.Name = "btn141"
-        btn141.Size = New Size(50, 50)
+        btn141.Size = New Size(106, 102)
         btn141.TabIndex = 135
         btn141.UseVisualStyleBackColor = False
         ' 
         ' btn149
         ' 
         btn149.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn149.Location = New Point(187, 163)
+        btn149.Location = New Point(397, 334)
+        btn149.Margin = New Padding(6, 6, 6, 6)
         btn149.Name = "btn149"
-        btn149.Size = New Size(50, 50)
+        btn149.Size = New Size(106, 102)
         btn149.TabIndex = 143
         btn149.UseVisualStyleBackColor = False
         ' 
         ' btn148
         ' 
         btn148.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn148.Location = New Point(186, 107)
+        btn148.Location = New Point(395, 219)
+        btn148.Margin = New Padding(6, 6, 6, 6)
         btn148.Name = "btn148"
-        btn148.Size = New Size(50, 50)
+        btn148.Size = New Size(106, 102)
         btn148.TabIndex = 142
         btn148.UseVisualStyleBackColor = False
         ' 
         ' btn147
         ' 
         btn147.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn147.Location = New Point(130, 107)
+        btn147.Location = New Point(276, 219)
+        btn147.Margin = New Padding(6, 6, 6, 6)
         btn147.Name = "btn147"
-        btn147.Size = New Size(50, 50)
+        btn147.Size = New Size(106, 102)
         btn147.TabIndex = 141
         btn147.UseVisualStyleBackColor = False
         ' 
         ' btn146
         ' 
         btn146.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn146.Location = New Point(74, 107)
+        btn146.Location = New Point(157, 219)
+        btn146.Margin = New Padding(6, 6, 6, 6)
         btn146.Name = "btn146"
-        btn146.Size = New Size(50, 50)
+        btn146.Size = New Size(106, 102)
         btn146.TabIndex = 140
         btn146.UseVisualStyleBackColor = False
         ' 
         ' btn96
         ' 
         btn96.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn96.Location = New Point(753, 331)
+        btn96.Location = New Point(1600, 679)
+        btn96.Margin = New Padding(6, 6, 6, 6)
         btn96.Name = "btn96"
-        btn96.Size = New Size(50, 50)
+        btn96.Size = New Size(106, 102)
         btn96.TabIndex = 150
         btn96.UseVisualStyleBackColor = False
         ' 
         ' btn85
         ' 
         btn85.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn85.Location = New Point(921, 443)
+        btn85.Location = New Point(1957, 908)
+        btn85.Margin = New Padding(6, 6, 6, 6)
         btn85.Name = "btn85"
-        btn85.Size = New Size(50, 50)
+        btn85.Size = New Size(106, 102)
         btn85.TabIndex = 149
         btn85.UseVisualStyleBackColor = False
         ' 
         ' btn84
         ' 
         btn84.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn84.Location = New Point(865, 443)
+        btn84.Location = New Point(1838, 908)
+        btn84.Margin = New Padding(6, 6, 6, 6)
         btn84.Name = "btn84"
-        btn84.Size = New Size(50, 50)
+        btn84.Size = New Size(106, 102)
         btn84.TabIndex = 148
         btn84.UseVisualStyleBackColor = False
         ' 
         ' btn83
         ' 
         btn83.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn83.Location = New Point(809, 443)
+        btn83.Location = New Point(1719, 908)
+        btn83.Margin = New Padding(6, 6, 6, 6)
         btn83.Name = "btn83"
-        btn83.Size = New Size(50, 50)
+        btn83.Size = New Size(106, 102)
         btn83.TabIndex = 147
         btn83.UseVisualStyleBackColor = False
         ' 
         ' btn82
         ' 
         btn82.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn82.Location = New Point(753, 443)
+        btn82.Location = New Point(1600, 908)
+        btn82.Margin = New Padding(6, 6, 6, 6)
         btn82.Name = "btn82"
-        btn82.Size = New Size(50, 50)
+        btn82.Size = New Size(106, 102)
         btn82.TabIndex = 146
         btn82.UseVisualStyleBackColor = False
         ' 
         ' btn89
         ' 
         btn89.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn89.Location = New Point(1095, 387)
+        btn89.Location = New Point(2327, 793)
+        btn89.Margin = New Padding(6, 6, 6, 6)
         btn89.Name = "btn89"
-        btn89.Size = New Size(50, 50)
+        btn89.Size = New Size(106, 102)
         btn89.TabIndex = 154
         btn89.UseVisualStyleBackColor = False
         ' 
         ' btn88
         ' 
         btn88.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn88.Location = New Point(1095, 443)
+        btn88.Location = New Point(2327, 908)
+        btn88.Margin = New Padding(6, 6, 6, 6)
         btn88.Name = "btn88"
-        btn88.Size = New Size(50, 50)
+        btn88.Size = New Size(106, 102)
         btn88.TabIndex = 153
         btn88.UseVisualStyleBackColor = False
         ' 
         ' btn87
         ' 
         btn87.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn87.Location = New Point(1039, 443)
+        btn87.Location = New Point(2208, 908)
+        btn87.Margin = New Padding(6, 6, 6, 6)
         btn87.Name = "btn87"
-        btn87.Size = New Size(50, 50)
+        btn87.Size = New Size(106, 102)
         btn87.TabIndex = 152
         btn87.UseVisualStyleBackColor = False
         ' 
         ' btn86
         ' 
         btn86.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn86.Location = New Point(983, 443)
+        btn86.Location = New Point(2089, 908)
+        btn86.Margin = New Padding(6, 6, 6, 6)
         btn86.Name = "btn86"
-        btn86.Size = New Size(50, 50)
+        btn86.Size = New Size(106, 102)
         btn86.TabIndex = 151
         btn86.UseVisualStyleBackColor = False
         ' 
         ' btn94
         ' 
         btn94.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn94.Location = New Point(871, 331)
+        btn94.Location = New Point(1851, 679)
+        btn94.Margin = New Padding(6, 6, 6, 6)
         btn94.Name = "btn94"
-        btn94.Size = New Size(50, 50)
+        btn94.Size = New Size(106, 102)
         btn94.TabIndex = 158
         btn94.UseVisualStyleBackColor = False
         ' 
         ' btn93
         ' 
         btn93.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn93.Location = New Point(927, 331)
+        btn93.Location = New Point(1970, 679)
+        btn93.Margin = New Padding(6, 6, 6, 6)
         btn93.Name = "btn93"
-        btn93.Size = New Size(50, 50)
+        btn93.Size = New Size(106, 102)
         btn93.TabIndex = 157
         btn93.UseVisualStyleBackColor = False
         ' 
         ' btn92
         ' 
         btn92.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn92.Location = New Point(983, 331)
+        btn92.Location = New Point(2089, 679)
+        btn92.Margin = New Padding(6, 6, 6, 6)
         btn92.Name = "btn92"
-        btn92.Size = New Size(50, 50)
+        btn92.Size = New Size(106, 102)
         btn92.TabIndex = 156
         btn92.UseVisualStyleBackColor = False
         ' 
         ' btn91
         ' 
         btn91.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn91.Location = New Point(1039, 331)
+        btn91.Location = New Point(2208, 679)
+        btn91.Margin = New Padding(6, 6, 6, 6)
         btn91.Name = "btn91"
-        btn91.Size = New Size(50, 50)
+        btn91.Size = New Size(106, 102)
         btn91.TabIndex = 155
         btn91.UseVisualStyleBackColor = False
         ' 
         ' btn90
         ' 
         btn90.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn90.Location = New Point(1095, 331)
+        btn90.Location = New Point(2327, 679)
+        btn90.Margin = New Padding(6, 6, 6, 6)
         btn90.Name = "btn90"
-        btn90.Size = New Size(50, 50)
+        btn90.Size = New Size(106, 102)
         btn90.TabIndex = 159
         btn90.UseVisualStyleBackColor = False
         ' 
         ' btn95
         ' 
         btn95.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn95.Location = New Point(809, 331)
+        btn95.Location = New Point(1719, 679)
+        btn95.Margin = New Padding(6, 6, 6, 6)
         btn95.Name = "btn95"
-        btn95.Size = New Size(50, 50)
+        btn95.Size = New Size(106, 102)
         btn95.TabIndex = 160
         btn95.UseVisualStyleBackColor = False
         ' 
         ' btn150
         ' 
         btn150.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        btn150.Location = New Point(186, 219)
+        btn150.Location = New Point(395, 449)
+        btn150.Margin = New Padding(6, 6, 6, 6)
         btn150.Name = "btn150"
-        btn150.Size = New Size(50, 50)
+        btn150.Size = New Size(106, 102)
         btn150.TabIndex = 161
         btn150.UseVisualStyleBackColor = False
         ' 
         ' BtnStart
         ' 
-        BtnStart.Location = New Point(1181, 84)
+        BtnStart.Location = New Point(2510, 172)
+        BtnStart.Margin = New Padding(6, 6, 6, 6)
         BtnStart.Name = "BtnStart"
-        BtnStart.Size = New Size(166, 73)
+        BtnStart.Size = New Size(353, 150)
         BtnStart.TabIndex = 162
         BtnStart.UseVisualStyleBackColor = True
         ' 
         ' pnlMain
         ' 
         pnlMain.Controls.Add(Lblgivenumber)
-        pnlMain.Location = New Point(1187, 207)
+        pnlMain.Location = New Point(2522, 424)
+        pnlMain.Margin = New Padding(6, 6, 6, 6)
         pnlMain.Name = "pnlMain"
-        pnlMain.Size = New Size(150, 150)
+        pnlMain.Size = New Size(319, 308)
         pnlMain.TabIndex = 163
         ' 
         ' Lblgivenumber
         ' 
         Lblgivenumber.AutoSize = True
         Lblgivenumber.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblgivenumber.Location = New Point(32, 64)
+        Lblgivenumber.Location = New Point(68, 131)
+        Lblgivenumber.Margin = New Padding(6, 0, 6, 0)
         Lblgivenumber.Name = "Lblgivenumber"
-        Lblgivenumber.Size = New Size(84, 31)
+        Lblgivenumber.Size = New Size(169, 62)
         Lblgivenumber.TabIndex = 164
         Lblgivenumber.Text = "Label1"
         ' 
-        ' Form1
+        ' frmCandyLandMain
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(17.0F, 41.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1411, 953)
+        ClientSize = New Size(2998, 1954)
         Controls.Add(pnlMain)
         Controls.Add(BtnStart)
         Controls.Add(btn150)
@@ -1735,7 +1892,7 @@ Partial Class frmCandyLandMain
         Controls.Add(btn27)
         Controls.Add(btn26)
         Controls.Add(btn25)
-        Controls.Add(btn224)
+        Controls.Add(btn24)
         Controls.Add(btn23)
         Controls.Add(btn22)
         Controls.Add(btn21)
@@ -1757,9 +1914,10 @@ Partial Class frmCandyLandMain
         Controls.Add(btn5)
         Controls.Add(btn4)
         Controls.Add(btn3)
-        Controls.Add(Btn2)
+        Controls.Add(btn2)
         Controls.Add(btn1)
-        Name = "Form1"
+        Margin = New Padding(6, 6, 6, 6)
+        Name = "frmCandyLandMain"
         Text = "Form1"
         pnlMain.ResumeLayout(False)
         pnlMain.PerformLayout()
@@ -1767,7 +1925,7 @@ Partial Class frmCandyLandMain
     End Sub
 
     Friend WithEvents btn1 As Button
-    Friend WithEvents Btn2 As Button
+    Friend WithEvents btn2 As Button
     Friend WithEvents btn3 As Button
     Friend WithEvents btn4 As Button
     Friend WithEvents btn5 As Button
@@ -1787,7 +1945,7 @@ Partial Class frmCandyLandMain
     Friend WithEvents btn17 As Button
     Friend WithEvents btn16 As Button
     Friend WithEvents btn25 As Button
-    Friend WithEvents btn224 As Button
+    Friend WithEvents btn24 As Button
     Friend WithEvents btn23 As Button
     Friend WithEvents btn22 As Button
     Friend WithEvents btn21 As Button
