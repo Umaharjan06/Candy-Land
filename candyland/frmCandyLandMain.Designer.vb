@@ -80,7 +80,7 @@ Partial Class frmCandyLandMain
         btn61 = New Button()
         btn60 = New Button()
         btn59 = New Button()
-        btn558 = New Button()
+        btn58 = New Button()
         btn57 = New Button()
         btn56 = New Button()
         btn65 = New Button()
@@ -186,7 +186,7 @@ Partial Class frmCandyLandMain
         ' 
         btn1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn1.Location = New Point(60, 1827)
-        btn1.Margin = New Padding(6, 6, 6, 6)
+        btn1.Margin = New Padding(6)
         btn1.Name = "btn1"
         btn1.Size = New Size(106, 102)
         btn1.TabIndex = 0
@@ -196,7 +196,7 @@ Partial Class frmCandyLandMain
         ' 
         btn2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn2.Location = New Point(178, 1827)
-        btn2.Margin = New Padding(6, 6, 6, 6)
+        btn2.Margin = New Padding(6)
         btn2.Name = "btn2"
         btn2.Size = New Size(106, 102)
         btn2.TabIndex = 1
@@ -206,7 +206,7 @@ Partial Class frmCandyLandMain
         ' 
         btn3.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn3.Location = New Point(298, 1827)
-        btn3.Margin = New Padding(6, 6, 6, 6)
+        btn3.Margin = New Padding(6)
         btn3.Name = "btn3"
         btn3.Size = New Size(106, 102)
         btn3.TabIndex = 2
@@ -216,7 +216,7 @@ Partial Class frmCandyLandMain
         ' 
         btn4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn4.Location = New Point(416, 1827)
-        btn4.Margin = New Padding(6, 6, 6, 6)
+        btn4.Margin = New Padding(6)
         btn4.Name = "btn4"
         btn4.Size = New Size(106, 102)
         btn4.TabIndex = 3
@@ -226,7 +226,7 @@ Partial Class frmCandyLandMain
         ' 
         btn5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn5.Location = New Point(536, 1827)
-        btn5.Margin = New Padding(6, 6, 6, 6)
+        btn5.Margin = New Padding(6)
         btn5.Name = "btn5"
         btn5.Size = New Size(106, 102)
         btn5.TabIndex = 4
@@ -236,7 +236,7 @@ Partial Class frmCandyLandMain
         ' 
         btn10.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn10.Location = New Point(1130, 1827)
-        btn10.Margin = New Padding(6, 6, 6, 6)
+        btn10.Margin = New Padding(6)
         btn10.Name = "btn10"
         btn10.Size = New Size(106, 102)
         btn10.TabIndex = 9
@@ -246,7 +246,7 @@ Partial Class frmCandyLandMain
         ' 
         btn9.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn9.Location = New Point(1012, 1827)
-        btn9.Margin = New Padding(6, 6, 6, 6)
+        btn9.Margin = New Padding(6)
         btn9.Name = "btn9"
         btn9.Size = New Size(106, 102)
         btn9.TabIndex = 8
@@ -256,7 +256,7 @@ Partial Class frmCandyLandMain
         ' 
         btn8.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn8.Location = New Point(892, 1827)
-        btn8.Margin = New Padding(6, 6, 6, 6)
+        btn8.Margin = New Padding(6)
         btn8.Name = "btn8"
         btn8.Size = New Size(106, 102)
         btn8.TabIndex = 7
@@ -266,7 +266,7 @@ Partial Class frmCandyLandMain
         ' 
         btn7.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn7.Location = New Point(774, 1827)
-        btn7.Margin = New Padding(6, 6, 6, 6)
+        btn7.Margin = New Padding(6)
         btn7.Name = "btn7"
         btn7.Size = New Size(106, 102)
         btn7.TabIndex = 6
@@ -276,7 +276,7 @@ Partial Class frmCandyLandMain
         ' 
         btn6.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn6.Location = New Point(654, 1827)
-        btn6.Margin = New Padding(6, 6, 6, 6)
+        btn6.Margin = New Padding(6)
         btn6.Name = "btn6"
         btn6.Size = New Size(106, 102)
         btn6.TabIndex = 5
@@ -286,7 +286,7 @@ Partial Class frmCandyLandMain
         ' 
         btn15.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn15.Location = New Point(1719, 1827)
-        btn15.Margin = New Padding(6, 6, 6, 6)
+        btn15.Margin = New Padding(6)
         btn15.Name = "btn15"
         btn15.Size = New Size(106, 102)
         btn15.TabIndex = 14
@@ -296,7 +296,7 @@ Partial Class frmCandyLandMain
         ' 
         btn14.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn14.Location = New Point(1600, 1827)
-        btn14.Margin = New Padding(6, 6, 6, 6)
+        btn14.Margin = New Padding(6)
         btn14.Name = "btn14"
         btn14.Size = New Size(106, 102)
         btn14.TabIndex = 13
@@ -306,7 +306,7 @@ Partial Class frmCandyLandMain
         ' 
         btn13.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn13.Location = New Point(1481, 1827)
-        btn13.Margin = New Padding(6, 6, 6, 6)
+        btn13.Margin = New Padding(6)
         btn13.Name = "btn13"
         btn13.Size = New Size(106, 102)
         btn13.TabIndex = 12
@@ -316,7 +316,7 @@ Partial Class frmCandyLandMain
         ' 
         btn12.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn12.Location = New Point(1362, 1827)
-        btn12.Margin = New Padding(6, 6, 6, 6)
+        btn12.Margin = New Padding(6)
         btn12.Name = "btn12"
         btn12.Size = New Size(106, 102)
         btn12.TabIndex = 11
@@ -326,7 +326,7 @@ Partial Class frmCandyLandMain
         ' 
         btn11.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn11.Location = New Point(1243, 1827)
-        btn11.Margin = New Padding(6, 6, 6, 6)
+        btn11.Margin = New Padding(6)
         btn11.Name = "btn11"
         btn11.Size = New Size(106, 102)
         btn11.TabIndex = 10
@@ -336,7 +336,7 @@ Partial Class frmCandyLandMain
         ' 
         btn20.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn20.Location = New Point(2327, 1827)
-        btn20.Margin = New Padding(6, 6, 6, 6)
+        btn20.Margin = New Padding(6)
         btn20.Name = "btn20"
         btn20.Size = New Size(106, 102)
         btn20.TabIndex = 19
@@ -346,7 +346,7 @@ Partial Class frmCandyLandMain
         ' 
         btn19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn19.Location = New Point(2208, 1827)
-        btn19.Margin = New Padding(6, 6, 6, 6)
+        btn19.Margin = New Padding(6)
         btn19.Name = "btn19"
         btn19.Size = New Size(106, 102)
         btn19.TabIndex = 18
@@ -356,7 +356,7 @@ Partial Class frmCandyLandMain
         ' 
         btn18.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn18.Location = New Point(2076, 1827)
-        btn18.Margin = New Padding(6, 6, 6, 6)
+        btn18.Margin = New Padding(6)
         btn18.Name = "btn18"
         btn18.Size = New Size(106, 102)
         btn18.TabIndex = 17
@@ -366,7 +366,7 @@ Partial Class frmCandyLandMain
         ' 
         btn17.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn17.Location = New Point(1957, 1827)
-        btn17.Margin = New Padding(6, 6, 6, 6)
+        btn17.Margin = New Padding(6)
         btn17.Name = "btn17"
         btn17.Size = New Size(106, 102)
         btn17.TabIndex = 16
@@ -376,7 +376,7 @@ Partial Class frmCandyLandMain
         ' 
         btn16.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn16.Location = New Point(1838, 1827)
-        btn16.Margin = New Padding(6, 6, 6, 6)
+        btn16.Margin = New Padding(6)
         btn16.Name = "btn16"
         btn16.Size = New Size(106, 102)
         btn16.TabIndex = 15
@@ -386,7 +386,7 @@ Partial Class frmCandyLandMain
         ' 
         btn25.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn25.Location = New Point(1970, 1597)
-        btn25.Margin = New Padding(6, 6, 6, 6)
+        btn25.Margin = New Padding(6)
         btn25.Name = "btn25"
         btn25.Size = New Size(106, 102)
         btn25.TabIndex = 24
@@ -396,7 +396,7 @@ Partial Class frmCandyLandMain
         ' 
         btn24.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn24.Location = New Point(2089, 1597)
-        btn24.Margin = New Padding(6, 6, 6, 6)
+        btn24.Margin = New Padding(6)
         btn24.Name = "btn24"
         btn24.Size = New Size(106, 102)
         btn24.TabIndex = 23
@@ -406,7 +406,7 @@ Partial Class frmCandyLandMain
         ' 
         btn23.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn23.Location = New Point(2208, 1597)
-        btn23.Margin = New Padding(6, 6, 6, 6)
+        btn23.Margin = New Padding(6)
         btn23.Name = "btn23"
         btn23.Size = New Size(106, 102)
         btn23.TabIndex = 22
@@ -416,7 +416,7 @@ Partial Class frmCandyLandMain
         ' 
         btn22.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn22.Location = New Point(2327, 1597)
-        btn22.Margin = New Padding(6, 6, 6, 6)
+        btn22.Margin = New Padding(6)
         btn22.Name = "btn22"
         btn22.Size = New Size(106, 102)
         btn22.TabIndex = 21
@@ -426,7 +426,7 @@ Partial Class frmCandyLandMain
         ' 
         btn21.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn21.Location = New Point(2327, 1712)
-        btn21.Margin = New Padding(6, 6, 6, 6)
+        btn21.Margin = New Padding(6)
         btn21.Name = "btn21"
         btn21.Size = New Size(106, 102)
         btn21.TabIndex = 20
@@ -436,7 +436,7 @@ Partial Class frmCandyLandMain
         ' 
         btn30.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn30.Location = New Point(1362, 1597)
-        btn30.Margin = New Padding(6, 6, 6, 6)
+        btn30.Margin = New Padding(6)
         btn30.Name = "btn30"
         btn30.Size = New Size(106, 102)
         btn30.TabIndex = 29
@@ -446,7 +446,7 @@ Partial Class frmCandyLandMain
         ' 
         btn29.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn29.Location = New Point(1494, 1597)
-        btn29.Margin = New Padding(6, 6, 6, 6)
+        btn29.Margin = New Padding(6)
         btn29.Name = "btn29"
         btn29.Size = New Size(106, 102)
         btn29.TabIndex = 28
@@ -456,7 +456,7 @@ Partial Class frmCandyLandMain
         ' 
         btn28.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn28.Location = New Point(1613, 1597)
-        btn28.Margin = New Padding(6, 6, 6, 6)
+        btn28.Margin = New Padding(6)
         btn28.Name = "btn28"
         btn28.Size = New Size(106, 102)
         btn28.TabIndex = 27
@@ -466,7 +466,7 @@ Partial Class frmCandyLandMain
         ' 
         btn27.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn27.Location = New Point(1719, 1597)
-        btn27.Margin = New Padding(6, 6, 6, 6)
+        btn27.Margin = New Padding(6)
         btn27.Name = "btn27"
         btn27.Size = New Size(106, 102)
         btn27.TabIndex = 26
@@ -476,7 +476,7 @@ Partial Class frmCandyLandMain
         ' 
         btn26.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn26.Location = New Point(1851, 1597)
-        btn26.Margin = New Padding(6, 6, 6, 6)
+        btn26.Margin = New Padding(6)
         btn26.Name = "btn26"
         btn26.Size = New Size(106, 102)
         btn26.TabIndex = 25
@@ -486,7 +486,7 @@ Partial Class frmCandyLandMain
         ' 
         btn35.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn35.Location = New Point(1719, 1367)
-        btn35.Margin = New Padding(6, 6, 6, 6)
+        btn35.Margin = New Padding(6)
         btn35.Name = "btn35"
         btn35.Size = New Size(106, 102)
         btn35.TabIndex = 34
@@ -496,7 +496,7 @@ Partial Class frmCandyLandMain
         ' 
         btn34.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn34.Location = New Point(1600, 1367)
-        btn34.Margin = New Padding(6, 6, 6, 6)
+        btn34.Margin = New Padding(6)
         btn34.Name = "btn34"
         btn34.Size = New Size(106, 102)
         btn34.TabIndex = 33
@@ -506,7 +506,7 @@ Partial Class frmCandyLandMain
         ' 
         btn33.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn33.Location = New Point(1481, 1367)
-        btn33.Margin = New Padding(6, 6, 6, 6)
+        btn33.Margin = New Padding(6)
         btn33.Name = "btn33"
         btn33.Size = New Size(106, 102)
         btn33.TabIndex = 32
@@ -516,7 +516,7 @@ Partial Class frmCandyLandMain
         ' 
         btn32.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn32.Location = New Point(1362, 1367)
-        btn32.Margin = New Padding(6, 6, 6, 6)
+        btn32.Margin = New Padding(6)
         btn32.Name = "btn32"
         btn32.Size = New Size(106, 102)
         btn32.TabIndex = 31
@@ -526,7 +526,7 @@ Partial Class frmCandyLandMain
         ' 
         btn31.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn31.Location = New Point(1362, 1482)
-        btn31.Margin = New Padding(6, 6, 6, 6)
+        btn31.Margin = New Padding(6)
         btn31.Name = "btn31"
         btn31.Size = New Size(106, 102)
         btn31.TabIndex = 30
@@ -536,7 +536,7 @@ Partial Class frmCandyLandMain
         ' 
         btn40.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn40.Location = New Point(2327, 1367)
-        btn40.Margin = New Padding(6, 6, 6, 6)
+        btn40.Margin = New Padding(6)
         btn40.Name = "btn40"
         btn40.Size = New Size(106, 102)
         btn40.TabIndex = 39
@@ -546,7 +546,7 @@ Partial Class frmCandyLandMain
         ' 
         btn39.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn39.Location = New Point(2208, 1367)
-        btn39.Margin = New Padding(6, 6, 6, 6)
+        btn39.Margin = New Padding(6)
         btn39.Name = "btn39"
         btn39.Size = New Size(106, 102)
         btn39.TabIndex = 38
@@ -556,7 +556,7 @@ Partial Class frmCandyLandMain
         ' 
         btn38.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn38.Location = New Point(2089, 1367)
-        btn38.Margin = New Padding(6, 6, 6, 6)
+        btn38.Margin = New Padding(6)
         btn38.Name = "btn38"
         btn38.Size = New Size(106, 102)
         btn38.TabIndex = 37
@@ -566,7 +566,7 @@ Partial Class frmCandyLandMain
         ' 
         btn37.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn37.Location = New Point(1970, 1367)
-        btn37.Margin = New Padding(6, 6, 6, 6)
+        btn37.Margin = New Padding(6)
         btn37.Name = "btn37"
         btn37.Size = New Size(106, 102)
         btn37.TabIndex = 36
@@ -576,7 +576,7 @@ Partial Class frmCandyLandMain
         ' 
         btn36.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn36.Location = New Point(1851, 1367)
-        btn36.Margin = New Padding(6, 6, 6, 6)
+        btn36.Margin = New Padding(6)
         btn36.Name = "btn36"
         btn36.Size = New Size(106, 102)
         btn36.TabIndex = 35
@@ -586,7 +586,7 @@ Partial Class frmCandyLandMain
         ' 
         btn45.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn45.Location = New Point(1970, 1138)
-        btn45.Margin = New Padding(6, 6, 6, 6)
+        btn45.Margin = New Padding(6)
         btn45.Name = "btn45"
         btn45.Size = New Size(106, 102)
         btn45.TabIndex = 44
@@ -596,7 +596,7 @@ Partial Class frmCandyLandMain
         ' 
         btn44.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn44.Location = New Point(2089, 1138)
-        btn44.Margin = New Padding(6, 6, 6, 6)
+        btn44.Margin = New Padding(6)
         btn44.Name = "btn44"
         btn44.Size = New Size(106, 102)
         btn44.TabIndex = 43
@@ -606,7 +606,7 @@ Partial Class frmCandyLandMain
         ' 
         btn43.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn43.Location = New Point(2208, 1138)
-        btn43.Margin = New Padding(6, 6, 6, 6)
+        btn43.Margin = New Padding(6)
         btn43.Name = "btn43"
         btn43.Size = New Size(106, 102)
         btn43.TabIndex = 42
@@ -616,7 +616,7 @@ Partial Class frmCandyLandMain
         ' 
         btn42.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn42.Location = New Point(2327, 1138)
-        btn42.Margin = New Padding(6, 6, 6, 6)
+        btn42.Margin = New Padding(6)
         btn42.Name = "btn42"
         btn42.Size = New Size(106, 102)
         btn42.TabIndex = 41
@@ -626,7 +626,7 @@ Partial Class frmCandyLandMain
         ' 
         btn41.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn41.Location = New Point(2327, 1253)
-        btn41.Margin = New Padding(6, 6, 6, 6)
+        btn41.Margin = New Padding(6)
         btn41.Name = "btn41"
         btn41.Size = New Size(106, 102)
         btn41.TabIndex = 40
@@ -636,7 +636,7 @@ Partial Class frmCandyLandMain
         ' 
         btn50.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn50.Location = New Point(1362, 1138)
-        btn50.Margin = New Padding(6, 6, 6, 6)
+        btn50.Margin = New Padding(6)
         btn50.Name = "btn50"
         btn50.Size = New Size(106, 102)
         btn50.TabIndex = 49
@@ -646,7 +646,7 @@ Partial Class frmCandyLandMain
         ' 
         btn49.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn49.Location = New Point(1481, 1138)
-        btn49.Margin = New Padding(6, 6, 6, 6)
+        btn49.Margin = New Padding(6)
         btn49.Name = "btn49"
         btn49.Size = New Size(106, 102)
         btn49.TabIndex = 48
@@ -656,7 +656,7 @@ Partial Class frmCandyLandMain
         ' 
         btn48.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn48.Location = New Point(1600, 1138)
-        btn48.Margin = New Padding(6, 6, 6, 6)
+        btn48.Margin = New Padding(6)
         btn48.Name = "btn48"
         btn48.Size = New Size(106, 102)
         btn48.TabIndex = 47
@@ -666,7 +666,7 @@ Partial Class frmCandyLandMain
         ' 
         btn47.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn47.Location = New Point(1732, 1138)
-        btn47.Margin = New Padding(6, 6, 6, 6)
+        btn47.Margin = New Padding(6)
         btn47.Name = "btn47"
         btn47.Size = New Size(106, 102)
         btn47.TabIndex = 46
@@ -676,7 +676,7 @@ Partial Class frmCandyLandMain
         ' 
         btn46.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn46.Location = New Point(1851, 1138)
-        btn46.Margin = New Padding(6, 6, 6, 6)
+        btn46.Margin = New Padding(6)
         btn46.Name = "btn46"
         btn46.Size = New Size(106, 102)
         btn46.TabIndex = 45
@@ -686,7 +686,7 @@ Partial Class frmCandyLandMain
         ' 
         btn55.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn55.Location = New Point(1130, 1482)
-        btn55.Margin = New Padding(6, 6, 6, 6)
+        btn55.Margin = New Padding(6)
         btn55.Name = "btn55"
         btn55.Size = New Size(106, 102)
         btn55.TabIndex = 54
@@ -696,7 +696,7 @@ Partial Class frmCandyLandMain
         ' 
         btn54.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn54.Location = New Point(1130, 1367)
-        btn54.Margin = New Padding(6, 6, 6, 6)
+        btn54.Margin = New Padding(6)
         btn54.Name = "btn54"
         btn54.Size = New Size(106, 102)
         btn54.TabIndex = 53
@@ -706,7 +706,7 @@ Partial Class frmCandyLandMain
         ' 
         btn53.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn53.Location = New Point(1124, 1253)
-        btn53.Margin = New Padding(6, 6, 6, 6)
+        btn53.Margin = New Padding(6)
         btn53.Name = "btn53"
         btn53.Size = New Size(106, 102)
         btn53.TabIndex = 52
@@ -716,7 +716,7 @@ Partial Class frmCandyLandMain
         ' 
         btn52.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn52.Location = New Point(1124, 1138)
-        btn52.Margin = New Padding(6, 6, 6, 6)
+        btn52.Margin = New Padding(6)
         btn52.Name = "btn52"
         btn52.Size = New Size(106, 102)
         btn52.TabIndex = 51
@@ -726,7 +726,7 @@ Partial Class frmCandyLandMain
         ' 
         btn51.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn51.Location = New Point(1243, 1138)
-        btn51.Margin = New Padding(6, 6, 6, 6)
+        btn51.Margin = New Padding(6)
         btn51.Name = "btn51"
         btn51.Size = New Size(106, 102)
         btn51.TabIndex = 50
@@ -736,7 +736,7 @@ Partial Class frmCandyLandMain
         ' 
         btn61.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn61.Location = New Point(404, 1482)
-        btn61.Margin = New Padding(6, 6, 6, 6)
+        btn61.Margin = New Padding(6)
         btn61.Name = "btn61"
         btn61.Size = New Size(106, 102)
         btn61.TabIndex = 64
@@ -746,7 +746,7 @@ Partial Class frmCandyLandMain
         ' 
         btn60.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn60.Location = New Point(523, 1482)
-        btn60.Margin = New Padding(6, 6, 6, 6)
+        btn60.Margin = New Padding(6)
         btn60.Name = "btn60"
         btn60.Size = New Size(106, 102)
         btn60.TabIndex = 63
@@ -756,27 +756,27 @@ Partial Class frmCandyLandMain
         ' 
         btn59.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn59.Location = New Point(642, 1482)
-        btn59.Margin = New Padding(6, 6, 6, 6)
+        btn59.Margin = New Padding(6)
         btn59.Name = "btn59"
         btn59.Size = New Size(106, 102)
         btn59.TabIndex = 62
         btn59.UseVisualStyleBackColor = False
         ' 
-        ' btn558
+        ' btn58
         ' 
-        btn558.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn558.Location = New Point(761, 1482)
-        btn558.Margin = New Padding(6, 6, 6, 6)
-        btn558.Name = "btn558"
-        btn558.Size = New Size(106, 102)
-        btn558.TabIndex = 61
-        btn558.UseVisualStyleBackColor = False
+        btn58.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
+        btn58.Location = New Point(761, 1482)
+        btn58.Margin = New Padding(6)
+        btn58.Name = "btn58"
+        btn58.Size = New Size(106, 102)
+        btn58.TabIndex = 61
+        btn58.UseVisualStyleBackColor = False
         ' 
         ' btn57
         ' 
         btn57.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn57.Location = New Point(892, 1482)
-        btn57.Margin = New Padding(6, 6, 6, 6)
+        btn57.Margin = New Padding(6)
         btn57.Name = "btn57"
         btn57.Size = New Size(106, 102)
         btn57.TabIndex = 60
@@ -786,7 +786,7 @@ Partial Class frmCandyLandMain
         ' 
         btn56.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn56.Location = New Point(1012, 1482)
-        btn56.Margin = New Padding(6, 6, 6, 6)
+        btn56.Margin = New Padding(6)
         btn56.Name = "btn56"
         btn56.Size = New Size(106, 102)
         btn56.TabIndex = 59
@@ -796,7 +796,7 @@ Partial Class frmCandyLandMain
         ' 
         btn65.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn65.Location = New Point(34, 1367)
-        btn65.Margin = New Padding(6, 6, 6, 6)
+        btn65.Margin = New Padding(6)
         btn65.Name = "btn65"
         btn65.Size = New Size(106, 102)
         btn65.TabIndex = 68
@@ -806,7 +806,7 @@ Partial Class frmCandyLandMain
         ' 
         btn64.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn64.Location = New Point(34, 1482)
-        btn64.Margin = New Padding(6, 6, 6, 6)
+        btn64.Margin = New Padding(6)
         btn64.Name = "btn64"
         btn64.Size = New Size(106, 102)
         btn64.TabIndex = 67
@@ -816,7 +816,7 @@ Partial Class frmCandyLandMain
         ' 
         btn63.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn63.Location = New Point(153, 1482)
-        btn63.Margin = New Padding(6, 6, 6, 6)
+        btn63.Margin = New Padding(6)
         btn63.Name = "btn63"
         btn63.Size = New Size(106, 102)
         btn63.TabIndex = 66
@@ -826,7 +826,7 @@ Partial Class frmCandyLandMain
         ' 
         btn62.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn62.Location = New Point(285, 1482)
-        btn62.Margin = New Padding(6, 6, 6, 6)
+        btn62.Margin = New Padding(6)
         btn62.Name = "btn62"
         btn62.Size = New Size(106, 102)
         btn62.TabIndex = 65
@@ -836,7 +836,7 @@ Partial Class frmCandyLandMain
         ' 
         btn69.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn69.Location = New Point(34, 908)
-        btn69.Margin = New Padding(6, 6, 6, 6)
+        btn69.Margin = New Padding(6)
         btn69.Name = "btn69"
         btn69.Size = New Size(106, 102)
         btn69.TabIndex = 73
@@ -846,7 +846,7 @@ Partial Class frmCandyLandMain
         ' 
         btn68.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn68.Location = New Point(34, 1023)
-        btn68.Margin = New Padding(6, 6, 6, 6)
+        btn68.Margin = New Padding(6)
         btn68.Name = "btn68"
         btn68.Size = New Size(106, 102)
         btn68.TabIndex = 72
@@ -856,7 +856,7 @@ Partial Class frmCandyLandMain
         ' 
         btn67.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn67.Location = New Point(34, 1138)
-        btn67.Margin = New Padding(6, 6, 6, 6)
+        btn67.Margin = New Padding(6)
         btn67.Name = "btn67"
         btn67.Size = New Size(106, 102)
         btn67.TabIndex = 71
@@ -866,7 +866,7 @@ Partial Class frmCandyLandMain
         ' 
         btn66.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn66.Location = New Point(34, 1253)
-        btn66.Margin = New Padding(6, 6, 6, 6)
+        btn66.Margin = New Padding(6)
         btn66.Name = "btn66"
         btn66.Size = New Size(106, 102)
         btn66.TabIndex = 70
@@ -876,7 +876,7 @@ Partial Class frmCandyLandMain
         ' 
         btn79.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn79.Location = New Point(1230, 908)
-        btn79.Margin = New Padding(6, 6, 6, 6)
+        btn79.Margin = New Padding(6)
         btn79.Name = "btn79"
         btn79.Size = New Size(106, 102)
         btn79.TabIndex = 83
@@ -886,7 +886,7 @@ Partial Class frmCandyLandMain
         ' 
         btn78.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn78.Location = New Point(1111, 908)
-        btn78.Margin = New Padding(6, 6, 6, 6)
+        btn78.Margin = New Padding(6)
         btn78.Name = "btn78"
         btn78.Size = New Size(106, 102)
         btn78.TabIndex = 82
@@ -896,7 +896,7 @@ Partial Class frmCandyLandMain
         ' 
         btn77.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn77.Location = New Point(992, 908)
-        btn77.Margin = New Padding(6, 6, 6, 6)
+        btn77.Margin = New Padding(6)
         btn77.Name = "btn77"
         btn77.Size = New Size(106, 102)
         btn77.TabIndex = 81
@@ -906,7 +906,7 @@ Partial Class frmCandyLandMain
         ' 
         btn76.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn76.Location = New Point(873, 908)
-        btn76.Margin = New Padding(6, 6, 6, 6)
+        btn76.Margin = New Padding(6)
         btn76.Name = "btn76"
         btn76.Size = New Size(106, 102)
         btn76.TabIndex = 80
@@ -916,7 +916,7 @@ Partial Class frmCandyLandMain
         ' 
         btn75.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn75.Location = New Point(761, 908)
-        btn75.Margin = New Padding(6, 6, 6, 6)
+        btn75.Margin = New Padding(6)
         btn75.Name = "btn75"
         btn75.Size = New Size(106, 102)
         btn75.TabIndex = 79
@@ -926,7 +926,7 @@ Partial Class frmCandyLandMain
         ' 
         btn74.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn74.Location = New Point(642, 908)
-        btn74.Margin = New Padding(6, 6, 6, 6)
+        btn74.Margin = New Padding(6)
         btn74.Name = "btn74"
         btn74.Size = New Size(106, 102)
         btn74.TabIndex = 78
@@ -936,7 +936,7 @@ Partial Class frmCandyLandMain
         ' 
         btn73.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn73.Location = New Point(523, 908)
-        btn73.Margin = New Padding(6, 6, 6, 6)
+        btn73.Margin = New Padding(6)
         btn73.Name = "btn73"
         btn73.Size = New Size(106, 102)
         btn73.TabIndex = 77
@@ -946,7 +946,7 @@ Partial Class frmCandyLandMain
         ' 
         btn72.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn72.Location = New Point(404, 908)
-        btn72.Margin = New Padding(6, 6, 6, 6)
+        btn72.Margin = New Padding(6)
         btn72.Name = "btn72"
         btn72.Size = New Size(106, 102)
         btn72.TabIndex = 76
@@ -956,7 +956,7 @@ Partial Class frmCandyLandMain
         ' 
         btn71.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn71.Location = New Point(285, 908)
-        btn71.Margin = New Padding(6, 6, 6, 6)
+        btn71.Margin = New Padding(6)
         btn71.Name = "btn71"
         btn71.Size = New Size(106, 102)
         btn71.TabIndex = 75
@@ -966,7 +966,7 @@ Partial Class frmCandyLandMain
         ' 
         btn70.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn70.Location = New Point(166, 908)
-        btn70.Margin = New Padding(6, 6, 6, 6)
+        btn70.Margin = New Padding(6)
         btn70.Name = "btn70"
         btn70.Size = New Size(106, 102)
         btn70.TabIndex = 74
@@ -976,7 +976,7 @@ Partial Class frmCandyLandMain
         ' 
         btn80.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn80.Location = New Point(1362, 908)
-        btn80.Margin = New Padding(6, 6, 6, 6)
+        btn80.Margin = New Padding(6)
         btn80.Name = "btn80"
         btn80.Size = New Size(106, 102)
         btn80.TabIndex = 84
@@ -986,7 +986,7 @@ Partial Class frmCandyLandMain
         ' 
         Button81.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         Button81.Location = New Point(1719, 908)
-        Button81.Margin = New Padding(6, 6, 6, 6)
+        Button81.Margin = New Padding(6)
         Button81.Name = "Button81"
         Button81.Size = New Size(0, 0)
         Button81.TabIndex = 88
@@ -997,7 +997,7 @@ Partial Class frmCandyLandMain
         ' 
         Button82.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         Button82.Location = New Point(1111, 525)
-        Button82.Margin = New Padding(6, 6, 6, 6)
+        Button82.Margin = New Padding(6)
         Button82.Name = "Button82"
         Button82.Size = New Size(0, 0)
         Button82.TabIndex = 87
@@ -1008,7 +1008,7 @@ Partial Class frmCandyLandMain
         ' 
         Button83.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         Button83.Location = New Point(1230, 525)
-        Button83.Margin = New Padding(6, 6, 6, 6)
+        Button83.Margin = New Padding(6)
         Button83.Name = "Button83"
         Button83.Size = New Size(0, 0)
         Button83.TabIndex = 86
@@ -1019,7 +1019,7 @@ Partial Class frmCandyLandMain
         ' 
         Button84.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         Button84.Location = New Point(1349, 525)
-        Button84.Margin = New Padding(6, 6, 6, 6)
+        Button84.Margin = New Padding(6)
         Button84.Name = "Button84"
         Button84.Size = New Size(0, 0)
         Button84.TabIndex = 85
@@ -1030,7 +1030,7 @@ Partial Class frmCandyLandMain
         ' 
         btn100.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn100.Location = New Point(1111, 679)
-        btn100.Margin = New Padding(6, 6, 6, 6)
+        btn100.Margin = New Padding(6)
         btn100.Name = "btn100"
         btn100.Size = New Size(106, 102)
         btn100.TabIndex = 94
@@ -1040,7 +1040,7 @@ Partial Class frmCandyLandMain
         ' 
         btn99.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn99.Location = New Point(1230, 679)
-        btn99.Margin = New Padding(6, 6, 6, 6)
+        btn99.Margin = New Padding(6)
         btn99.Name = "btn99"
         btn99.Size = New Size(106, 102)
         btn99.TabIndex = 93
@@ -1050,7 +1050,7 @@ Partial Class frmCandyLandMain
         ' 
         btn98.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn98.Location = New Point(1349, 679)
-        btn98.Margin = New Padding(6, 6, 6, 6)
+        btn98.Margin = New Padding(6)
         btn98.Name = "btn98"
         btn98.Size = New Size(106, 102)
         btn98.TabIndex = 92
@@ -1060,7 +1060,7 @@ Partial Class frmCandyLandMain
         ' 
         btn97.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn97.Location = New Point(1481, 679)
-        btn97.Margin = New Padding(6, 6, 6, 6)
+        btn97.Margin = New Padding(6)
         btn97.Name = "btn97"
         btn97.Size = New Size(106, 102)
         btn97.TabIndex = 91
@@ -1070,7 +1070,7 @@ Partial Class frmCandyLandMain
         ' 
         btn81.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn81.Location = New Point(1481, 908)
-        btn81.Margin = New Padding(6, 6, 6, 6)
+        btn81.Margin = New Padding(6)
         btn81.Name = "btn81"
         btn81.Size = New Size(106, 102)
         btn81.TabIndex = 90
@@ -1080,7 +1080,7 @@ Partial Class frmCandyLandMain
         ' 
         btn105.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn105.Location = New Point(992, 449)
-        btn105.Margin = New Padding(6, 6, 6, 6)
+        btn105.Margin = New Padding(6)
         btn105.Name = "btn105"
         btn105.Size = New Size(106, 102)
         btn105.TabIndex = 99
@@ -1090,7 +1090,7 @@ Partial Class frmCandyLandMain
         ' 
         btn104.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn104.Location = New Point(873, 449)
-        btn104.Margin = New Padding(6, 6, 6, 6)
+        btn104.Margin = New Padding(6)
         btn104.Name = "btn104"
         btn104.Size = New Size(106, 102)
         btn104.TabIndex = 98
@@ -1100,7 +1100,7 @@ Partial Class frmCandyLandMain
         ' 
         btn103.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn103.Location = New Point(867, 564)
-        btn103.Margin = New Padding(6, 6, 6, 6)
+        btn103.Margin = New Padding(6)
         btn103.Name = "btn103"
         btn103.Size = New Size(106, 102)
         btn103.TabIndex = 97
@@ -1110,7 +1110,7 @@ Partial Class frmCandyLandMain
         ' 
         btn102.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn102.Location = New Point(867, 679)
-        btn102.Margin = New Padding(6, 6, 6, 6)
+        btn102.Margin = New Padding(6)
         btn102.Name = "btn102"
         btn102.Size = New Size(106, 102)
         btn102.TabIndex = 96
@@ -1120,7 +1120,7 @@ Partial Class frmCandyLandMain
         ' 
         btn101.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn101.Location = New Point(992, 679)
-        btn101.Margin = New Padding(6, 6, 6, 6)
+        btn101.Margin = New Padding(6)
         btn101.Name = "btn101"
         btn101.Size = New Size(106, 102)
         btn101.TabIndex = 95
@@ -1130,7 +1130,7 @@ Partial Class frmCandyLandMain
         ' 
         btn110.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn110.Location = New Point(1600, 449)
-        btn110.Margin = New Padding(6, 6, 6, 6)
+        btn110.Margin = New Padding(6)
         btn110.Name = "btn110"
         btn110.Size = New Size(106, 102)
         btn110.TabIndex = 104
@@ -1140,7 +1140,7 @@ Partial Class frmCandyLandMain
         ' 
         btn109.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn109.Location = New Point(1468, 449)
-        btn109.Margin = New Padding(6, 6, 6, 6)
+        btn109.Margin = New Padding(6)
         btn109.Name = "btn109"
         btn109.Size = New Size(106, 102)
         btn109.TabIndex = 103
@@ -1150,7 +1150,7 @@ Partial Class frmCandyLandMain
         ' 
         btn108.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn108.Location = New Point(1349, 449)
-        btn108.Margin = New Padding(6, 6, 6, 6)
+        btn108.Margin = New Padding(6)
         btn108.Name = "btn108"
         btn108.Size = New Size(106, 102)
         btn108.TabIndex = 102
@@ -1160,7 +1160,7 @@ Partial Class frmCandyLandMain
         ' 
         btn107.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn107.Location = New Point(1230, 449)
-        btn107.Margin = New Padding(6, 6, 6, 6)
+        btn107.Margin = New Padding(6)
         btn107.Name = "btn107"
         btn107.Size = New Size(106, 102)
         btn107.TabIndex = 101
@@ -1170,7 +1170,7 @@ Partial Class frmCandyLandMain
         ' 
         btn106.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn106.Location = New Point(1111, 449)
-        btn106.Margin = New Padding(6, 6, 6, 6)
+        btn106.Margin = New Padding(6)
         btn106.Name = "btn106"
         btn106.Size = New Size(106, 102)
         btn106.TabIndex = 100
@@ -1180,7 +1180,7 @@ Partial Class frmCandyLandMain
         ' 
         btn115.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn115.Location = New Point(2208, 449)
-        btn115.Margin = New Padding(6, 6, 6, 6)
+        btn115.Margin = New Padding(6)
         btn115.Name = "btn115"
         btn115.Size = New Size(106, 102)
         btn115.TabIndex = 109
@@ -1190,7 +1190,7 @@ Partial Class frmCandyLandMain
         ' 
         btn114.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn114.Location = New Point(2089, 449)
-        btn114.Margin = New Padding(6, 6, 6, 6)
+        btn114.Margin = New Padding(6)
         btn114.Name = "btn114"
         btn114.Size = New Size(106, 102)
         btn114.TabIndex = 108
@@ -1200,7 +1200,7 @@ Partial Class frmCandyLandMain
         ' 
         btn113.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn113.Location = New Point(1970, 449)
-        btn113.Margin = New Padding(6, 6, 6, 6)
+        btn113.Margin = New Padding(6)
         btn113.Name = "btn113"
         btn113.Size = New Size(106, 102)
         btn113.TabIndex = 107
@@ -1210,7 +1210,7 @@ Partial Class frmCandyLandMain
         ' 
         btn112.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn112.Location = New Point(1851, 449)
-        btn112.Margin = New Padding(6, 6, 6, 6)
+        btn112.Margin = New Padding(6)
         btn112.Name = "btn112"
         btn112.Size = New Size(106, 102)
         btn112.TabIndex = 106
@@ -1220,7 +1220,7 @@ Partial Class frmCandyLandMain
         ' 
         btn111.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn111.Location = New Point(1732, 449)
-        btn111.Margin = New Padding(6, 6, 6, 6)
+        btn111.Margin = New Padding(6)
         btn111.Name = "btn111"
         btn111.Size = New Size(106, 102)
         btn111.TabIndex = 105
@@ -1230,7 +1230,7 @@ Partial Class frmCandyLandMain
         ' 
         btn120.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn120.Location = New Point(2208, 105)
-        btn120.Margin = New Padding(6, 6, 6, 6)
+        btn120.Margin = New Padding(6)
         btn120.Name = "btn120"
         btn120.Size = New Size(106, 102)
         btn120.TabIndex = 114
@@ -1240,7 +1240,7 @@ Partial Class frmCandyLandMain
         ' 
         btn119.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn119.Location = New Point(2327, 105)
-        btn119.Margin = New Padding(6, 6, 6, 6)
+        btn119.Margin = New Padding(6)
         btn119.Name = "btn119"
         btn119.Size = New Size(106, 102)
         btn119.TabIndex = 113
@@ -1250,7 +1250,7 @@ Partial Class frmCandyLandMain
         ' 
         btn117.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn117.Location = New Point(2327, 334)
-        btn117.Margin = New Padding(6, 6, 6, 6)
+        btn117.Margin = New Padding(6)
         btn117.Name = "btn117"
         btn117.Size = New Size(106, 102)
         btn117.TabIndex = 112
@@ -1260,7 +1260,7 @@ Partial Class frmCandyLandMain
         ' 
         btn118.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn118.Location = New Point(2327, 219)
-        btn118.Margin = New Padding(6, 6, 6, 6)
+        btn118.Margin = New Padding(6)
         btn118.Name = "btn118"
         btn118.Size = New Size(106, 102)
         btn118.TabIndex = 111
@@ -1270,7 +1270,7 @@ Partial Class frmCandyLandMain
         ' 
         btn116.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn116.Location = New Point(2327, 449)
-        btn116.Margin = New Padding(6, 6, 6, 6)
+        btn116.Margin = New Padding(6)
         btn116.Name = "btn116"
         btn116.Size = New Size(106, 102)
         btn116.TabIndex = 110
@@ -1280,7 +1280,7 @@ Partial Class frmCandyLandMain
         ' 
         btn125.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn125.Location = New Point(1613, 105)
-        btn125.Margin = New Padding(6, 6, 6, 6)
+        btn125.Margin = New Padding(6)
         btn125.Name = "btn125"
         btn125.Size = New Size(106, 102)
         btn125.TabIndex = 119
@@ -1290,7 +1290,7 @@ Partial Class frmCandyLandMain
         ' 
         btn124.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn124.Location = New Point(1745, 105)
-        btn124.Margin = New Padding(6, 6, 6, 6)
+        btn124.Margin = New Padding(6)
         btn124.Name = "btn124"
         btn124.Size = New Size(106, 102)
         btn124.TabIndex = 118
@@ -1300,7 +1300,7 @@ Partial Class frmCandyLandMain
         ' 
         btn123.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn123.Location = New Point(1864, 105)
-        btn123.Margin = New Padding(6, 6, 6, 6)
+        btn123.Margin = New Padding(6)
         btn123.Name = "btn123"
         btn123.Size = New Size(106, 102)
         btn123.TabIndex = 117
@@ -1310,7 +1310,7 @@ Partial Class frmCandyLandMain
         ' 
         btn122.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn122.Location = New Point(1970, 105)
-        btn122.Margin = New Padding(6, 6, 6, 6)
+        btn122.Margin = New Padding(6)
         btn122.Name = "btn122"
         btn122.Size = New Size(106, 102)
         btn122.TabIndex = 116
@@ -1320,7 +1320,7 @@ Partial Class frmCandyLandMain
         ' 
         btn121.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn121.Location = New Point(2089, 105)
-        btn121.Margin = New Padding(6, 6, 6, 6)
+        btn121.Margin = New Padding(6)
         btn121.Name = "btn121"
         btn121.Size = New Size(106, 102)
         btn121.TabIndex = 115
@@ -1330,7 +1330,7 @@ Partial Class frmCandyLandMain
         ' 
         btn130.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn130.Location = New Point(992, 105)
-        btn130.Margin = New Padding(6, 6, 6, 6)
+        btn130.Margin = New Padding(6)
         btn130.Name = "btn130"
         btn130.Size = New Size(106, 102)
         btn130.TabIndex = 124
@@ -1340,7 +1340,7 @@ Partial Class frmCandyLandMain
         ' 
         btn129.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn129.Location = New Point(1111, 105)
-        btn129.Margin = New Padding(6, 6, 6, 6)
+        btn129.Margin = New Padding(6)
         btn129.Name = "btn129"
         btn129.Size = New Size(106, 102)
         btn129.TabIndex = 123
@@ -1350,7 +1350,7 @@ Partial Class frmCandyLandMain
         ' 
         btn128.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn128.Location = New Point(1230, 105)
-        btn128.Margin = New Padding(6, 6, 6, 6)
+        btn128.Margin = New Padding(6)
         btn128.Name = "btn128"
         btn128.Size = New Size(106, 102)
         btn128.TabIndex = 122
@@ -1360,7 +1360,7 @@ Partial Class frmCandyLandMain
         ' 
         btn127.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn127.Location = New Point(1349, 105)
-        btn127.Margin = New Padding(6, 6, 6, 6)
+        btn127.Margin = New Padding(6)
         btn127.Name = "btn127"
         btn127.Size = New Size(106, 102)
         btn127.TabIndex = 121
@@ -1370,7 +1370,7 @@ Partial Class frmCandyLandMain
         ' 
         btn126.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn126.Location = New Point(1481, 105)
-        btn126.Margin = New Padding(6, 6, 6, 6)
+        btn126.Margin = New Padding(6)
         btn126.Name = "btn126"
         btn126.Size = New Size(106, 102)
         btn126.TabIndex = 120
@@ -1380,7 +1380,7 @@ Partial Class frmCandyLandMain
         ' 
         btn135.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn135.Location = New Point(629, 334)
-        btn135.Margin = New Padding(6, 6, 6, 6)
+        btn135.Margin = New Padding(6)
         btn135.Name = "btn135"
         btn135.Size = New Size(106, 102)
         btn135.TabIndex = 129
@@ -1390,7 +1390,7 @@ Partial Class frmCandyLandMain
         ' 
         btn134.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn134.Location = New Point(629, 219)
-        btn134.Margin = New Padding(6, 6, 6, 6)
+        btn134.Margin = New Padding(6)
         btn134.Name = "btn134"
         btn134.Size = New Size(106, 102)
         btn134.TabIndex = 128
@@ -1400,7 +1400,7 @@ Partial Class frmCandyLandMain
         ' 
         btn133.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn133.Location = New Point(629, 105)
-        btn133.Margin = New Padding(6, 6, 6, 6)
+        btn133.Margin = New Padding(6)
         btn133.Name = "btn133"
         btn133.Size = New Size(106, 102)
         btn133.TabIndex = 127
@@ -1410,7 +1410,7 @@ Partial Class frmCandyLandMain
         ' 
         btn132.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn132.Location = New Point(748, 105)
-        btn132.Margin = New Padding(6, 6, 6, 6)
+        btn132.Margin = New Padding(6)
         btn132.Name = "btn132"
         btn132.Size = New Size(106, 102)
         btn132.TabIndex = 126
@@ -1420,7 +1420,7 @@ Partial Class frmCandyLandMain
         ' 
         btn131.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn131.Location = New Point(867, 105)
-        btn131.Margin = New Padding(6, 6, 6, 6)
+        btn131.Margin = New Padding(6)
         btn131.Name = "btn131"
         btn131.Size = New Size(106, 102)
         btn131.TabIndex = 125
@@ -1430,7 +1430,7 @@ Partial Class frmCandyLandMain
         ' 
         btn140.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn140.Location = New Point(397, 674)
-        btn140.Margin = New Padding(6, 6, 6, 6)
+        btn140.Margin = New Padding(6)
         btn140.Name = "btn140"
         btn140.Size = New Size(106, 102)
         btn140.TabIndex = 134
@@ -1440,7 +1440,7 @@ Partial Class frmCandyLandMain
         ' 
         btn139.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn139.Location = New Point(508, 674)
-        btn139.Margin = New Padding(6, 6, 6, 6)
+        btn139.Margin = New Padding(6)
         btn139.Name = "btn139"
         btn139.Size = New Size(106, 102)
         btn139.TabIndex = 133
@@ -1450,7 +1450,7 @@ Partial Class frmCandyLandMain
         ' 
         btn138.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn138.Location = New Point(627, 674)
-        btn138.Margin = New Padding(6, 6, 6, 6)
+        btn138.Margin = New Padding(6)
         btn138.Name = "btn138"
         btn138.Size = New Size(106, 102)
         btn138.TabIndex = 132
@@ -1460,7 +1460,7 @@ Partial Class frmCandyLandMain
         ' 
         btn137.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn137.Location = New Point(629, 564)
-        btn137.Margin = New Padding(6, 6, 6, 6)
+        btn137.Margin = New Padding(6)
         btn137.Name = "btn137"
         btn137.Size = New Size(106, 102)
         btn137.TabIndex = 131
@@ -1470,7 +1470,7 @@ Partial Class frmCandyLandMain
         ' 
         btn136.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn136.Location = New Point(629, 449)
-        btn136.Margin = New Padding(6, 6, 6, 6)
+        btn136.Margin = New Padding(6)
         btn136.Name = "btn136"
         btn136.Size = New Size(106, 102)
         btn136.TabIndex = 130
@@ -1480,7 +1480,7 @@ Partial Class frmCandyLandMain
         ' 
         btn145.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn145.Location = New Point(157, 334)
-        btn145.Margin = New Padding(6, 6, 6, 6)
+        btn145.Margin = New Padding(6)
         btn145.Name = "btn145"
         btn145.Size = New Size(106, 102)
         btn145.TabIndex = 139
@@ -1490,7 +1490,7 @@ Partial Class frmCandyLandMain
         ' 
         btn144.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn144.Location = New Point(157, 449)
-        btn144.Margin = New Padding(6, 6, 6, 6)
+        btn144.Margin = New Padding(6)
         btn144.Name = "btn144"
         btn144.Size = New Size(106, 102)
         btn144.TabIndex = 138
@@ -1500,7 +1500,7 @@ Partial Class frmCandyLandMain
         ' 
         btn143.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn143.Location = New Point(157, 564)
-        btn143.Margin = New Padding(6, 6, 6, 6)
+        btn143.Margin = New Padding(6)
         btn143.Name = "btn143"
         btn143.Size = New Size(106, 102)
         btn143.TabIndex = 137
@@ -1510,7 +1510,7 @@ Partial Class frmCandyLandMain
         ' 
         btn142.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn142.Location = New Point(157, 674)
-        btn142.Margin = New Padding(6, 6, 6, 6)
+        btn142.Margin = New Padding(6)
         btn142.Name = "btn142"
         btn142.Size = New Size(106, 102)
         btn142.TabIndex = 136
@@ -1520,7 +1520,7 @@ Partial Class frmCandyLandMain
         ' 
         btn141.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn141.Location = New Point(276, 674)
-        btn141.Margin = New Padding(6, 6, 6, 6)
+        btn141.Margin = New Padding(6)
         btn141.Name = "btn141"
         btn141.Size = New Size(106, 102)
         btn141.TabIndex = 135
@@ -1530,7 +1530,7 @@ Partial Class frmCandyLandMain
         ' 
         btn149.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn149.Location = New Point(397, 334)
-        btn149.Margin = New Padding(6, 6, 6, 6)
+        btn149.Margin = New Padding(6)
         btn149.Name = "btn149"
         btn149.Size = New Size(106, 102)
         btn149.TabIndex = 143
@@ -1540,7 +1540,7 @@ Partial Class frmCandyLandMain
         ' 
         btn148.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn148.Location = New Point(395, 219)
-        btn148.Margin = New Padding(6, 6, 6, 6)
+        btn148.Margin = New Padding(6)
         btn148.Name = "btn148"
         btn148.Size = New Size(106, 102)
         btn148.TabIndex = 142
@@ -1550,7 +1550,7 @@ Partial Class frmCandyLandMain
         ' 
         btn147.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn147.Location = New Point(276, 219)
-        btn147.Margin = New Padding(6, 6, 6, 6)
+        btn147.Margin = New Padding(6)
         btn147.Name = "btn147"
         btn147.Size = New Size(106, 102)
         btn147.TabIndex = 141
@@ -1560,7 +1560,7 @@ Partial Class frmCandyLandMain
         ' 
         btn146.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn146.Location = New Point(157, 219)
-        btn146.Margin = New Padding(6, 6, 6, 6)
+        btn146.Margin = New Padding(6)
         btn146.Name = "btn146"
         btn146.Size = New Size(106, 102)
         btn146.TabIndex = 140
@@ -1570,7 +1570,7 @@ Partial Class frmCandyLandMain
         ' 
         btn96.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn96.Location = New Point(1600, 679)
-        btn96.Margin = New Padding(6, 6, 6, 6)
+        btn96.Margin = New Padding(6)
         btn96.Name = "btn96"
         btn96.Size = New Size(106, 102)
         btn96.TabIndex = 150
@@ -1580,7 +1580,7 @@ Partial Class frmCandyLandMain
         ' 
         btn85.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn85.Location = New Point(1957, 908)
-        btn85.Margin = New Padding(6, 6, 6, 6)
+        btn85.Margin = New Padding(6)
         btn85.Name = "btn85"
         btn85.Size = New Size(106, 102)
         btn85.TabIndex = 149
@@ -1590,7 +1590,7 @@ Partial Class frmCandyLandMain
         ' 
         btn84.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn84.Location = New Point(1838, 908)
-        btn84.Margin = New Padding(6, 6, 6, 6)
+        btn84.Margin = New Padding(6)
         btn84.Name = "btn84"
         btn84.Size = New Size(106, 102)
         btn84.TabIndex = 148
@@ -1600,7 +1600,7 @@ Partial Class frmCandyLandMain
         ' 
         btn83.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn83.Location = New Point(1719, 908)
-        btn83.Margin = New Padding(6, 6, 6, 6)
+        btn83.Margin = New Padding(6)
         btn83.Name = "btn83"
         btn83.Size = New Size(106, 102)
         btn83.TabIndex = 147
@@ -1610,7 +1610,7 @@ Partial Class frmCandyLandMain
         ' 
         btn82.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn82.Location = New Point(1600, 908)
-        btn82.Margin = New Padding(6, 6, 6, 6)
+        btn82.Margin = New Padding(6)
         btn82.Name = "btn82"
         btn82.Size = New Size(106, 102)
         btn82.TabIndex = 146
@@ -1620,7 +1620,7 @@ Partial Class frmCandyLandMain
         ' 
         btn89.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn89.Location = New Point(2327, 793)
-        btn89.Margin = New Padding(6, 6, 6, 6)
+        btn89.Margin = New Padding(6)
         btn89.Name = "btn89"
         btn89.Size = New Size(106, 102)
         btn89.TabIndex = 154
@@ -1630,7 +1630,7 @@ Partial Class frmCandyLandMain
         ' 
         btn88.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn88.Location = New Point(2327, 908)
-        btn88.Margin = New Padding(6, 6, 6, 6)
+        btn88.Margin = New Padding(6)
         btn88.Name = "btn88"
         btn88.Size = New Size(106, 102)
         btn88.TabIndex = 153
@@ -1640,7 +1640,7 @@ Partial Class frmCandyLandMain
         ' 
         btn87.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn87.Location = New Point(2208, 908)
-        btn87.Margin = New Padding(6, 6, 6, 6)
+        btn87.Margin = New Padding(6)
         btn87.Name = "btn87"
         btn87.Size = New Size(106, 102)
         btn87.TabIndex = 152
@@ -1650,7 +1650,7 @@ Partial Class frmCandyLandMain
         ' 
         btn86.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn86.Location = New Point(2089, 908)
-        btn86.Margin = New Padding(6, 6, 6, 6)
+        btn86.Margin = New Padding(6)
         btn86.Name = "btn86"
         btn86.Size = New Size(106, 102)
         btn86.TabIndex = 151
@@ -1660,7 +1660,7 @@ Partial Class frmCandyLandMain
         ' 
         btn94.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
         btn94.Location = New Point(1851, 679)
-        btn94.Margin = New Padding(6, 6, 6, 6)
+        btn94.Margin = New Padding(6)
         btn94.Name = "btn94"
         btn94.Size = New Size(106, 102)
         btn94.TabIndex = 158
@@ -1670,7 +1670,7 @@ Partial Class frmCandyLandMain
         ' 
         btn93.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
         btn93.Location = New Point(1970, 679)
-        btn93.Margin = New Padding(6, 6, 6, 6)
+        btn93.Margin = New Padding(6)
         btn93.Name = "btn93"
         btn93.Size = New Size(106, 102)
         btn93.TabIndex = 157
@@ -1680,7 +1680,7 @@ Partial Class frmCandyLandMain
         ' 
         btn92.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
         btn92.Location = New Point(2089, 679)
-        btn92.Margin = New Padding(6, 6, 6, 6)
+        btn92.Margin = New Padding(6)
         btn92.Name = "btn92"
         btn92.Size = New Size(106, 102)
         btn92.TabIndex = 156
@@ -1690,7 +1690,7 @@ Partial Class frmCandyLandMain
         ' 
         btn91.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         btn91.Location = New Point(2208, 679)
-        btn91.Margin = New Padding(6, 6, 6, 6)
+        btn91.Margin = New Padding(6)
         btn91.Name = "btn91"
         btn91.Size = New Size(106, 102)
         btn91.TabIndex = 155
@@ -1700,7 +1700,7 @@ Partial Class frmCandyLandMain
         ' 
         btn90.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn90.Location = New Point(2327, 679)
-        btn90.Margin = New Padding(6, 6, 6, 6)
+        btn90.Margin = New Padding(6)
         btn90.Name = "btn90"
         btn90.Size = New Size(106, 102)
         btn90.TabIndex = 159
@@ -1710,7 +1710,7 @@ Partial Class frmCandyLandMain
         ' 
         btn95.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn95.Location = New Point(1719, 679)
-        btn95.Margin = New Padding(6, 6, 6, 6)
+        btn95.Margin = New Padding(6)
         btn95.Name = "btn95"
         btn95.Size = New Size(106, 102)
         btn95.TabIndex = 160
@@ -1720,7 +1720,7 @@ Partial Class frmCandyLandMain
         ' 
         btn150.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
         btn150.Location = New Point(395, 449)
-        btn150.Margin = New Padding(6, 6, 6, 6)
+        btn150.Margin = New Padding(6)
         btn150.Name = "btn150"
         btn150.Size = New Size(106, 102)
         btn150.TabIndex = 161
@@ -1729,7 +1729,7 @@ Partial Class frmCandyLandMain
         ' BtnStart
         ' 
         BtnStart.Location = New Point(2510, 172)
-        BtnStart.Margin = New Padding(6, 6, 6, 6)
+        BtnStart.Margin = New Padding(6)
         BtnStart.Name = "BtnStart"
         BtnStart.Size = New Size(353, 150)
         BtnStart.TabIndex = 162
@@ -1739,7 +1739,7 @@ Partial Class frmCandyLandMain
         ' 
         pnlMain.Controls.Add(Lblgivenumber)
         pnlMain.Location = New Point(2522, 424)
-        pnlMain.Margin = New Padding(6, 6, 6, 6)
+        pnlMain.Margin = New Padding(6)
         pnlMain.Name = "pnlMain"
         pnlMain.Size = New Size(319, 308)
         pnlMain.TabIndex = 163
@@ -1757,7 +1757,7 @@ Partial Class frmCandyLandMain
         ' 
         ' frmCandyLandMain
         ' 
-        AutoScaleDimensions = New SizeF(17.0F, 41.0F)
+        AutoScaleDimensions = New SizeF(17F, 41F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(2998, 1954)
         Controls.Add(pnlMain)
@@ -1858,7 +1858,7 @@ Partial Class frmCandyLandMain
         Controls.Add(btn61)
         Controls.Add(btn60)
         Controls.Add(btn59)
-        Controls.Add(btn558)
+        Controls.Add(btn58)
         Controls.Add(btn57)
         Controls.Add(btn56)
         Controls.Add(btn55)
@@ -1916,7 +1916,7 @@ Partial Class frmCandyLandMain
         Controls.Add(btn3)
         Controls.Add(btn2)
         Controls.Add(btn1)
-        Margin = New Padding(6, 6, 6, 6)
+        Margin = New Padding(6)
         Name = "frmCandyLandMain"
         Text = "Form1"
         pnlMain.ResumeLayout(False)
@@ -1982,7 +1982,7 @@ Partial Class frmCandyLandMain
     Friend WithEvents btn61 As Button
     Friend WithEvents btn60 As Button
     Friend WithEvents btn59 As Button
-    Friend WithEvents btn558 As Button
+    Friend WithEvents btn58 As Button
     Friend WithEvents btn57 As Button
     Friend WithEvents btn56 As Button
     Friend WithEvents btn65 As Button

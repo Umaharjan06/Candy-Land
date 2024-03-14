@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/candyland/obj/Debug/net8.0-windows/.NETCoreApp,Version=v8.0.AssemblyAttributes.vb
+/candyland/obj/Debug/net8.0-windows/candyland.AssemblyInfo.vb
+/.vs/CandyLand Group Project/v17/.wsuo
+/candyland/.vs/candyland/FileContentIndex/3e5c0c4e-5a4d-4e89-92ff-2bb6d14511de.vsidx
+/candyland/candyland.vbproj.user
+/candyland/obj/Debug/net8.0-windows/candyland.assets.cache
+/candyland/obj/Debug/net8.0-windows/candyland.AssemblyInfoInputs.cache
+/candyland/obj/candyland.vbproj.nuget.g.props
+/candyland/obj/candyland.vbproj.nuget.dgspec.json
+/candyland/obj/project.assets.json
+/candyland/obj/Debug/net8.0-windows/candyland.GeneratedMSBuildEditorConfig.editorconfig
+/candyland/obj/project.nuget.cache
+/candyland/obj/Debug/net8.0-windows/candyland.designer.runtimeconfig.json
+/candyland/.vs/candyland/v17/.suo
+/candyland/.vs/candyland/FileContentIndex/2cc4a3c9-38e8-43ef-a7e2-531f3715be3b.vsidx
