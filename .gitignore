@@ -17,3 +17,5 @@
 /candyland/obj/Debug/net8.0-windows/candyland.designer.runtimeconfig.json
 /candyland/.vs/candyland/v17/.suo
 /candyland/.vs/candyland/FileContentIndex/2cc4a3c9-38e8-43ef-a7e2-531f3715be3b.vsidx
+*.resources
+/candyland/My Project/Application.myapp
