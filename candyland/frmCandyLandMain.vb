@@ -68,7 +68,6 @@ Public Class frmCandyLandMain
         Dim gridSpaces(99) As gridSpace
         ' Create grid spaces array
 
-
         ' Fill the gridSpaces array in a snaking pattern
         Dim index As Integer = 0
         For i As Integer = 0 To 9
@@ -80,7 +79,20 @@ Public Class frmCandyLandMain
                 gridSpaces(index) = New gridSpace(Board, i, j)
                 index += 1
             Next
+
         Next
+
+        For y As Integer = 0 To tblBoardGame.RowCount
+            For x As Integer = 0 To tblBoardGame.ColumnCount
+                Dim pnl1 As New Panel
+                pnl1.Dock = DockStyle.Fill
+                pnl1.BackColor = Color.Red
+                tblBoardGame.Controls.Add(pnl1)
+                y += 1
+                x += 1
+            Next
+        Next
+
     End Sub
 
     Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
