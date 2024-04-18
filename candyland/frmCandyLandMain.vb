@@ -1,53 +1,61 @@
 ﻿Imports System.Configuration
 Imports System.Reflection.Metadata
 Imports System.Runtime.CompilerServices
+Imports System.Security.Cryptography.X509Certificates
 
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
+    Public isBackwards As Boolean = False
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
-        btnRoll.BackColor = Color.Green
+        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
+        Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
+        Dim maxCol As Integer = 9
+        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
-        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
+        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)  '** need to fix the random method, it ain't random lmao (displayMove.vb)**
         MsgBox(x) ' test passed, it displays correct
-        SPMove(btnMain, x)
+        If isBackwards = False Then
+            SPMove(btnMain, x)
+        ElseIf isBackwards = True Then
+            SPMoveReversed(btnMain, x)
+        End If
+
     End Sub
 
     Private Sub SPMoveReversed(player As Button, steps As Integer)
-        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain) 'gets column(0)
-        Dim currRow As Integer = tblBoardGame.GetRow(btnMain) 'gets row(9)
-        Dim newCol As Integer
+        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
+        Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
+        Dim maxCol As Integer = 9
         Dim minCol As Integer = 0
-        newCol = currCol - steps
-        If newCol < minCol Then
-            'newCol = currCol - steps
+        Dim newcol As Integer
+        newcol = currCol - steps
+        If newcol >= minCol Then
+            tblBoardGame.SetColumn(btnMain, newcol)
+        ElseIf newcol < minCol Then
+            newcol = minCol
             tblBoardGame.SetRow(btnMain, currRow - 1)
-            newCol = minCol
-            SPMove(btnMain, steps)
+            tblBoardGame.SetColumn(btnMain, newcol + steps)
+            isBackwards = False
         End If
-        tblBoardGame.SetColumn(btnMain, newCol)
+
     End Sub
 
     Private Sub SPMove(player As Button, steps As Integer)
-        'Dim playerMove As Integer = displayMove.DisplayColor(btnRollNumber) 'gets whatever random number is returned by the roll function
-        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain) 'gets column(0)
-        Dim currRow As Integer = tblBoardGame.GetRow(btnMain) 'gets row(9)
+        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
+        Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
         Dim maxCol As Integer = 9
-
-        Dim newCol As Integer ' = currCol + steps
-        Dim newRow As Integer 'might not use
-        newCol = currCol + steps 'doesnt go past this when it goes all the way to the right
-        If newCol > maxCol Then
+        Dim minCol As Integer = 0
+        Dim newcol As Integer
+        newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
+        If newcol <= maxCol Then
+            tblBoardGame.SetColumn(btnMain, newcol)
+        ElseIf newcol > maxCol Then
+            newcol = maxCol
             tblBoardGame.SetRow(btnMain, currRow - 1)
-            newCol = maxCol
-            currCol = maxCol
-            SPMoveReversed(btnMain, steps)
+            tblBoardGame.SetColumn(btnMain, newcol - steps)
+            isBackwards = True
         End If
-        tblBoardGame.SetColumn(btnMain, newCol)
 
-        '''Right now the singleplayer goes from left to right, and up op row
-        '''instead of throwing null as it goes off the fixed board. need to 
-        '''figure out how to reverse the directed and continure it throughout
-        '''the program throught some kind of loop?
     End Sub
 
     Function playerturn() As String
@@ -64,7 +72,7 @@ Public Class frmCandyLandMain
         ' Fill the gridSpaces array in a snaking pattern
         Dim index As Integer = 0
         For i As Integer = 0 To 9
-            Dim direction As Integer = If(i Mod 2 = 0, 1, -1)
+            Dim direction As Integer = If(i Mod 2 = 0, 1, -1)   ' If([T or F], if T, if F)
             Dim startColumn As Integer = If(i Mod 2 = 0, 0, 9)
             Dim endColumn As Integer = If(i Mod 2 = 0, 9, 0)
 
