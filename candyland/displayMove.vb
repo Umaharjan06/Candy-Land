@@ -33,7 +33,10 @@
 
         End If
     End Function
-    Public Function roll() As Integer 'Randomly returns a integer 1-5
-        Return (Int((5 * Rnd()) + 1))
+    Public Function roll() As Integer 'Randomly returns a integer 1-5 
+        Dim random As New Random
+        Randomize()
+        Dim randInt As Integer = random.Next(1, 6)
+        Return (randInt)
     End Function
 End Module
