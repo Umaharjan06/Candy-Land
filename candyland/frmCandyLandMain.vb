@@ -1,4 +1,8 @@
 ﻿Imports System.Configuration
+Imports System.Diagnostics.Eventing.Reader
+Imports System.DirectoryServices.ActiveDirectory
+Imports System.Globalization
+Imports System.IO
 Imports System.Numerics
 Imports System.Reflection.Metadata
 Imports System.Runtime.CompilerServices
@@ -7,7 +11,6 @@ Imports Windows.Win32.System
 
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
-    Public isBackwards As Boolean = False
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
@@ -15,10 +18,10 @@ Public Class frmCandyLandMain
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
-        If isBackwards = False Then
-            SPMove(btnMain, x)
-        ElseIf isBackwards = True Then
+        If currRow Mod 2 = 0 Then
             SPMoveReversed(btnMain, x)
+        ElseIf currRow Mod 2 = 1 Then
+            SPMove(btnMain, x)
         End If
 
     End Sub
@@ -35,23 +38,24 @@ Public Class frmCandyLandMain
         If currRow <> 0 Then ' while not in the last row
             If newcol >= minCol Then ' if the new column is larger than or equal 0
                 tblBoardGame.SetColumn(player, newcol)
+                chute(player, newcol, currRow)
+                ladder(player, newcol, currRow)
             ElseIf newcol < minCol Then ' if the new column is smaller than 0
                 If currCol = minCol Then ' if the player is in the last column
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
-                    isBackwards = False
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
                     Dim remainingSteps As Integer = steps - tempSteps
                     tblBoardGame.SetColumn(player, currCol - tempSteps)
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
-                    isBackwards = False
                 End If
             End If
         ElseIf currRow = 0 Then
             If newcol > minCol Then ' new column greater than 0
                 tblBoardGame.SetColumn(player, newcol)
+                chute(player, newcol, currRow)
             ElseIf newcol = minCol Then ' new column is 0
                 tblBoardGame.SetColumn(player, newcol)
                 playerWin()
@@ -62,6 +66,119 @@ Public Class frmCandyLandMain
             End If
         End If
 
+    End Sub
+
+    Sub ladder(player As Button, col As Integer, row As Integer)
+        Select Case row
+            Case 9
+                Select Case col
+                    Case 1
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 1)
+                    Case 3
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 1)
+                        tblBoardGame.SetColumn(player, col + 3)
+                    Case 7
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 3)
+                        tblBoardGame.SetColumn(player, col + 2)
+                End Select
+            Case 7
+                Select Case col
+                    Case 0
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 2)
+                        tblBoardGame.SetColumn(player, col + 1)
+                    Case 7
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 6)
+                        tblBoardGame.SetColumn(player, col - 4)
+                End Select
+            Case 6
+                Select Case col
+                    Case 4
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 1)
+                        tblBoardGame.SetColumn(player, col - 1)
+                End Select
+            Case 4
+                Select Case col
+                    Case 9
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 1)
+                        tblBoardGame.SetColumn(player, col - 3)
+                End Select
+            Case 2
+                Select Case col
+                    Case 9
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 2)
+                    Case 0
+                        MsgBox("You found a ladder!")
+                        tblBoardGame.SetRow(player, row - 2)
+                        playerWin()
+                End Select
+        End Select
+    End Sub
+
+    Sub chute(player As Button, col As Integer, row As Integer)
+        Select Case row
+            Case 8
+                Select Case col
+                    Case 4
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 1)
+                        tblBoardGame.SetColumn(player, col + 1)
+                End Select
+            Case 5
+                Select Case col
+                    Case 7
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 2)
+                        tblBoardGame.SetColumn(player, col - 1)
+                    Case 8
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 4)
+                        tblBoardGame.SetColumn(player, col + 1)
+                End Select
+            Case 4
+                Select Case col
+                    Case 4
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetColumn(player, col + 3)
+                End Select
+            Case 3
+                Select Case col
+                    Case 1
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 5)
+                        tblBoardGame.SetColumn(player, col + 1)
+                    Case 3
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 1)
+                        tblBoardGame.SetColumn(player, col - 3)
+                End Select
+            Case 1
+                Select Case col
+                    Case 6
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 6)
+                        tblBoardGame.SetColumn(player, col - 3)
+                End Select
+            Case 0
+                Select Case col
+                    Case 7
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 2)
+                    Case 5
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 2)
+                    Case 2
+                        MsgBox("You found a chute!")
+                        tblBoardGame.SetRow(player, row + 2)
+                End Select
+        End Select
     End Sub
 
     Private Sub playerWin()
@@ -80,12 +197,13 @@ Public Class frmCandyLandMain
         newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
         If newcol <= maxCol Then 'if the roll is less than max columns
             tblBoardGame.SetColumn(player, newcol)
+            ladder(player, newcol, currRow)
+            chute(player, newcol, currRow)
         ElseIf newcol > maxCol Then 'if roll is greater than max columns
             If currCol = maxCol Then 'if the player is currently in the last column
                 'move up a row, then move columns
                 tblBoardGame.SetRow(player, currRow - 1)
                 tblBoardGame.SetColumn(player, currCol - steps + 1)
-                isBackwards = True
             Else 'if the player is not in the last column
                 'the # of steps to get to the last column
                 Dim tempSteps As Integer = maxCol - currCol
@@ -96,7 +214,6 @@ Public Class frmCandyLandMain
                 tblBoardGame.SetRow(player, currRow - 1)
                 'move the remaining steps
                 tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
-                isBackwards = True
             End If
         End If
 
@@ -132,7 +249,6 @@ Public Class frmCandyLandMain
         btnRestartGame.Hide()
         btnRoll.Enabled = True
         btnRoll.BackColor = Color.Gray
-        isBackwards = False
         lblUsername.Text = frmGameSetUp.getUsername()
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
@@ -143,7 +259,6 @@ Public Class frmCandyLandMain
     Private Sub reloadGame() ' completely restarts game - sends user back to set up
         Me.Close()
         btnRoll.Enabled = True
-        isBackwards = False
         btnReplayGame.Hide()
         btnRestartGame.Hide()
         frmGameSetUp.loadSetUp()
