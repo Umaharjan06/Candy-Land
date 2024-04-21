@@ -1,7 +1,9 @@
 ﻿Imports System.Configuration
+Imports System.Numerics
 Imports System.Reflection.Metadata
 Imports System.Runtime.CompilerServices
 Imports System.Security.Cryptography.X509Certificates
+Imports Windows.Win32.System
 
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
@@ -12,8 +14,7 @@ Public Class frmCandyLandMain
         Dim maxCol As Integer = 9
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
-        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)  '** need to fix the random method, it ain't random lmao (displayMove.vb)**
-        MsgBox(x) ' test passed, it displays correct
+        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
         If isBackwards = False Then
             SPMove(btnMain, x)
         ElseIf isBackwards = True Then
@@ -23,62 +24,80 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub SPMoveReversed(player As Button, steps As Integer)
-        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
-        Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
+        Dim currCol As Integer = tblBoardGame.GetColumn(player)
+        Dim currRow As Integer = tblBoardGame.GetRow(player)
         Dim maxCol As Integer = 9
         Dim minCol As Integer = 0
-        Dim newcol As Integer
+        Dim minRow As Integer = 0
+        Dim newcol As Integer = 0
+        Dim tempSteps As Integer = 0
         newcol = currCol - steps
-        If newcol >= minCol Then
-            tblBoardGame.SetColumn(btnMain, newcol)
-        ElseIf newcol < minCol Then
-            If currCol = minCol Then
-                tblBoardGame.SetRow(btnMain, currRow - 1)
-                tblBoardGame.SetColumn(btnMain, currCol + steps - 1)
-            Else
-                Dim tempSteps As Integer = minCol + currCol
-                Dim remainingSteps As Integer = steps - tempSteps
-                tblBoardGame.SetColumn(btnMain, currCol - tempSteps)
-                tblBoardGame.SetRow(btnMain, currRow - 1)
-                tblBoardGame.SetColumn(btnMain, minCol + remainingSteps - 1)
+        'condense this code and make it more efficient pls thx
+        If currRow <> 0 Then ' while not in the last row
+            If newcol >= minCol Then ' if the new column is larger than or equal 0
+                tblBoardGame.SetColumn(player, newcol)
+            ElseIf newcol < minCol Then ' if the new column is smaller than 0
+                If currCol = minCol Then ' if the player is in the last column
+                    tblBoardGame.SetRow(player, currRow - 1)
+                    tblBoardGame.SetColumn(player, currCol + steps - 1)
+                    isBackwards = False
+                Else ' if the player is not in the last column
+                    tempSteps = minCol + currCol
+                    Dim remainingSteps As Integer = steps - tempSteps
+                    tblBoardGame.SetColumn(player, currCol - tempSteps)
+                    tblBoardGame.SetRow(player, currRow - 1)
+                    tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
+                    isBackwards = False
+                End If
             End If
-            'newcol = minCol
-            'tblBoardGame.SetRow(btnMain, currRow - 1)
-            'tblBoardGame.SetColumn(btnMain, newcol + steps)
-            isBackwards = False
+        ElseIf currRow = 0 Then
+            If newcol > minCol Then ' new column greater than 0
+                tblBoardGame.SetColumn(player, newcol)
+            ElseIf newcol = minCol Then ' new column is 0
+                tblBoardGame.SetColumn(player, newcol)
+                playerWin()
+            ElseIf newcol < minCol Then ' new column less than 
+                tempSteps = minCol + currCol ' calculates steps between last column and current
+                tblBoardGame.SetColumn(player, currCol - tempSteps)
+                playerWin()
+            End If
         End If
 
     End Sub
 
+    Private Sub playerWin()
+        MsgBox("Congratulations! You Won!")
+        btnRestartGame.Show()
+        btnRoll.Enabled = False
+    End Sub
+
     Private Sub SPMove(player As Button, steps As Integer)
-        Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
-        Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
+        Dim currCol As Integer = tblBoardGame.GetColumn(player)
+        Dim currRow As Integer = tblBoardGame.GetRow(player)
         Dim maxCol As Integer = 9
         Dim minCol As Integer = 0
-        Dim newcol As Integer
+        Dim newcol As Integer = 0
         newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
         If newcol <= maxCol Then 'if the roll is less than max columns
-            tblBoardGame.SetColumn(btnMain, newcol)
+            tblBoardGame.SetColumn(player, newcol)
         ElseIf newcol > maxCol Then 'if roll is greater than max columns
             If currCol = maxCol Then 'if the player is currently in the last column
                 'move up a row, then move columns
-                tblBoardGame.SetRow(btnMain, currRow - 1)
-                tblBoardGame.SetColumn(btnMain, currCol - steps + 1)
+                tblBoardGame.SetRow(player, currRow - 1)
+                tblBoardGame.SetColumn(player, currCol - steps + 1)
+                isBackwards = True
             Else 'if the player is not in the last column
                 'the # of steps to get to the last column
                 Dim tempSteps As Integer = maxCol - currCol
                 Dim remainingSteps As Integer = steps - tempSteps
                 'move to the last column
-                tblBoardGame.SetColumn(btnMain, currCol + tempSteps)
+                tblBoardGame.SetColumn(player, currCol + tempSteps)
                 'move up the row
-                tblBoardGame.SetRow(btnMain, currRow - 1)
+                tblBoardGame.SetRow(player, currRow - 1)
                 'move the remaining steps
-                tblBoardGame.SetColumn(btnMain, maxCol - remainingSteps + 1)
+                tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
+                isBackwards = True
             End If
-            'newcol = maxCol
-            'tblBoardGame.SetRow(btnMain, currRow - 1)
-            'tblBoardGame.SetColumn(btnMain, newcol - steps)
-            isBackwards = True
         End If
 
     End Sub
@@ -104,36 +123,34 @@ Public Class frmCandyLandMain
                 gridSpaces(index) = New gridSpace(Board, i, j)
                 index += 1
             Next
-
         Next
-
-        'this doesnt work rn
-        'For y As Integer = 0 To tblBoardGame.RowCount
-        '    For x As Integer = 0 To tblBoardGame.ColumnCount
-        '        Dim pnl1 As New Panel
-        '        pnl1.Dock = DockStyle.Fill
-        '        pnl1.BackColor = Color.Red
-        '        tblBoardGame.Controls.Add(pnl1)
-        '        y += 1
-        '        x += 1
-        '    Next
-        'Next
-
     End Sub
 
     Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        loadGame()
+    End Sub
+
+    Private Sub loadGame()
         frmGameSetUp.Hide()
+        btnRestartGame.Hide()
+        btnRoll.Enabled = True
         lblUsername.Text = frmGameSetUp.getUsername()
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
             main()
-
         End If
-
     End Sub
 
     Public Function getBoard()
         Return Board
     End Function
 
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        End
+    End Sub
+
+    Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
+        loadGame()
+        btnRestartGame.Hide()
+    End Sub
 End Class
