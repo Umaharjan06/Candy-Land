@@ -22,7 +22,6 @@ Partial Class frmCandyLandMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCandyLandMain))
         btn1 = New Button()
         btn2 = New Button()
         btn3 = New Button()
@@ -100,7 +99,6 @@ Partial Class frmCandyLandMain
         ' tblBoardGame
         ' 
         tblBoardGame.BackColor = Color.Snow
-        tblBoardGame.BackgroundImage = CType(resources.GetObject("tblBoardGame.BackgroundImage"), Image)
         tblBoardGame.BackgroundImageLayout = ImageLayout.Stretch
         tblBoardGame.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         tblBoardGame.ColumnCount = 10
