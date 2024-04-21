@@ -26,6 +26,12 @@ Public Class frmGameSetUp
     End Sub
 
     Private Sub frmGameSetUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        loadSetUp()
+    End Sub
+
+    Public Sub loadSetUp()
+        cboGameType.Show()
+        btnStart.Show()
         cboColorPicker.Hide()
         btnChooseColor.Hide()
         btnName1.Hide()
@@ -40,6 +46,7 @@ Public Class frmGameSetUp
             strColorChoice = cboColorPicker.SelectedItem.ToString()
             Singleplayer_ColorPicker(strColorChoice)
         End If
+        frmCandyLandMain.loadGame()
 
     End Sub
 

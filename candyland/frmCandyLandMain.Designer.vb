@@ -33,13 +33,14 @@ Partial Class frmCandyLandMain
         btn5 = New Button()
         lblUsername = New Label()
         btnExit = New Button()
+        btnReplayGame = New Button()
         btnRestartGame = New Button()
         SuspendLayout()
         ' 
         ' btn1
         ' 
         btn1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn1.Location = New Point(2080, 996)
+        btn1.Location = New Point(2035, 996)
         btn1.Margin = New Padding(5)
         btn1.Name = "btn1"
         btn1.Size = New Size(81, 80)
@@ -49,7 +50,7 @@ Partial Class frmCandyLandMain
         ' btn2
         ' 
         btn2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn2.Location = New Point(2080, 889)
+        btn2.Location = New Point(2035, 889)
         btn2.Margin = New Padding(5)
         btn2.Name = "btn2"
         btn2.Size = New Size(81, 80)
@@ -59,7 +60,7 @@ Partial Class frmCandyLandMain
         ' btn3
         ' 
         btn3.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn3.Location = New Point(2080, 790)
+        btn3.Location = New Point(2035, 790)
         btn3.Margin = New Padding(5)
         btn3.Name = "btn3"
         btn3.Size = New Size(81, 80)
@@ -69,7 +70,7 @@ Partial Class frmCandyLandMain
         ' btn4
         ' 
         btn4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn4.Location = New Point(2080, 684)
+        btn4.Location = New Point(2035, 684)
         btn4.Margin = New Padding(5)
         btn4.Name = "btn4"
         btn4.Size = New Size(81, 80)
@@ -78,7 +79,7 @@ Partial Class frmCandyLandMain
         ' 
         ' btnRoll
         ' 
-        btnRoll.Location = New Point(1920, 213)
+        btnRoll.Location = New Point(1875, 213)
         btnRoll.Margin = New Padding(5)
         btnRoll.Name = "btnRoll"
         btnRoll.Size = New Size(270, 117)
@@ -88,7 +89,7 @@ Partial Class frmCandyLandMain
         ' 
         ' btnRollNumber
         ' 
-        btnRollNumber.Location = New Point(1935, 337)
+        btnRollNumber.Location = New Point(1890, 337)
         btnRollNumber.Margin = New Padding(2)
         btnRollNumber.Name = "btnRollNumber"
         btnRollNumber.Size = New Size(244, 240)
@@ -134,7 +135,7 @@ Partial Class frmCandyLandMain
         ' btn5
         ' 
         btn5.BackColor = Color.Firebrick
-        btn5.Location = New Point(2080, 595)
+        btn5.Location = New Point(2035, 595)
         btn5.Margin = New Padding(5)
         btn5.Name = "btn5"
         btn5.Size = New Size(81, 80)
@@ -152,7 +153,7 @@ Partial Class frmCandyLandMain
         ' 
         ' btnExit
         ' 
-        btnExit.Location = New Point(1920, 1101)
+        btnExit.Location = New Point(1875, 1101)
         btnExit.Margin = New Padding(5)
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(270, 117)
@@ -160,12 +161,22 @@ Partial Class frmCandyLandMain
         btnExit.Text = "Exit Game"
         btnExit.UseVisualStyleBackColor = True
         ' 
+        ' btnReplayGame
+        ' 
+        btnReplayGame.Location = New Point(1876, 981)
+        btnReplayGame.Name = "btnReplayGame"
+        btnReplayGame.Size = New Size(269, 112)
+        btnReplayGame.TabIndex = 167
+        btnReplayGame.Text = "Replay Game"
+        btnReplayGame.UseVisualStyleBackColor = True
+        btnReplayGame.Visible = False
+        ' 
         ' btnRestartGame
         ' 
-        btnRestartGame.Location = New Point(1921, 981)
+        btnRestartGame.Location = New Point(1876, 863)
         btnRestartGame.Name = "btnRestartGame"
         btnRestartGame.Size = New Size(269, 112)
-        btnRestartGame.TabIndex = 167
+        btnRestartGame.TabIndex = 168
         btnRestartGame.Text = "Restart Game"
         btnRestartGame.UseVisualStyleBackColor = True
         btnRestartGame.Visible = False
@@ -177,6 +188,7 @@ Partial Class frmCandyLandMain
         AutoSize = True
         ClientSize = New Size(2270, 1467)
         Controls.Add(btnRestartGame)
+        Controls.Add(btnReplayGame)
         Controls.Add(btnExit)
         Controls.Add(btnRollNumber)
         Controls.Add(lblUsername)
@@ -204,6 +216,7 @@ Partial Class frmCandyLandMain
     Friend WithEvents lblUsername As Label
     Friend WithEvents btnRollNumber As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents btnReplayGame As Button
     Friend WithEvents btnRestartGame As Button
 
 End Class

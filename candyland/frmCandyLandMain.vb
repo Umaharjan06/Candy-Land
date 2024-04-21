@@ -28,7 +28,6 @@ Public Class frmCandyLandMain
         Dim currRow As Integer = tblBoardGame.GetRow(player)
         Dim maxCol As Integer = 9
         Dim minCol As Integer = 0
-        Dim minRow As Integer = 0
         Dim newcol As Integer = 0
         Dim tempSteps As Integer = 0
         newcol = currCol - steps
@@ -67,6 +66,7 @@ Public Class frmCandyLandMain
 
     Private Sub playerWin()
         MsgBox("Congratulations! You Won!")
+        btnReplayGame.Show()
         btnRestartGame.Show()
         btnRoll.Enabled = False
     End Sub
@@ -126,19 +126,28 @@ Public Class frmCandyLandMain
         Next
     End Sub
 
-    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        loadGame()
-    End Sub
-
-    Private Sub loadGame()
+    Public Sub loadGame() ' resets the board w/ the same players
         frmGameSetUp.Hide()
+        btnReplayGame.Hide()
         btnRestartGame.Hide()
         btnRoll.Enabled = True
+        btnRoll.BackColor = Color.Gray
+        isBackwards = False
         lblUsername.Text = frmGameSetUp.getUsername()
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
             main()
         End If
+    End Sub
+
+    Private Sub reloadGame() ' completely restarts game - sends user back to set up
+        Me.Close()
+        btnRoll.Enabled = True
+        isBackwards = False
+        btnReplayGame.Hide()
+        btnRestartGame.Hide()
+        frmGameSetUp.loadSetUp()
+        frmGameSetUp.Show()
     End Sub
 
     Public Function getBoard()
@@ -149,8 +158,12 @@ Public Class frmCandyLandMain
         End
     End Sub
 
-    Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
+    Private Sub btnReplayGame_Click(sender As Object, e As EventArgs) Handles btnReplayGame.Click
         loadGame()
-        btnRestartGame.Hide()
+        btnReplayGame.Hide()
+    End Sub
+
+    Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
+        reloadGame()
     End Sub
 End Class
