@@ -31,69 +31,75 @@ Partial Class frmCandyLandMain
         tblBoardGame = New TableLayoutPanel()
         btn5 = New Button()
         lblUsername = New Label()
+        btnExit = New Button()
+        btnReplayGame = New Button()
+        btnRestartGame = New Button()
         SuspendLayout()
         ' 
         ' btn1
         ' 
         btn1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
-        btn1.Location = New Point(2782, 1270)
-        btn1.Margin = New Padding(6)
+        btn1.Location = New Point(2035, 996)
+        btn1.Margin = New Padding(5)
         btn1.Name = "btn1"
-        btn1.Size = New Size(106, 102)
+        btn1.Size = New Size(81, 80)
         btn1.TabIndex = 0
         btn1.UseVisualStyleBackColor = False
         ' 
         ' btn2
         ' 
         btn2.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        btn2.Location = New Point(2782, 1133)
-        btn2.Margin = New Padding(6)
+        btn2.Location = New Point(2035, 889)
+        btn2.Margin = New Padding(5)
         btn2.Name = "btn2"
-        btn2.Size = New Size(106, 102)
+        btn2.Size = New Size(81, 80)
         btn2.TabIndex = 1
         btn2.UseVisualStyleBackColor = False
         ' 
         ' btn3
         ' 
         btn3.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        btn3.Location = New Point(2782, 1006)
-        btn3.Margin = New Padding(6)
+        btn3.Location = New Point(2035, 790)
+        btn3.Margin = New Padding(5)
         btn3.Name = "btn3"
-        btn3.Size = New Size(106, 102)
+        btn3.Size = New Size(81, 80)
         btn3.TabIndex = 2
         btn3.UseVisualStyleBackColor = False
         ' 
         ' btn4
         ' 
         btn4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        btn4.Location = New Point(2782, 870)
-        btn4.Margin = New Padding(6)
+        btn4.Location = New Point(2035, 684)
+        btn4.Margin = New Padding(5)
         btn4.Name = "btn4"
-        btn4.Size = New Size(106, 102)
+        btn4.Size = New Size(81, 80)
         btn4.TabIndex = 3
         btn4.UseVisualStyleBackColor = False
         ' 
         ' btnRoll
         ' 
-        btnRoll.Location = New Point(2522, 266)
-        btnRoll.Margin = New Padding(6)
+        btnRoll.Location = New Point(1875, 213)
+        btnRoll.Margin = New Padding(5)
         btnRoll.Name = "btnRoll"
-        btnRoll.Size = New Size(353, 150)
+        btnRoll.Size = New Size(270, 117)
         btnRoll.TabIndex = 162
         btnRoll.Text = "Roll!"
         btnRoll.UseVisualStyleBackColor = True
         ' 
         ' btnRollNumber
         ' 
-        btnRollNumber.Location = New Point(2522, 425)
+        btnRollNumber.Location = New Point(1890, 337)
+        btnRollNumber.Margin = New Padding(2)
         btnRollNumber.Name = "btnRollNumber"
-        btnRollNumber.Size = New Size(319, 308)
+        btnRollNumber.Size = New Size(244, 240)
         btnRollNumber.TabIndex = 165
         btnRollNumber.Text = "n/a"
         btnRollNumber.UseVisualStyleBackColor = True
         ' 
         ' tblBoardGame
         ' 
+        tblBoardGame.BackColor = Color.Snow
+        tblBoardGame.BackgroundImageLayout = ImageLayout.Stretch
         tblBoardGame.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         tblBoardGame.ColumnCount = 10
         tblBoardGame.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 10F))
@@ -107,7 +113,8 @@ Partial Class frmCandyLandMain
         tblBoardGame.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 10F))
         tblBoardGame.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 10F))
         tblBoardGame.GrowStyle = TableLayoutPanelGrowStyle.FixedSize
-        tblBoardGame.Location = New Point(0, 0)
+        tblBoardGame.Location = New Point(47, 59)
+        tblBoardGame.Margin = New Padding(2)
         tblBoardGame.Name = "tblBoardGame"
         tblBoardGame.RowCount = 10
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
@@ -120,33 +127,67 @@ Partial Class frmCandyLandMain
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
-        tblBoardGame.Size = New Size(2400, 1900)
+        tblBoardGame.Size = New Size(1805, 1164)
         tblBoardGame.TabIndex = 164
         ' 
         ' btn5
         ' 
         btn5.BackColor = Color.Firebrick
-        btn5.Location = New Point(2782, 756)
-        btn5.Margin = New Padding(6)
+        btn5.Location = New Point(2035, 595)
+        btn5.Margin = New Padding(5)
         btn5.Name = "btn5"
-        btn5.Size = New Size(106, 102)
+        btn5.Size = New Size(81, 80)
         btn5.TabIndex = 3
         btn5.UseVisualStyleBackColor = False
         ' 
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
-        lblUsername.Location = New Point(2545, 76)
+        lblUsername.Location = New Point(1946, 59)
+        lblUsername.Margin = New Padding(2, 0, 2, 0)
         lblUsername.Name = "lblUsername"
-        lblUsername.Size = New Size(0, 41)
+        lblUsername.Size = New Size(0, 32)
         lblUsername.TabIndex = 165
+        ' 
+        ' btnExit
+        ' 
+        btnExit.Location = New Point(1875, 1101)
+        btnExit.Margin = New Padding(5)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(270, 117)
+        btnExit.TabIndex = 166
+        btnExit.Text = "Exit Game"
+        btnExit.UseVisualStyleBackColor = True
+        ' 
+        ' btnReplayGame
+        ' 
+        btnReplayGame.Location = New Point(1876, 981)
+        btnReplayGame.Name = "btnReplayGame"
+        btnReplayGame.Size = New Size(269, 112)
+        btnReplayGame.TabIndex = 167
+        btnReplayGame.Text = "Replay Game"
+        btnReplayGame.UseVisualStyleBackColor = True
+        btnReplayGame.Visible = False
+        ' 
+        ' btnRestartGame
+        ' 
+        btnRestartGame.Location = New Point(1876, 863)
+        btnRestartGame.Name = "btnRestartGame"
+        btnRestartGame.Size = New Size(269, 112)
+        btnRestartGame.TabIndex = 168
+        btnRestartGame.Text = "Restart Game"
+        btnRestartGame.UseVisualStyleBackColor = True
+        btnRestartGame.Visible = False
         ' 
         ' frmCandyLandMain
         ' 
-        AutoScaleDimensions = New SizeF(17F, 41F)
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
-        ClientSize = New Size(2968, 1962)
+        ClientSize = New Size(2270, 1467)
+        Controls.Add(btnRestartGame)
+        Controls.Add(btnReplayGame)
+        Controls.Add(btnExit)
         Controls.Add(btnRollNumber)
         Controls.Add(lblUsername)
         Controls.Add(btn2)
@@ -156,7 +197,7 @@ Partial Class frmCandyLandMain
         Controls.Add(btn1)
         Controls.Add(btnRoll)
         Controls.Add(tblBoardGame)
-        Margin = New Padding(6)
+        Margin = New Padding(5)
         Name = "frmCandyLandMain"
         Text = "Candy Land"
         ResumeLayout(False)
@@ -172,5 +213,8 @@ Partial Class frmCandyLandMain
     Friend WithEvents btn5 As Button
     Friend WithEvents lblUsername As Label
     Friend WithEvents btnRollNumber As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents btnReplayGame As Button
+    Friend WithEvents btnRestartGame As Button
 
 End Class
