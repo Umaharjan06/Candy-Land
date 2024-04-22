@@ -40,7 +40,6 @@ Module gameMode
             frmCandyLandMain.btn2.Hide() : frmCandyLandMain.btn3.Hide()
             frmCandyLandMain.btn4.Hide() : frmCandyLandMain.btn5.Hide()
             frmCandyLandMain.btn1.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
-
         End If
     End Sub
 
