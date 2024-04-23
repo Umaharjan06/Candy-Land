@@ -41,6 +41,9 @@ Partial Class frmCandyLandMain
         btnFoxIcon = New Button()
         btnBunnyIcon = New Button()
         btnCatIcon = New Button()
+        btnP2frog = New Button()
+        btnP2dog = New Button()
+        lblPlayer2Name = New Label()
         SuspendLayout()
         ' 
         ' btnCat
@@ -92,7 +95,7 @@ Partial Class frmCandyLandMain
         btnBunny.BackgroundImageLayout = ImageLayout.Stretch
         btnBunny.FlatAppearance.BorderSize = 0
         btnBunny.FlatStyle = FlatStyle.Flat
-        btnBunny.Location = New Point(1079, 304)
+        btnBunny.Location = New Point(1079, 363)
         btnBunny.Margin = New Padding(3, 2, 3, 2)
         btnBunny.Name = "btnBunny"
         btnBunny.Size = New Size(44, 44)
@@ -101,7 +104,7 @@ Partial Class frmCandyLandMain
         ' 
         ' btnRoll
         ' 
-        btnRoll.Location = New Point(1019, 96)
+        btnRoll.Location = New Point(1018, 118)
         btnRoll.Margin = New Padding(3, 2, 3, 2)
         btnRoll.Name = "btnRoll"
         btnRoll.Size = New Size(145, 59)
@@ -111,7 +114,7 @@ Partial Class frmCandyLandMain
         ' 
         ' btnRollNumber
         ' 
-        btnRollNumber.Location = New Point(1019, 158)
+        btnRollNumber.Location = New Point(1018, 180)
         btnRollNumber.Margin = New Padding(1)
         btnRollNumber.Name = "btnRollNumber"
         btnRollNumber.Size = New Size(145, 131)
@@ -161,7 +164,7 @@ Partial Class frmCandyLandMain
         btnFox.FlatAppearance.BorderSize = 0
         btnFox.FlatStyle = FlatStyle.Flat
         btnFox.ForeColor = Color.Transparent
-        btnFox.Location = New Point(1019, 304)
+        btnFox.Location = New Point(1019, 363)
         btnFox.Margin = New Padding(3, 2, 3, 2)
         btnFox.Name = "btnFox"
         btnFox.Size = New Size(44, 44)
@@ -171,7 +174,7 @@ Partial Class frmCandyLandMain
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
-        lblUsername.Location = New Point(1063, 48)
+        lblUsername.Location = New Point(1064, 38)
         lblUsername.Margin = New Padding(1, 0, 1, 0)
         lblUsername.Name = "lblUsername"
         lblUsername.Size = New Size(0, 15)
@@ -212,7 +215,7 @@ Partial Class frmCandyLandMain
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(1132, 319)
+        Label1.Location = New Point(1129, 346)
         Label1.Name = "Label1"
         Label1.Size = New Size(41, 15)
         Label1.TabIndex = 169
@@ -225,7 +228,7 @@ Partial Class frmCandyLandMain
         btnFrogIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnFrogIcon.FlatAppearance.BorderSize = 0
         btnFrogIcon.FlatStyle = FlatStyle.Flat
-        btnFrogIcon.Location = New Point(1019, 38)
+        btnFrogIcon.Location = New Point(1020, 28)
         btnFrogIcon.Margin = New Padding(3, 2, 3, 2)
         btnFrogIcon.Name = "btnFrogIcon"
         btnFrogIcon.Size = New Size(35, 35)
@@ -240,7 +243,7 @@ Partial Class frmCandyLandMain
         btnDogIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnDogIcon.FlatAppearance.BorderSize = 0
         btnDogIcon.FlatStyle = FlatStyle.Flat
-        btnDogIcon.Location = New Point(1019, 38)
+        btnDogIcon.Location = New Point(1020, 28)
         btnDogIcon.Margin = New Padding(3, 2, 3, 2)
         btnDogIcon.Name = "btnDogIcon"
         btnDogIcon.Size = New Size(35, 35)
@@ -256,7 +259,7 @@ Partial Class frmCandyLandMain
         btnFoxIcon.FlatAppearance.BorderSize = 0
         btnFoxIcon.FlatStyle = FlatStyle.Flat
         btnFoxIcon.ForeColor = Color.Transparent
-        btnFoxIcon.Location = New Point(1019, 38)
+        btnFoxIcon.Location = New Point(1020, 28)
         btnFoxIcon.Margin = New Padding(3, 2, 3, 2)
         btnFoxIcon.Name = "btnFoxIcon"
         btnFoxIcon.Size = New Size(35, 35)
@@ -271,7 +274,7 @@ Partial Class frmCandyLandMain
         btnBunnyIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnBunnyIcon.FlatAppearance.BorderSize = 0
         btnBunnyIcon.FlatStyle = FlatStyle.Flat
-        btnBunnyIcon.Location = New Point(1019, 38)
+        btnBunnyIcon.Location = New Point(1020, 28)
         btnBunnyIcon.Margin = New Padding(3, 2, 3, 2)
         btnBunnyIcon.Name = "btnBunnyIcon"
         btnBunnyIcon.Size = New Size(35, 35)
@@ -286,7 +289,7 @@ Partial Class frmCandyLandMain
         btnCatIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnCatIcon.FlatAppearance.BorderSize = 0
         btnCatIcon.FlatStyle = FlatStyle.Flat
-        btnCatIcon.Location = New Point(1019, 38)
+        btnCatIcon.Location = New Point(1020, 28)
         btnCatIcon.Margin = New Padding(3, 2, 3, 2)
         btnCatIcon.Name = "btnCatIcon"
         btnCatIcon.Size = New Size(35, 35)
@@ -294,12 +297,54 @@ Partial Class frmCandyLandMain
         btnCatIcon.UseVisualStyleBackColor = False
         btnCatIcon.Visible = False
         ' 
+        ' btnP2frog
+        ' 
+        btnP2frog.BackColor = SystemColors.Control
+        btnP2frog.BackgroundImage = CType(resources.GetObject("btnP2frog.BackgroundImage"), Image)
+        btnP2frog.BackgroundImageLayout = ImageLayout.Stretch
+        btnP2frog.FlatAppearance.BorderSize = 0
+        btnP2frog.FlatStyle = FlatStyle.Flat
+        btnP2frog.Location = New Point(1020, 73)
+        btnP2frog.Margin = New Padding(3, 2, 3, 2)
+        btnP2frog.Name = "btnP2frog"
+        btnP2frog.Size = New Size(35, 35)
+        btnP2frog.TabIndex = 174
+        btnP2frog.UseVisualStyleBackColor = False
+        btnP2frog.Visible = False
+        ' 
+        ' btnP2dog
+        ' 
+        btnP2dog.BackColor = SystemColors.Control
+        btnP2dog.BackgroundImage = CType(resources.GetObject("btnP2dog.BackgroundImage"), Image)
+        btnP2dog.BackgroundImageLayout = ImageLayout.Stretch
+        btnP2dog.FlatAppearance.BorderSize = 0
+        btnP2dog.FlatStyle = FlatStyle.Flat
+        btnP2dog.Location = New Point(1020, 73)
+        btnP2dog.Margin = New Padding(3, 2, 3, 2)
+        btnP2dog.Name = "btnP2dog"
+        btnP2dog.Size = New Size(35, 35)
+        btnP2dog.TabIndex = 175
+        btnP2dog.UseVisualStyleBackColor = False
+        btnP2dog.Visible = False
+        ' 
+        ' lblPlayer2Name
+        ' 
+        lblPlayer2Name.AutoSize = True
+        lblPlayer2Name.Location = New Point(1064, 83)
+        lblPlayer2Name.Margin = New Padding(1, 0, 1, 0)
+        lblPlayer2Name.Name = "lblPlayer2Name"
+        lblPlayer2Name.Size = New Size(0, 15)
+        lblPlayer2Name.TabIndex = 176
+        ' 
         ' frmCandyLandMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         ClientSize = New Size(1187, 613)
+        Controls.Add(lblPlayer2Name)
+        Controls.Add(btnP2dog)
+        Controls.Add(btnP2frog)
         Controls.Add(btnFrogIcon)
         Controls.Add(btnDogIcon)
         Controls.Add(btnBunnyIcon)
@@ -344,5 +389,8 @@ Partial Class frmCandyLandMain
     Friend WithEvents btnFoxIcon As Button
     Friend WithEvents btnBunnyIcon As Button
     Friend WithEvents btnDogIcon As Button
+    Friend WithEvents btnP2frog As Button
+    Friend WithEvents btnP2dog As Button
+    Friend WithEvents lblPlayer2Name As Label
 
 End Class

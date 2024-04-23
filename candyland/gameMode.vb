@@ -1,6 +1,7 @@
 ﻿Imports System.Drawing.Text
 Imports System.Reflection.Metadata.Ecma335
 Imports System.Security.Cryptography.X509Certificates
+Imports Microsoft.VisualBasic.Devices
 
 Module gameMode
     'Public Username As frmGameSetUp
@@ -12,6 +13,8 @@ Module gameMode
         If colorChoice = "Fox" Then
             ' -- set computer to dog
             btnComputer = frmCandyLandMain.btnDog
+            frmCandyLandMain.btnP2dog.Show()
+            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
             btnMain = frmCandyLandMain.btnFox
             frmCandyLandMain.Show()
@@ -25,6 +28,8 @@ Module gameMode
         ElseIf colorChoice = "Bunny" Then
             ' -- set computer to dog
             btnComputer = frmCandyLandMain.btnDog
+            frmCandyLandMain.btnP2dog.Show()
+            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
             btnMain = frmCandyLandMain.btnBunny
             frmCandyLandMain.Show()
@@ -38,6 +43,8 @@ Module gameMode
         ElseIf colorChoice = "Frog" Then
             ' -- set computer to dog
             btnComputer = frmCandyLandMain.btnDog
+            frmCandyLandMain.btnP2dog.Show()
+            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
             btnMain = frmCandyLandMain.btnFrog
             frmCandyLandMain.Show()
@@ -51,6 +58,8 @@ Module gameMode
         ElseIf colorChoice = "Dog" Then
             ' -- set computer to frog
             btnComputer = frmCandyLandMain.btnFrog
+            frmCandyLandMain.btnP2frog.Show()
+            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
             btnMain = frmCandyLandMain.btnDog
             frmCandyLandMain.Show()
@@ -64,6 +73,8 @@ Module gameMode
         ElseIf colorChoice = "Cat" Then
             ' -- set computer to frog
             btnComputer = frmCandyLandMain.btnFrog
+            frmCandyLandMain.btnP2frog.Show()
+            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
             btnMain = frmCandyLandMain.btnCat
             frmCandyLandMain.Show()
