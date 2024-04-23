@@ -45,7 +45,7 @@ Partial Class frmCandyLandMain
         btnCat.BackgroundImageLayout = ImageLayout.Stretch
         btnCat.FlatAppearance.BorderSize = 0
         btnCat.FlatStyle = FlatStyle.Flat
-        btnCat.Location = New Point(1120, 338)
+        btnCat.Location = New Point(1129, 363)
         btnCat.Margin = New Padding(3, 2, 3, 2)
         btnCat.Name = "btnCat"
         btnCat.Size = New Size(44, 44)
@@ -59,7 +59,7 @@ Partial Class frmCandyLandMain
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(1070, 338)
+        btnDog.Location = New Point(1079, 363)
         btnDog.Margin = New Padding(3, 2, 3, 2)
         btnDog.Name = "btnDog"
         btnDog.Size = New Size(44, 44)
@@ -73,7 +73,7 @@ Partial Class frmCandyLandMain
         btnFrog.BackgroundImageLayout = ImageLayout.Stretch
         btnFrog.FlatAppearance.BorderSize = 0
         btnFrog.FlatStyle = FlatStyle.Flat
-        btnFrog.Location = New Point(1010, 338)
+        btnFrog.Location = New Point(1019, 363)
         btnFrog.Margin = New Padding(3, 2, 3, 2)
         btnFrog.Name = "btnFrog"
         btnFrog.Size = New Size(44, 44)
@@ -87,7 +87,7 @@ Partial Class frmCandyLandMain
         btnBunny.BackgroundImageLayout = ImageLayout.Stretch
         btnBunny.FlatAppearance.BorderSize = 0
         btnBunny.FlatStyle = FlatStyle.Flat
-        btnBunny.Location = New Point(1070, 279)
+        btnBunny.Location = New Point(1079, 304)
         btnBunny.Margin = New Padding(3, 2, 3, 2)
         btnBunny.Name = "btnBunny"
         btnBunny.Size = New Size(44, 44)
@@ -96,20 +96,20 @@ Partial Class frmCandyLandMain
         ' 
         ' btnRoll
         ' 
-        btnRoll.Location = New Point(1010, 100)
+        btnRoll.Location = New Point(1019, 96)
         btnRoll.Margin = New Padding(3, 2, 3, 2)
         btnRoll.Name = "btnRoll"
-        btnRoll.Size = New Size(139, 55)
+        btnRoll.Size = New Size(145, 59)
         btnRoll.TabIndex = 162
         btnRoll.Text = "Roll!"
         btnRoll.UseVisualStyleBackColor = True
         ' 
         ' btnRollNumber
         ' 
-        btnRollNumber.Location = New Point(1010, 158)
+        btnRollNumber.Location = New Point(1019, 158)
         btnRollNumber.Margin = New Padding(1)
         btnRollNumber.Name = "btnRollNumber"
-        btnRollNumber.Size = New Size(139, 118)
+        btnRollNumber.Size = New Size(145, 131)
         btnRollNumber.TabIndex = 165
         btnRollNumber.Text = "n/a"
         btnRollNumber.UseVisualStyleBackColor = True
@@ -156,7 +156,7 @@ Partial Class frmCandyLandMain
         btnFox.FlatAppearance.BorderSize = 0
         btnFox.FlatStyle = FlatStyle.Flat
         btnFox.ForeColor = Color.Transparent
-        btnFox.Location = New Point(1010, 279)
+        btnFox.Location = New Point(1019, 304)
         btnFox.Margin = New Padding(3, 2, 3, 2)
         btnFox.Name = "btnFox"
         btnFox.Size = New Size(44, 44)
@@ -207,7 +207,7 @@ Partial Class frmCandyLandMain
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(1123, 294)
+        Label1.Location = New Point(1132, 319)
         Label1.Name = "Label1"
         Label1.Size = New Size(41, 15)
         Label1.TabIndex = 169

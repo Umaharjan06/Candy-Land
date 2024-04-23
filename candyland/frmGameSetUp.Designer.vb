@@ -86,7 +86,7 @@ Partial Class frmGameSetUp
         ' 
         ' txtNames
         ' 
-        txtNames.Font = New Font("Bahnschrift SemiCondensed", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNames.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtNames.Location = New Point(281, 134)
         txtNames.Margin = New Padding(1)
         txtNames.Name = "txtNames"

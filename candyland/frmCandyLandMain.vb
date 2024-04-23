@@ -250,6 +250,7 @@ Public Class frmCandyLandMain
         btnRoll.Enabled = True
         btnRoll.BackColor = Color.Gray
         lblUsername.Text = frmGameSetUp.getUsername()
+        ' -- add the icon of the player
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
             main()
