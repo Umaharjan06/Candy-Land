@@ -44,12 +44,18 @@ Public Class frmCandyLandMain
                 If currCol = minCol Then ' if the player is in the last column
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
+                    currRow = currRow - 1
+                    chute(player, newcol, currRow)
+                    ladder(player, newcol, currRow)
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
                     Dim remainingSteps As Integer = steps - tempSteps
                     tblBoardGame.SetColumn(player, currCol - tempSteps)
                     tblBoardGame.SetRow(player, currRow - 1)
+                    currRow = currRow - 1
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
+                    chute(player, newcol, currRow)
+                    ladder(player, newcol, currRow)
                 End If
             End If
         ElseIf currRow = 0 Then
@@ -73,49 +79,40 @@ Public Class frmCandyLandMain
             Case 9
                 Select Case col
                     Case 1
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 1)
                     Case 3
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 1)
-                        tblBoardGame.SetColumn(player, col + 3)
+                        tblBoardGame.SetColumn(player, col + 2)
                     Case 7
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 3)
                         tblBoardGame.SetColumn(player, col + 2)
                 End Select
             Case 7
                 Select Case col
-                    Case 0
-                        MsgBox("You found a ladder!")
+                    Case 0 ' this one isnt working correctly
                         tblBoardGame.SetRow(player, row - 2)
                         tblBoardGame.SetColumn(player, col + 1)
                     Case 7
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 6)
-                        tblBoardGame.SetColumn(player, col - 4)
+                        tblBoardGame.SetColumn(player, col - 3)
                 End Select
             Case 6
                 Select Case col
                     Case 4
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 1)
                         tblBoardGame.SetColumn(player, col - 1)
                 End Select
             Case 4
                 Select Case col
                     Case 9
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 1)
-                        tblBoardGame.SetColumn(player, col - 3)
+                        tblBoardGame.SetColumn(player, col - 4)
                 End Select
             Case 2
                 Select Case col
                     Case 9
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 2)
                     Case 0
-                        MsgBox("You found a ladder!")
                         tblBoardGame.SetRow(player, row - 2)
                         playerWin()
                 End Select
@@ -126,56 +123,46 @@ Public Class frmCandyLandMain
         Select Case row
             Case 8
                 Select Case col
-                    Case 4
-                        MsgBox("You found a chute!")
+                    Case 3
                         tblBoardGame.SetRow(player, row + 1)
                         tblBoardGame.SetColumn(player, col + 1)
                 End Select
             Case 5
                 Select Case col
-                    Case 7
-                        MsgBox("You found a chute!")
+                    Case 6
                         tblBoardGame.SetRow(player, row + 2)
                         tblBoardGame.SetColumn(player, col - 1)
-                    Case 8
-                        MsgBox("You found a chute!")
+                    Case 7
                         tblBoardGame.SetRow(player, row + 4)
-                        tblBoardGame.SetColumn(player, col + 1)
+                        tblBoardGame.SetColumn(player, col + 2)
                 End Select
             Case 4
                 Select Case col
-                    Case 4
-                        MsgBox("You found a chute!")
-                        tblBoardGame.SetColumn(player, col + 3)
+                    Case 3
+                        tblBoardGame.SetColumn(player, col + 4)
                 End Select
             Case 3
                 Select Case col
                     Case 1
-                        MsgBox("You found a chute!")
-                        tblBoardGame.SetRow(player, row + 5)
+                        tblBoardGame.SetRow(player, row + 4)
                         tblBoardGame.SetColumn(player, col + 1)
                     Case 3
-                        MsgBox("You found a chute!")
                         tblBoardGame.SetRow(player, row + 1)
                         tblBoardGame.SetColumn(player, col - 3)
                 End Select
             Case 1
                 Select Case col
-                    Case 6
-                        MsgBox("You found a chute!")
+                    Case 5
                         tblBoardGame.SetRow(player, row + 6)
-                        tblBoardGame.SetColumn(player, col - 3)
+                        tblBoardGame.SetColumn(player, col - 2)
                 End Select
             Case 0
                 Select Case col
-                    Case 7
-                        MsgBox("You found a chute!")
+                    Case 6
                         tblBoardGame.SetRow(player, row + 2)
-                    Case 5
-                        MsgBox("You found a chute!")
+                    Case 4
                         tblBoardGame.SetRow(player, row + 2)
                     Case 2
-                        MsgBox("You found a chute!")
                         tblBoardGame.SetRow(player, row + 2)
                 End Select
         End Select
@@ -204,6 +191,9 @@ Public Class frmCandyLandMain
                 'move up a row, then move columns
                 tblBoardGame.SetRow(player, currRow - 1)
                 tblBoardGame.SetColumn(player, currCol - steps + 1)
+                currRow = currRow - 1
+                chute(player, newcol, currRow)
+                ladder(player, newcol, currRow)
             Else 'if the player is not in the last column
                 'the # of steps to get to the last column
                 Dim tempSteps As Integer = maxCol - currCol
@@ -212,8 +202,11 @@ Public Class frmCandyLandMain
                 tblBoardGame.SetColumn(player, currCol + tempSteps)
                 'move up the row
                 tblBoardGame.SetRow(player, currRow - 1)
+                currRow = currRow - 1
                 'move the remaining steps
                 tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
+                chute(player, newcol, currRow)
+                ladder(player, newcol, currRow)
             End If
         End If
 
