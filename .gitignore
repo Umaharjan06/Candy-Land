@@ -20,3 +20,5 @@
 *.resources
 /candyland/My Project/Application.myapp
 .vs/
+/candyland/gameMode.vb
+/candyland/frmGameSetUp.Designer.vb
