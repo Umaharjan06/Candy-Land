@@ -6,40 +6,40 @@ Module gameMode
     'Public Username As frmGameSetUp
     Public btnMain As Button
     Public Sub Singleplayer_ColorPicker(colorChoice)
-        If colorChoice = "Red" Then
-            btnMain = frmCandyLandMain.btn5
+        If colorChoice = "Fox" Then
+            btnMain = frmCandyLandMain.btnFox
             frmCandyLandMain.Show()
-            frmCandyLandMain.btn1.Hide() : frmCandyLandMain.btn4.Hide()
-            frmCandyLandMain.btn3.Hide() : frmCandyLandMain.btn2.Hide()
-            frmCandyLandMain.btn5.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
+            frmCandyLandMain.btnCat.Hide() : frmCandyLandMain.btnBunny.Hide()
+            frmCandyLandMain.btnFrog.Hide() : frmCandyLandMain.btnDog.Hide()
+            frmCandyLandMain.btnFox.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
 
-        ElseIf colorChoice = "Yellow" Then
-            btnMain = frmCandyLandMain.btn4
+        ElseIf colorChoice = "Bunny" Then
+            btnMain = frmCandyLandMain.btnBunny
             frmCandyLandMain.Show()
-            frmCandyLandMain.btn1.Hide() : frmCandyLandMain.btn2.Hide()
-            frmCandyLandMain.btn3.Hide() : frmCandyLandMain.btn5.Hide()
-            frmCandyLandMain.btn4.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
+            frmCandyLandMain.btnCat.Hide() : frmCandyLandMain.btnDog.Hide()
+            frmCandyLandMain.btnFrog.Hide() : frmCandyLandMain.btnFox.Hide()
+            frmCandyLandMain.btnBunny.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
 
-        ElseIf colorChoice = "Green" Then
-            btnMain = frmCandyLandMain.btn3
+        ElseIf colorChoice = "Frog" Then
+            btnMain = frmCandyLandMain.btnFrog
             frmCandyLandMain.Show()
-            frmCandyLandMain.btn1.Hide() : frmCandyLandMain.btn2.Hide()
-            frmCandyLandMain.btn4.Hide() : frmCandyLandMain.btn5.Hide()
-            frmCandyLandMain.btn3.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
+            frmCandyLandMain.btnCat.Hide() : frmCandyLandMain.btnDog.Hide()
+            frmCandyLandMain.btnBunny.Hide() : frmCandyLandMain.btnFox.Hide()
+            frmCandyLandMain.btnFrog.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
 
-        ElseIf colorChoice = "Blue" Then
-            btnMain = frmCandyLandMain.btn2
+        ElseIf colorChoice = "Dog" Then
+            btnMain = frmCandyLandMain.btnDog
             frmCandyLandMain.Show()
-            frmCandyLandMain.btn1.Hide() : frmCandyLandMain.btn3.Hide()
-            frmCandyLandMain.btn4.Hide() : frmCandyLandMain.btn5.Hide()
-            frmCandyLandMain.btn2.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
+            frmCandyLandMain.btnCat.Hide() : frmCandyLandMain.btnFrog.Hide()
+            frmCandyLandMain.btnBunny.Hide() : frmCandyLandMain.btnFox.Hide()
+            frmCandyLandMain.btnDog.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
 
-        ElseIf colorChoice = "Pink" Then
-            btnMain = frmCandyLandMain.btn1
+        ElseIf colorChoice = "Cat" Then
+            btnMain = frmCandyLandMain.btnCat
             frmCandyLandMain.Show()
-            frmCandyLandMain.btn2.Hide() : frmCandyLandMain.btn3.Hide()
-            frmCandyLandMain.btn4.Hide() : frmCandyLandMain.btn5.Hide()
-            frmCandyLandMain.btn1.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
+            frmCandyLandMain.btnDog.Hide() : frmCandyLandMain.btnFrog.Hide()
+            frmCandyLandMain.btnBunny.Hide() : frmCandyLandMain.btnFox.Hide()
+            frmCandyLandMain.btnCat.Text = frmGameSetUp.getUsername.ToString.Substring(0, 1)
         End If
     End Sub
 
