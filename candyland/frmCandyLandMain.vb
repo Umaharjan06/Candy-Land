@@ -5,13 +5,13 @@ Imports System.Globalization
 Imports System.IO
 Imports System.Numerics
 Imports System.Reflection.Metadata
+Imports System.Runtime
 Imports System.Runtime.CompilerServices
 Imports System.Security.Cryptography.X509Certificates
 Imports Windows.Win32.System
 
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
-
     Public rollCount As Integer = 0
 
 
@@ -21,27 +21,27 @@ Public Class frmCandyLandMain
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
         Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
         Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
-        Dim maxCol As Integer = 9
 
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
-
+        lblComputerRoll.Show()
+        lblComputerRoll.Text = x.ToString()
         If currRow Mod 2 = 0 Then
             SPMoveReversed(btnComputer, x)
         ElseIf currRow Mod 2 = 1 Then
             SPMove(btnComputer, x)
         End If
 
-
     End Sub
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
-        Dim maxCol As Integer = 9
         rollCount += 1
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
+        lblPlayerRoll.Show()
+        lblPlayerRoll.Text = x.ToString()
         If currRow Mod 2 = 0 Then
             SPMoveReversed(btnMain, x)
         ElseIf currRow Mod 2 = 1 Then
@@ -68,15 +68,14 @@ Public Class frmCandyLandMain
         If currRow <> 0 Then ' while not in the last row
             If newcol >= minCol Then ' if the new column is larger than or equal 0
                 tblBoardGame.SetColumn(player, newcol)
-                chute(player, newcol, currRow)
-                ladder(player, newcol, currRow)
+                chuteOrLadder(player, newcol, currRow)
             ElseIf newcol < minCol Then ' if the new column is smaller than 0
                 If currCol = minCol Then ' if the player is in the last column
+                    newcol = 0 + steps - 1
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
                     currRow = currRow - 1
-                    chute(player, newcol, currRow)
-                    ladder(player, newcol, currRow)
+                    chuteOrLadder(player, newcol, currRow)
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
                     Dim remainingSteps As Integer = steps - tempSteps
@@ -84,8 +83,7 @@ Public Class frmCandyLandMain
                     tblBoardGame.SetRow(player, currRow - 1)
                     currRow = currRow - 1
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
-                    chute(player, newcol, currRow)
-                    ladder(player, newcol, currRow)
+                    chuteOrLadder(player, newcol, currRow)
                 End If
             End If
         ElseIf currRow = 0 Then
@@ -94,14 +92,19 @@ Public Class frmCandyLandMain
                 chute(player, newcol, currRow)
             ElseIf newcol = minCol Then ' new column is 0
                 tblBoardGame.SetColumn(player, newcol)
-                playerWin()
+                whoWin(player)
             ElseIf newcol < minCol Then ' new column less than 
                 tempSteps = minCol + currCol ' calculates steps between last column and current
                 tblBoardGame.SetColumn(player, currCol - tempSteps)
-                playerWin()
+                whoWin(player)
             End If
         End If
 
+    End Sub
+
+    Sub chuteOrLadder(player As Button, col As Integer, row As Integer)
+        ladder(player, col, row)
+        chute(player, col, row)
     End Sub
 
     Sub ladder(player As Button, col As Integer, row As Integer)
@@ -144,7 +147,7 @@ Public Class frmCandyLandMain
                         tblBoardGame.SetRow(player, row - 2)
                     Case 0
                         tblBoardGame.SetRow(player, row - 2)
-                        playerWin()
+                        whoWin(player)
                 End Select
         End Select
     End Sub
@@ -198,8 +201,8 @@ Public Class frmCandyLandMain
         End Select
     End Sub
 
-    Private Sub playerWin()
-        MsgBox("Congratulations! You Won!")
+    Private Sub whoWin(player As Button)
+        MsgBox("Congratulations!") ' cant call button cause button doesnt have the name attached
         btnReplayGame.Show()
         btnRestartGame.Show()
         btnRoll.Enabled = False
@@ -218,16 +221,14 @@ Public Class frmCandyLandMain
         newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
         If newcol <= maxCol Then 'if the roll is less than max columns
             tblBoardGame.SetColumn(player, newcol)
-            ladder(player, newcol, currRow)
-            chute(player, newcol, currRow)
+            chuteOrLadder(player, newcol, currRow)
         ElseIf newcol > maxCol Then 'if roll is greater than max columns
             If currCol = maxCol Then 'if the player is currently in the last column
                 'move up a row, then move columns
                 tblBoardGame.SetRow(player, currRow - 1)
                 tblBoardGame.SetColumn(player, currCol - steps + 1)
                 currRow = currRow - 1
-                chute(player, newcol, currRow)
-                ladder(player, newcol, currRow)
+                chuteOrLadder(player, newcol, currRow)
             Else 'if the player is not in the last column
                 'the # of steps to get to the last column
                 Dim tempSteps As Integer = maxCol - currCol
@@ -239,16 +240,11 @@ Public Class frmCandyLandMain
                 currRow = currRow - 1
                 'move the remaining steps
                 tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
-                chute(player, newcol, currRow)
-                ladder(player, newcol, currRow)
+                chuteOrLadder(player, newcol, currRow)
             End If
         End If
 
     End Sub
-
-    Function playerturn() As String
-        'display name of player whos turn it is using a for loop 
-    End Function
 
     Sub main() 'i believe this sets up the board
 
@@ -274,12 +270,15 @@ Public Class frmCandyLandMain
         frmGameSetUp.Hide()
         btnReplayGame.Hide()
         btnRestartGame.Hide()
+        lblPlayerRoll.Hide()
+        lblComputerRoll.Hide()
         btnRoll.Enabled = True
-        btnRoll.BackColor = Color.Gray
+        btnRoll.BackColor = Color.Snow
         lblUsername.Text = frmGameSetUp.getUsername()
         ' -- add the icon of the player
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
+            tblBoardGame.Controls.Add(gameMode.btnComputer, 0, 9) ' resets the computer piece but moves the player piece
             main()
         End If
     End Sub
@@ -315,29 +314,5 @@ Public Class frmCandyLandMain
 
     Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
         reloadGame()
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub tblBoardGame_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub btn5_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn3_Click(sender As Object, e As EventArgs) Handles btnFrog.Click
-
-    End Sub
-
-    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btnBunny.Click
-
     End Sub
 End Class

@@ -35,7 +35,6 @@ Partial Class frmCandyLandMain
         btnExit = New Button()
         btnReplayGame = New Button()
         btnRestartGame = New Button()
-        Label1 = New Label()
         btnFrogIcon = New Button()
         btnDogIcon = New Button()
         btnFoxIcon = New Button()
@@ -44,33 +43,35 @@ Partial Class frmCandyLandMain
         btnP2frog = New Button()
         btnP2dog = New Button()
         lblPlayer2Name = New Label()
+        lblPlayerRoll = New Label()
+        lblComputerRoll = New Label()
         SuspendLayout()
         ' 
         ' btnCat
         ' 
-        btnCat.BackColor = SystemColors.Control
+        btnCat.BackColor = Color.Transparent
         btnCat.BackgroundImage = CType(resources.GetObject("btnCat.BackgroundImage"), Image)
         btnCat.BackgroundImageLayout = ImageLayout.Stretch
         btnCat.FlatAppearance.BorderSize = 0
         btnCat.FlatStyle = FlatStyle.Flat
-        btnCat.Location = New Point(1129, 363)
-        btnCat.Margin = New Padding(3, 2, 3, 2)
+        btnCat.Location = New Point(1661, 726)
+        btnCat.Margin = New Padding(6, 4, 6, 4)
         btnCat.Name = "btnCat"
-        btnCat.Size = New Size(44, 44)
+        btnCat.Size = New Size(82, 94)
         btnCat.TabIndex = 0
         btnCat.UseVisualStyleBackColor = False
         ' 
         ' btnDog
         ' 
-        btnDog.BackColor = SystemColors.Control
+        btnDog.BackColor = Color.Transparent
         btnDog.BackgroundImage = CType(resources.GetObject("btnDog.BackgroundImage"), Image)
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(76, 558)
-        btnDog.Margin = New Padding(3, 2, 3, 2)
+        btnDog.Location = New Point(141, 1190)
+        btnDog.Margin = New Padding(6, 4, 6, 4)
         btnDog.Name = "btnDog"
-        btnDog.Size = New Size(44, 44)
+        btnDog.Size = New Size(82, 94)
         btnDog.TabIndex = 1
         btnDog.UseVisualStyleBackColor = False
         ' 
@@ -81,50 +82,53 @@ Partial Class frmCandyLandMain
         btnFrog.BackgroundImageLayout = ImageLayout.Stretch
         btnFrog.FlatAppearance.BorderSize = 0
         btnFrog.FlatStyle = FlatStyle.Flat
-        btnFrog.Location = New Point(76, 558)
-        btnFrog.Margin = New Padding(3, 2, 3, 2)
+        btnFrog.Location = New Point(141, 1190)
+        btnFrog.Margin = New Padding(6, 4, 6, 4)
         btnFrog.Name = "btnFrog"
-        btnFrog.Size = New Size(44, 44)
+        btnFrog.Size = New Size(82, 94)
         btnFrog.TabIndex = 2
         btnFrog.UseVisualStyleBackColor = False
         ' 
         ' btnBunny
         ' 
-        btnBunny.BackColor = SystemColors.Control
+        btnBunny.BackColor = Color.Transparent
         btnBunny.BackgroundImage = CType(resources.GetObject("btnBunny.BackgroundImage"), Image)
         btnBunny.BackgroundImageLayout = ImageLayout.Stretch
         btnBunny.FlatAppearance.BorderSize = 0
         btnBunny.FlatStyle = FlatStyle.Flat
-        btnBunny.Location = New Point(1079, 363)
-        btnBunny.Margin = New Padding(3, 2, 3, 2)
+        btnBunny.Location = New Point(1568, 726)
+        btnBunny.Margin = New Padding(6, 4, 6, 4)
         btnBunny.Name = "btnBunny"
-        btnBunny.Size = New Size(44, 44)
+        btnBunny.Size = New Size(82, 94)
         btnBunny.TabIndex = 3
         btnBunny.UseVisualStyleBackColor = False
         ' 
         ' btnRoll
         ' 
-        btnRoll.Location = New Point(1018, 118)
-        btnRoll.Margin = New Padding(3, 2, 3, 2)
+        btnRoll.BackColor = Color.Snow
+        btnRoll.Location = New Point(1455, 204)
+        btnRoll.Margin = New Padding(6, 4, 6, 4)
         btnRoll.Name = "btnRoll"
-        btnRoll.Size = New Size(145, 59)
+        btnRoll.Size = New Size(269, 126)
         btnRoll.TabIndex = 162
         btnRoll.Text = "Roll!"
-        btnRoll.UseVisualStyleBackColor = True
+        btnRoll.UseVisualStyleBackColor = False
         ' 
         ' btnRollNumber
         ' 
-        btnRollNumber.Location = New Point(1018, 180)
-        btnRollNumber.Margin = New Padding(1)
+        btnRollNumber.BackColor = Color.Snow
+        btnRollNumber.Location = New Point(1455, 336)
+        btnRollNumber.Margin = New Padding(2)
         btnRollNumber.Name = "btnRollNumber"
-        btnRollNumber.Size = New Size(145, 131)
+        btnRollNumber.Size = New Size(269, 279)
         btnRollNumber.TabIndex = 165
         btnRollNumber.Text = "n/a"
-        btnRollNumber.UseVisualStyleBackColor = True
+        btnRollNumber.UseVisualStyleBackColor = False
         ' 
         ' tblBoardGame
         ' 
-        tblBoardGame.BackColor = Color.Snow
+        tblBoardGame.BackColor = Color.OldLace
+        tblBoardGame.BackgroundImage = My.Resources.Resources.snakesandladder1
         tblBoardGame.BackgroundImageLayout = ImageLayout.Stretch
         tblBoardGame.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         tblBoardGame.ColumnCount = 10
@@ -139,8 +143,8 @@ Partial Class frmCandyLandMain
         tblBoardGame.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 10F))
         tblBoardGame.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 10F))
         tblBoardGame.GrowStyle = TableLayoutPanelGrowStyle.FixedSize
-        tblBoardGame.Location = New Point(25, 28)
-        tblBoardGame.Margin = New Padding(1)
+        tblBoardGame.Location = New Point(31, 65)
+        tblBoardGame.Margin = New Padding(2)
         tblBoardGame.Name = "tblBoardGame"
         tblBoardGame.RowCount = 10
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
@@ -153,85 +157,79 @@ Partial Class frmCandyLandMain
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
         tblBoardGame.RowStyles.Add(New RowStyle(SizeType.Percent, 10F))
-        tblBoardGame.Size = New Size(972, 546)
+        tblBoardGame.Size = New Size(1395, 1112)
         tblBoardGame.TabIndex = 164
         ' 
         ' btnFox
         ' 
-        btnFox.BackColor = SystemColors.Control
+        btnFox.BackColor = Color.Transparent
         btnFox.BackgroundImage = CType(resources.GetObject("btnFox.BackgroundImage"), Image)
         btnFox.BackgroundImageLayout = ImageLayout.Stretch
         btnFox.FlatAppearance.BorderSize = 0
         btnFox.FlatStyle = FlatStyle.Flat
         btnFox.ForeColor = Color.Transparent
-        btnFox.Location = New Point(1019, 363)
-        btnFox.Margin = New Padding(3, 2, 3, 2)
+        btnFox.Location = New Point(1456, 726)
+        btnFox.Margin = New Padding(6, 4, 6, 4)
         btnFox.Name = "btnFox"
-        btnFox.Size = New Size(44, 44)
+        btnFox.Size = New Size(82, 94)
         btnFox.TabIndex = 3
         btnFox.UseVisualStyleBackColor = False
         ' 
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
-        lblUsername.Location = New Point(1064, 38)
-        lblUsername.Margin = New Padding(1, 0, 1, 0)
+        lblUsername.Location = New Point(1540, 33)
+        lblUsername.Margin = New Padding(2, 0, 2, 0)
         lblUsername.Name = "lblUsername"
-        lblUsername.Size = New Size(0, 15)
+        lblUsername.Size = New Size(0, 32)
         lblUsername.TabIndex = 165
         ' 
         ' btnExit
         ' 
-        btnExit.Location = New Point(1019, 525)
-        btnExit.Margin = New Padding(3, 2, 3, 2)
+        btnExit.BackColor = Color.Snow
+        btnExit.Location = New Point(1456, 1072)
+        btnExit.Margin = New Padding(6, 4, 6, 4)
         btnExit.Name = "btnExit"
-        btnExit.Size = New Size(145, 49)
+        btnExit.Size = New Size(269, 105)
         btnExit.TabIndex = 166
         btnExit.Text = "Exit Game"
-        btnExit.UseVisualStyleBackColor = True
+        btnExit.UseVisualStyleBackColor = False
         ' 
         ' btnReplayGame
         ' 
-        btnReplayGame.Location = New Point(1019, 470)
-        btnReplayGame.Margin = New Padding(2, 1, 2, 1)
+        btnReplayGame.BackColor = Color.Snow
+        btnReplayGame.Location = New Point(1456, 955)
+        btnReplayGame.Margin = New Padding(4, 2, 4, 2)
         btnReplayGame.Name = "btnReplayGame"
-        btnReplayGame.Size = New Size(145, 52)
+        btnReplayGame.Size = New Size(269, 111)
         btnReplayGame.TabIndex = 167
         btnReplayGame.Text = "Replay Game"
-        btnReplayGame.UseVisualStyleBackColor = True
+        btnReplayGame.UseVisualStyleBackColor = False
         btnReplayGame.Visible = False
         ' 
         ' btnRestartGame
         ' 
-        btnRestartGame.Location = New Point(1019, 415)
-        btnRestartGame.Margin = New Padding(2, 1, 2, 1)
+        btnRestartGame.BackColor = Color.Snow
+        btnRestartGame.Location = New Point(1456, 840)
+        btnRestartGame.Margin = New Padding(4, 2, 4, 2)
         btnRestartGame.Name = "btnRestartGame"
-        btnRestartGame.Size = New Size(145, 52)
+        btnRestartGame.Size = New Size(269, 111)
         btnRestartGame.TabIndex = 168
         btnRestartGame.Text = "Restart Game"
-        btnRestartGame.UseVisualStyleBackColor = True
+        btnRestartGame.UseVisualStyleBackColor = False
         btnRestartGame.Visible = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(1129, 346)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(41, 15)
-        Label1.TabIndex = 169
-        Label1.Text = "Label1"
         ' 
         ' btnFrogIcon
         ' 
-        btnFrogIcon.BackColor = SystemColors.Control
+        btnFrogIcon.BackColor = Color.Transparent
         btnFrogIcon.BackgroundImage = CType(resources.GetObject("btnFrogIcon.BackgroundImage"), Image)
         btnFrogIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnFrogIcon.FlatAppearance.BorderSize = 0
         btnFrogIcon.FlatStyle = FlatStyle.Flat
-        btnFrogIcon.Location = New Point(1020, 28)
-        btnFrogIcon.Margin = New Padding(3, 2, 3, 2)
+        btnFrogIcon.Location = New Point(1458, 12)
+        btnFrogIcon.Margin = New Padding(6, 4, 6, 4)
         btnFrogIcon.Name = "btnFrogIcon"
-        btnFrogIcon.Size = New Size(35, 35)
+        btnFrogIcon.Size = New Size(65, 75)
         btnFrogIcon.TabIndex = 170
         btnFrogIcon.UseVisualStyleBackColor = False
         btnFrogIcon.Visible = False
@@ -243,10 +241,10 @@ Partial Class frmCandyLandMain
         btnDogIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnDogIcon.FlatAppearance.BorderSize = 0
         btnDogIcon.FlatStyle = FlatStyle.Flat
-        btnDogIcon.Location = New Point(1020, 28)
-        btnDogIcon.Margin = New Padding(3, 2, 3, 2)
+        btnDogIcon.Location = New Point(1458, 12)
+        btnDogIcon.Margin = New Padding(6, 4, 6, 4)
         btnDogIcon.Name = "btnDogIcon"
-        btnDogIcon.Size = New Size(35, 35)
+        btnDogIcon.Size = New Size(65, 75)
         btnDogIcon.TabIndex = 171
         btnDogIcon.UseVisualStyleBackColor = False
         btnDogIcon.Visible = False
@@ -259,10 +257,10 @@ Partial Class frmCandyLandMain
         btnFoxIcon.FlatAppearance.BorderSize = 0
         btnFoxIcon.FlatStyle = FlatStyle.Flat
         btnFoxIcon.ForeColor = Color.Transparent
-        btnFoxIcon.Location = New Point(1020, 28)
-        btnFoxIcon.Margin = New Padding(3, 2, 3, 2)
+        btnFoxIcon.Location = New Point(1458, 12)
+        btnFoxIcon.Margin = New Padding(6, 4, 6, 4)
         btnFoxIcon.Name = "btnFoxIcon"
-        btnFoxIcon.Size = New Size(35, 35)
+        btnFoxIcon.Size = New Size(65, 75)
         btnFoxIcon.TabIndex = 171
         btnFoxIcon.UseVisualStyleBackColor = False
         btnFoxIcon.Visible = False
@@ -274,10 +272,10 @@ Partial Class frmCandyLandMain
         btnBunnyIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnBunnyIcon.FlatAppearance.BorderSize = 0
         btnBunnyIcon.FlatStyle = FlatStyle.Flat
-        btnBunnyIcon.Location = New Point(1020, 28)
-        btnBunnyIcon.Margin = New Padding(3, 2, 3, 2)
+        btnBunnyIcon.Location = New Point(1458, 12)
+        btnBunnyIcon.Margin = New Padding(6, 4, 6, 4)
         btnBunnyIcon.Name = "btnBunnyIcon"
-        btnBunnyIcon.Size = New Size(35, 35)
+        btnBunnyIcon.Size = New Size(65, 75)
         btnBunnyIcon.TabIndex = 172
         btnBunnyIcon.UseVisualStyleBackColor = False
         btnBunnyIcon.Visible = False
@@ -289,10 +287,10 @@ Partial Class frmCandyLandMain
         btnCatIcon.BackgroundImageLayout = ImageLayout.Stretch
         btnCatIcon.FlatAppearance.BorderSize = 0
         btnCatIcon.FlatStyle = FlatStyle.Flat
-        btnCatIcon.Location = New Point(1020, 28)
-        btnCatIcon.Margin = New Padding(3, 2, 3, 2)
+        btnCatIcon.Location = New Point(1458, 12)
+        btnCatIcon.Margin = New Padding(6, 4, 6, 4)
         btnCatIcon.Name = "btnCatIcon"
-        btnCatIcon.Size = New Size(35, 35)
+        btnCatIcon.Size = New Size(65, 75)
         btnCatIcon.TabIndex = 173
         btnCatIcon.UseVisualStyleBackColor = False
         btnCatIcon.Visible = False
@@ -304,25 +302,25 @@ Partial Class frmCandyLandMain
         btnP2frog.BackgroundImageLayout = ImageLayout.Stretch
         btnP2frog.FlatAppearance.BorderSize = 0
         btnP2frog.FlatStyle = FlatStyle.Flat
-        btnP2frog.Location = New Point(1020, 73)
-        btnP2frog.Margin = New Padding(3, 2, 3, 2)
+        btnP2frog.Location = New Point(1458, 108)
+        btnP2frog.Margin = New Padding(6, 4, 6, 4)
         btnP2frog.Name = "btnP2frog"
-        btnP2frog.Size = New Size(35, 35)
+        btnP2frog.Size = New Size(65, 75)
         btnP2frog.TabIndex = 174
         btnP2frog.UseVisualStyleBackColor = False
         btnP2frog.Visible = False
         ' 
         ' btnP2dog
         ' 
-        btnP2dog.BackColor = SystemColors.Control
+        btnP2dog.BackColor = Color.Transparent
         btnP2dog.BackgroundImage = CType(resources.GetObject("btnP2dog.BackgroundImage"), Image)
         btnP2dog.BackgroundImageLayout = ImageLayout.Stretch
         btnP2dog.FlatAppearance.BorderSize = 0
         btnP2dog.FlatStyle = FlatStyle.Flat
-        btnP2dog.Location = New Point(1020, 73)
-        btnP2dog.Margin = New Padding(3, 2, 3, 2)
+        btnP2dog.Location = New Point(1458, 108)
+        btnP2dog.Margin = New Padding(6, 4, 6, 4)
         btnP2dog.Name = "btnP2dog"
-        btnP2dog.Size = New Size(35, 35)
+        btnP2dog.Size = New Size(65, 75)
         btnP2dog.TabIndex = 175
         btnP2dog.UseVisualStyleBackColor = False
         btnP2dog.Visible = False
@@ -330,18 +328,39 @@ Partial Class frmCandyLandMain
         ' lblPlayer2Name
         ' 
         lblPlayer2Name.AutoSize = True
-        lblPlayer2Name.Location = New Point(1064, 83)
-        lblPlayer2Name.Margin = New Padding(1, 0, 1, 0)
+        lblPlayer2Name.Location = New Point(1540, 129)
+        lblPlayer2Name.Margin = New Padding(2, 0, 2, 0)
         lblPlayer2Name.Name = "lblPlayer2Name"
-        lblPlayer2Name.Size = New Size(0, 15)
+        lblPlayer2Name.Size = New Size(0, 32)
         lblPlayer2Name.TabIndex = 176
+        ' 
+        ' lblPlayerRoll
+        ' 
+        lblPlayerRoll.AutoSize = True
+        lblPlayerRoll.Location = New Point(1660, 44)
+        lblPlayerRoll.Name = "lblPlayerRoll"
+        lblPlayerRoll.Size = New Size(83, 32)
+        lblPlayerRoll.TabIndex = 177
+        lblPlayerRoll.Text = "Label1"
+        ' 
+        ' lblComputerRoll
+        ' 
+        lblComputerRoll.AutoSize = True
+        lblComputerRoll.Location = New Point(1660, 129)
+        lblComputerRoll.Name = "lblComputerRoll"
+        lblComputerRoll.Size = New Size(24, 32)
+        lblComputerRoll.TabIndex = 178
+        lblComputerRoll.Text = "s"
         ' 
         ' frmCandyLandMain
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
-        ClientSize = New Size(1187, 613)
+        BackColor = Color.Bisque
+        ClientSize = New Size(1761, 1209)
+        Controls.Add(lblComputerRoll)
+        Controls.Add(lblPlayerRoll)
         Controls.Add(lblPlayer2Name)
         Controls.Add(btnP2dog)
         Controls.Add(btnP2frog)
@@ -351,7 +370,6 @@ Partial Class frmCandyLandMain
         Controls.Add(btnCatIcon)
         Controls.Add(btnDog)
         Controls.Add(btnFoxIcon)
-        Controls.Add(Label1)
         Controls.Add(btnRestartGame)
         Controls.Add(btnReplayGame)
         Controls.Add(btnExit)
@@ -363,7 +381,7 @@ Partial Class frmCandyLandMain
         Controls.Add(btnCat)
         Controls.Add(btnRoll)
         Controls.Add(tblBoardGame)
-        Margin = New Padding(3, 2, 3, 2)
+        Margin = New Padding(6, 4, 6, 4)
         Name = "frmCandyLandMain"
         Text = "Candy Land"
         ResumeLayout(False)
@@ -383,7 +401,6 @@ Partial Class frmCandyLandMain
     Friend WithEvents btnReplayGame As Button
     Friend WithEvents btnRestartGame As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents btnFrogIcon As Button
     Friend WithEvents btnCatIcon As Button
     Friend WithEvents btnFoxIcon As Button
@@ -392,5 +409,7 @@ Partial Class frmCandyLandMain
     Friend WithEvents btnP2frog As Button
     Friend WithEvents btnP2dog As Button
     Friend WithEvents lblPlayer2Name As Label
+    Friend WithEvents lblPlayerRoll As Label
+    Friend WithEvents lblComputerRoll As Label
 
 End Class
