@@ -281,4 +281,28 @@ Public Class frmCandyLandMain
     Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
         reloadGame()
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub tblBoardGame_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub btn5_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn3_Click(sender As Object, e As EventArgs) Handles btnFrog.Click
+
+    End Sub
+
+    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btnBunny.Click
+
+    End Sub
 End Class

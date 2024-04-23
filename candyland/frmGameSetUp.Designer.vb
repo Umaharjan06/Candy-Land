@@ -22,12 +22,16 @@ Partial Class frmGameSetUp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGameSetUp))
         cboGameType = New ComboBox()
-        btnStart = New Button()
+        btnChooseMode = New Button()
         cboColorPicker = New ComboBox()
         btnChooseColor = New Button()
         txtNames = New TextBox()
         btnName1 = New Button()
+        lblGameMode = New Label()
+        lblEnterName = New Label()
+        lblPlayerColor = New Label()
         SuspendLayout()
         ' 
         ' cboGameType
@@ -35,66 +39,129 @@ Partial Class frmGameSetUp
         cboGameType.DropDownStyle = ComboBoxStyle.DropDownList
         cboGameType.FormattingEnabled = True
         cboGameType.Items.AddRange(New Object() {"Single Player", "Multi-Player (2 players)", "Multi-Player (3 players)", "Multi-Player (4 players)"})
-        cboGameType.Location = New Point(496, 220)
+        cboGameType.Location = New Point(281, 134)
+        cboGameType.Margin = New Padding(1)
         cboGameType.Name = "cboGameType"
-        cboGameType.Size = New Size(302, 49)
+        cboGameType.Size = New Size(127, 23)
         cboGameType.TabIndex = 0
         ' 
-        ' btnStart
+        ' btnChooseMode
         ' 
-        btnStart.Location = New Point(868, 220)
-        btnStart.Name = "btnStart"
-        btnStart.Size = New Size(284, 129)
-        btnStart.TabIndex = 1
-        btnStart.Text = "Start"
-        btnStart.UseVisualStyleBackColor = True
+        btnChooseMode.BackColor = Color.LavenderBlush
+        btnChooseMode.Font = New Font("Verdana", 9.75F)
+        btnChooseMode.ForeColor = SystemColors.ControlDarkDark
+        btnChooseMode.Location = New Point(237, 172)
+        btnChooseMode.Margin = New Padding(1)
+        btnChooseMode.Name = "btnChooseMode"
+        btnChooseMode.Size = New Size(117, 47)
+        btnChooseMode.TabIndex = 1
+        btnChooseMode.Text = "Enter"
+        btnChooseMode.UseVisualStyleBackColor = False
         ' 
         ' cboColorPicker
         ' 
         cboColorPicker.DropDownStyle = ComboBoxStyle.DropDownList
+        cboColorPicker.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cboColorPicker.ForeColor = SystemColors.ControlDarkDark
         cboColorPicker.FormattingEnabled = True
-        cboColorPicker.Items.AddRange(New Object() {"Red", "Yellow", "Green", "Blue", "Pink"})
-        cboColorPicker.Location = New Point(496, 220)
+        cboColorPicker.Items.AddRange(New Object() {"Fox", "Bunny", "Frog", "Dog", "Cat"})
+        cboColorPicker.Location = New Point(281, 134)
+        cboColorPicker.Margin = New Padding(1)
         cboColorPicker.Name = "cboColorPicker"
-        cboColorPicker.Size = New Size(302, 49)
+        cboColorPicker.Size = New Size(127, 22)
         cboColorPicker.TabIndex = 2
         ' 
         ' btnChooseColor
         ' 
-        btnChooseColor.Location = New Point(868, 220)
+        btnChooseColor.BackColor = Color.LavenderBlush
+        btnChooseColor.Font = New Font("Verdana", 9.75F)
+        btnChooseColor.ForeColor = SystemColors.ControlDarkDark
+        btnChooseColor.Location = New Point(237, 172)
+        btnChooseColor.Margin = New Padding(1)
         btnChooseColor.Name = "btnChooseColor"
-        btnChooseColor.Size = New Size(284, 129)
+        btnChooseColor.Size = New Size(117, 47)
         btnChooseColor.TabIndex = 3
-        btnChooseColor.Text = "Choose Color"
-        btnChooseColor.UseVisualStyleBackColor = True
+        btnChooseColor.Text = "Start!"
+        btnChooseColor.UseVisualStyleBackColor = False
         ' 
         ' txtNames
         ' 
-        txtNames.Location = New Point(496, 222)
+        txtNames.Font = New Font("Bahnschrift SemiCondensed", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNames.Location = New Point(281, 134)
+        txtNames.Margin = New Padding(1)
         txtNames.Name = "txtNames"
-        txtNames.Size = New Size(302, 47)
+        txtNames.Size = New Size(127, 22)
         txtNames.TabIndex = 4
         ' 
         ' btnName1
         ' 
-        btnName1.Location = New Point(868, 222)
+        btnName1.BackColor = Color.LavenderBlush
+        btnName1.FlatAppearance.BorderSize = 0
+        btnName1.Font = New Font("Verdana", 9.75F)
+        btnName1.ForeColor = SystemColors.ControlDarkDark
+        btnName1.Location = New Point(237, 173)
+        btnName1.Margin = New Padding(1)
         btnName1.Name = "btnName1"
-        btnName1.Size = New Size(284, 127)
+        btnName1.Size = New Size(117, 46)
         btnName1.TabIndex = 5
-        btnName1.Text = "Name"
-        btnName1.UseVisualStyleBackColor = True
+        btnName1.Text = "Enter"
+        btnName1.UseVisualStyleBackColor = False
+        ' 
+        ' lblGameMode
+        ' 
+        lblGameMode.AutoSize = True
+        lblGameMode.BackColor = Color.Transparent
+        lblGameMode.Font = New Font("Verdana", 9.75F)
+        lblGameMode.ForeColor = SystemColors.ControlDarkDark
+        lblGameMode.Location = New Point(132, 136)
+        lblGameMode.Name = "lblGameMode"
+        lblGameMode.Size = New Size(135, 16)
+        lblGameMode.TabIndex = 6
+        lblGameMode.Text = "Select game mode:"
+        ' 
+        ' lblEnterName
+        ' 
+        lblEnterName.AutoSize = True
+        lblEnterName.BackColor = Color.Transparent
+        lblEnterName.Font = New Font("Verdana", 9.75F)
+        lblEnterName.ForeColor = SystemColors.ControlDarkDark
+        lblEnterName.Location = New Point(178, 136)
+        lblEnterName.Name = "lblEnterName"
+        lblEnterName.Size = New Size(89, 16)
+        lblEnterName.TabIndex = 7
+        lblEnterName.Text = "Enter Name:"
+        lblEnterName.Visible = False
+        ' 
+        ' lblPlayerColor
+        ' 
+        lblPlayerColor.AutoSize = True
+        lblPlayerColor.BackColor = Color.Transparent
+        lblPlayerColor.Font = New Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblPlayerColor.ForeColor = SystemColors.ControlDarkDark
+        lblPlayerColor.Location = New Point(142, 136)
+        lblPlayerColor.Name = "lblPlayerColor"
+        lblPlayerColor.Size = New Size(125, 16)
+        lblPlayerColor.TabIndex = 8
+        lblPlayerColor.Text = "Select Character:"
+        lblPlayerColor.Visible = False
         ' 
         ' frmGameSetUp
         ' 
-        AutoScaleDimensions = New SizeF(17F, 41F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1385, 823)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(584, 301)
+        Controls.Add(lblPlayerColor)
+        Controls.Add(lblEnterName)
+        Controls.Add(lblGameMode)
         Controls.Add(btnName1)
         Controls.Add(txtNames)
         Controls.Add(btnChooseColor)
         Controls.Add(cboColorPicker)
-        Controls.Add(btnStart)
+        Controls.Add(btnChooseMode)
         Controls.Add(cboGameType)
+        ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Margin = New Padding(1)
         Name = "frmGameSetUp"
         Text = "frmGameSetUp"
         ResumeLayout(False)
@@ -102,9 +169,12 @@ Partial Class frmGameSetUp
     End Sub
 
     Friend WithEvents cboGameType As ComboBox
-    Friend WithEvents btnStart As Button
+    Friend WithEvents btnChooseMode As Button
     Friend WithEvents cboColorPicker As ComboBox
     Friend WithEvents btnChooseColor As Button
     Friend WithEvents txtNames As TextBox
     Friend WithEvents btnName1 As Button
+    Friend WithEvents lblGameMode As Label
+    Friend WithEvents lblEnterName As Label
+    Friend WithEvents lblPlayerColor As Label
 End Class

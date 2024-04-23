@@ -3,18 +3,23 @@
 Public Class frmGameSetUp
     Public singlePlayerUsername As String
     Public gmSP As Boolean
-    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+
+    ' -- "Enter" Game Mode button
+    ' First Button
+    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnChooseMode.Click
         Dim strChoice As String = ""
         If cboGameType.SelectedIndex = -1 Then
             MsgBox("Please Pick A Mode!")
         Else
             strChoice = cboGameType.SelectedItem.ToString()
+            lblGameMode.Hide()
+            lblEnterName.Show()
         End If
 
         If strChoice = "Single Player" Then
             gmSP = True
             cboGameType.Hide() : txtNames.Show()
-            btnStart.Hide() : btnName1.Show()
+            btnChooseMode.Hide() : btnName1.Show()
             cboColorPicker.Show() : btnChooseColor.Show()
         ElseIf strChoice = "Multi-Player (2 players)" Then
             MsgBox(strChoice & " Not yet implemented")
@@ -31,13 +36,15 @@ Public Class frmGameSetUp
 
     Public Sub loadSetUp()
         cboGameType.Show()
-        btnStart.Show()
+        btnChooseMode.Show()
         cboColorPicker.Hide()
         btnChooseColor.Hide()
         btnName1.Hide()
         txtNames.Hide()
     End Sub
 
+    ' -- "Start!" Button
+    ' -- Third / Final button
     Private Sub btnChooseColor_Click(sender As Object, e As EventArgs) Handles btnChooseColor.Click
         Dim strColorChoice As String = ""
         If cboColorPicker.SelectedIndex = -1 Then
@@ -50,11 +57,16 @@ Public Class frmGameSetUp
 
     End Sub
 
+    ' -- "Enter" Name button
+    ' -- Second Button
     Private Sub btnName1_Click(sender As Object, e As EventArgs) Handles btnName1.Click
         If txtNames.Text = "" Then
             MsgBox("Please Enter A Name!")
         Else
             singlePlayerUsername = txtNames.Text
+            lblGameMode.Hide()
+            lblEnterName.Hide()
+            lblPlayerColor.Show()
             txtNames.Hide() : btnName1.Hide()
         End If
     End Sub
@@ -62,4 +74,16 @@ Public Class frmGameSetUp
     Public Function getUsername()
         Return singlePlayerUsername
     End Function
+
+    Private Sub txtNames_TextChanged(sender As Object, e As EventArgs) Handles txtNames.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblEnterName.Click
+
+    End Sub
+
+    Private Sub btnStart_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
