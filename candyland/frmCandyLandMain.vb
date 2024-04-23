@@ -11,10 +11,34 @@ Imports Windows.Win32.System
 
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
+
+    Public rollCount As Integer = 0
+
+
+    ' -- uses even or odd to determine if it's the player or computer's turn
+    ' -- player goes first so player is odd
+    Private Sub turns()
+        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
+        Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
+        Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
+        Dim maxCol As Integer = 9
+
+        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
+        displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
+
+        If currRow Mod 2 = 0 Then
+            SPMoveReversed(btnComputer, x)
+        ElseIf currRow Mod 2 = 1 Then
+            SPMove(btnComputer, x)
+        End If
+
+
+    End Sub
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
         Dim maxCol As Integer = 9
+        rollCount += 1
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
@@ -23,6 +47,8 @@ Public Class frmCandyLandMain
         ElseIf currRow Mod 2 = 1 Then
             SPMove(btnMain, x)
         End If
+
+        turns()
 
     End Sub
 
@@ -34,6 +60,10 @@ Public Class frmCandyLandMain
         Dim newcol As Integer = 0
         Dim tempSteps As Integer = 0
         newcol = currCol - steps
+
+        ' -- should ideally add if gamemode = single player around this
+        loadComputer()
+
         'condense this code and make it more efficient pls thx
         If currRow <> 0 Then ' while not in the last row
             If newcol >= minCol Then ' if the new column is larger than or equal 0
@@ -181,6 +211,10 @@ Public Class frmCandyLandMain
         Dim maxCol As Integer = 9
         Dim minCol As Integer = 0
         Dim newcol As Integer = 0
+
+        ' -- should ideally add if gamemode = single player around this
+        loadComputer()
+
         newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
         If newcol <= maxCol Then 'if the roll is less than max columns
             tblBoardGame.SetColumn(player, newcol)
@@ -257,6 +291,13 @@ Public Class frmCandyLandMain
         btnRestartGame.Hide()
         frmGameSetUp.loadSetUp()
         frmGameSetUp.Show()
+    End Sub
+
+    ' -- adds computer piece to board
+    Public Sub loadComputer()
+        If (rollCount = 1) Then
+            tblBoardGame.Controls.Add(gameMode.btnComputer, 0, 9)
+        End If
     End Sub
 
     Public Function getBoard()
