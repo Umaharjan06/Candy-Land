@@ -59,7 +59,7 @@ Partial Class frmCandyLandMain
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(1079, 363)
+        btnDog.Location = New Point(76, 558)
         btnDog.Margin = New Padding(3, 2, 3, 2)
         btnDog.Name = "btnDog"
         btnDog.Size = New Size(44, 44)
@@ -219,13 +219,13 @@ Partial Class frmCandyLandMain
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         ClientSize = New Size(1187, 613)
+        Controls.Add(btnDog)
         Controls.Add(Label1)
         Controls.Add(btnRestartGame)
         Controls.Add(btnReplayGame)
         Controls.Add(btnExit)
         Controls.Add(btnRollNumber)
         Controls.Add(lblUsername)
-        Controls.Add(btnDog)
         Controls.Add(btnFrog)
         Controls.Add(btnFox)
         Controls.Add(btnBunny)
