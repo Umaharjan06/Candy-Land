@@ -122,7 +122,7 @@ Public Class frmCandyLandMain
                 End Select
             Case 7
                 Select Case col
-                    Case 0 ' this one isnt working correctly
+                    Case 0
                         tblBoardGame.SetRow(player, row - 2)
                         tblBoardGame.SetColumn(player, col + 1)
                     Case 7
@@ -304,6 +304,7 @@ Public Class frmCandyLandMain
     End Function
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        MsgBox("Would you like to exit the application?", MsgBoxStyle.Exclamation, MsgBoxStyle.YesNo)
         End
     End Sub
 
@@ -313,6 +314,7 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
+        MsgBox(MsgBoxStyle.YesNo, "Would you like to restart?")
         reloadGame()
     End Sub
 End Class

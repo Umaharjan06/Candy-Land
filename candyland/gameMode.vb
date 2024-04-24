@@ -81,6 +81,7 @@ Module gameMode
         ElseIf colorChoice = "Cat" Then
             ' -- set computer to frog
             btnComputer = frmCandyLandMain.btnFrog
+            frmCandyLandMain.btnFrog.BackColor = Color.Transparent
             frmCandyLandMain.btnP2frog.BackColor = Color.Transparent
             frmCandyLandMain.btnP2frog.Show()
             frmCandyLandMain.lblPlayer2Name.Text = "Computer"

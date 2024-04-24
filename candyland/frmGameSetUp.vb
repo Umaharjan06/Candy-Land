@@ -10,6 +10,7 @@ Public Class frmGameSetUp
         Dim strChoice As String = ""
         If cboGameType.SelectedIndex = -1 Then
             MsgBox("Please Pick A Mode!")
+            'MsgBox(MsgBoxStyle.Exclamation, "Please Pick A Mode!")
         Else
             strChoice = cboGameType.SelectedItem.ToString()
             lblGameMode.Hide()
