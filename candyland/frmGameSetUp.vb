@@ -1,5 +1,4 @@
-﻿Imports System.Linq.Expressions
-Imports System.Security.Cryptography.X509Certificates
+﻿Imports System.Security.Cryptography.X509Certificates
 
 Public Class frmGameSetUp
     Public singlePlayerUsername As String
@@ -10,7 +9,7 @@ Public Class frmGameSetUp
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnChooseMode.Click
         Dim strChoice As String = ""
         If cboGameType.SelectedIndex = -1 Then
-            MsgBox("Please Pick A Mode!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
+            MsgBox("Please Pick A Mode!")
         Else
             strChoice = cboGameType.SelectedItem.ToString()
             lblGameMode.Hide()
@@ -23,11 +22,11 @@ Public Class frmGameSetUp
             btnChooseMode.Hide() : btnName1.Show()
             cboColorPicker.Show() : btnChooseColor.Show()
         ElseIf strChoice = "Multi-Player (2 players)" Then
-            MsgBox(strChoice & " Not yet implemented", MsgBoxStyle.Information, "Soon to come!")
+            MsgBox(strChoice & " Not yet implemented")
         ElseIf strChoice = "Multi-Player (3 players)" Then
-            MsgBox(strChoice & " Not yet implemented", MsgBoxStyle.Information, "Soon to come!")
+            MsgBox(strChoice & " Not yet implemented")
         ElseIf strChoice = "Multi-Player (4 players)" Then
-            MsgBox(strChoice & " Not yet implemented", MsgBoxStyle.Information, "Soon to come!")
+            MsgBox(strChoice & " Not yet implemented")
         End If
     End Sub
 
@@ -49,8 +48,7 @@ Public Class frmGameSetUp
     Private Sub btnChooseColor_Click(sender As Object, e As EventArgs) Handles btnChooseColor.Click
         Dim strColorChoice As String = ""
         If cboColorPicker.SelectedIndex = -1 Then
-            MsgBox("Please Pick A Character!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
-            Exit Sub
+            MsgBox("Please Pick A Color!")
         Else
             strColorChoice = cboColorPicker.SelectedItem.ToString()
             Singleplayer_ColorPicker(strColorChoice)
@@ -63,7 +61,7 @@ Public Class frmGameSetUp
     ' -- Second Button
     Private Sub btnName1_Click(sender As Object, e As EventArgs) Handles btnName1.Click
         If txtNames.Text = "" Then
-            MsgBox("Please Enter A Name!", MsgBoxStyle.Critical, "Error! You need to pick a name!")
+            MsgBox("Please Enter A Name!")
         Else
             singlePlayerUsername = txtNames.Text
             lblGameMode.Hide()
