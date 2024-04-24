@@ -202,7 +202,7 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub whoWin(player As Button)
-        MsgBox("Congratulations!") ' cant call button cause button doesnt have the name attached
+        MsgBox("Congratulations!", MsgBoxStyle.Exclamation, "WINNER WINNER CHICKEN DINNER!") ' cant call button cause button doesnt have the name attached
         btnReplayGame.Show()
         btnRestartGame.Show()
         btnRoll.Enabled = False
