@@ -111,6 +111,7 @@ Partial Class frmCandyLandMain
         ' btnRoll
         ' 
         btnRoll.BackColor = Color.Snow
+        btnRoll.Font = New Font("Verdana", 9F)
         btnRoll.Location = New Point(16, 101)
         btnRoll.Margin = New Padding(3, 2, 3, 2)
         btnRoll.Name = "btnRoll"
@@ -122,6 +123,7 @@ Partial Class frmCandyLandMain
         ' btnRollNumber
         ' 
         btnRollNumber.BackColor = Color.Snow
+        btnRollNumber.Font = New Font("Verdana", 9F)
         btnRollNumber.Location = New Point(16, 163)
         btnRollNumber.Margin = New Padding(1)
         btnRollNumber.Name = "btnRollNumber"
@@ -183,15 +185,17 @@ Partial Class frmCandyLandMain
         ' lblUsername
         ' 
         lblUsername.AutoSize = True
+        lblUsername.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblUsername.Location = New Point(65, 22)
         lblUsername.Margin = New Padding(1, 0, 1, 0)
         lblUsername.Name = "lblUsername"
-        lblUsername.Size = New Size(0, 15)
+        lblUsername.Size = New Size(0, 14)
         lblUsername.TabIndex = 165
         ' 
         ' btnExit
         ' 
         btnExit.BackColor = Color.Snow
+        btnExit.Font = New Font("Verdana", 9F)
         btnExit.Location = New Point(17, 541)
         btnExit.Margin = New Padding(3, 2, 3, 2)
         btnExit.Name = "btnExit"
@@ -203,6 +207,7 @@ Partial Class frmCandyLandMain
         ' btnReplayGame
         ' 
         btnReplayGame.BackColor = Color.Snow
+        btnReplayGame.Font = New Font("Verdana", 9F)
         btnReplayGame.Location = New Point(17, 487)
         btnReplayGame.Margin = New Padding(2, 1, 2, 1)
         btnReplayGame.Name = "btnReplayGame"
@@ -215,6 +220,7 @@ Partial Class frmCandyLandMain
         ' btnRestartGame
         ' 
         btnRestartGame.BackColor = Color.Snow
+        btnRestartGame.Font = New Font("Verdana", 9F)
         btnRestartGame.Location = New Point(17, 433)
         btnRestartGame.Margin = New Padding(2, 1, 2, 1)
         btnRestartGame.Name = "btnRestartGame"
@@ -333,29 +339,32 @@ Partial Class frmCandyLandMain
         ' lblPlayer2Name
         ' 
         lblPlayer2Name.AutoSize = True
+        lblPlayer2Name.Font = New Font("Verdana", 9F)
         lblPlayer2Name.Location = New Point(62, 65)
         lblPlayer2Name.Margin = New Padding(1, 0, 1, 0)
         lblPlayer2Name.Name = "lblPlayer2Name"
-        lblPlayer2Name.Size = New Size(0, 15)
+        lblPlayer2Name.Size = New Size(0, 14)
         lblPlayer2Name.TabIndex = 176
         ' 
         ' lblPlayerRoll
         ' 
         lblPlayerRoll.AutoSize = True
+        lblPlayerRoll.Font = New Font("Verdana", 9F)
         lblPlayerRoll.Location = New Point(127, 26)
         lblPlayerRoll.Margin = New Padding(2, 0, 2, 0)
         lblPlayerRoll.Name = "lblPlayerRoll"
-        lblPlayerRoll.Size = New Size(41, 15)
+        lblPlayerRoll.Size = New Size(49, 14)
         lblPlayerRoll.TabIndex = 177
         lblPlayerRoll.Text = "Label1"
         ' 
         ' lblComputerRoll
         ' 
         lblComputerRoll.AutoSize = True
+        lblComputerRoll.Font = New Font("Verdana", 9F)
         lblComputerRoll.Location = New Point(127, 65)
         lblComputerRoll.Margin = New Padding(2, 0, 2, 0)
         lblComputerRoll.Name = "lblComputerRoll"
-        lblComputerRoll.Size = New Size(12, 15)
+        lblComputerRoll.Size = New Size(14, 14)
         lblComputerRoll.TabIndex = 178
         lblComputerRoll.Text = "s"
         ' 

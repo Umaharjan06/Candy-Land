@@ -22,7 +22,7 @@ Public Class frmCandyLandMain
         Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
         Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
 
-        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
+        btnRoll.BackColor = Color.DarkSeaGreen ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         lblComputerRoll.Show()
         lblComputerRoll.Text = x.ToString()
