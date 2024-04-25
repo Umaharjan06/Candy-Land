@@ -193,6 +193,7 @@ Partial Class frmGameSetUp
         Controls.Add(cboGameType)
         DoubleBuffered = True
         ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(1)
         Name = "frmGameSetUp"
         Text = "SlidesNClimbs"

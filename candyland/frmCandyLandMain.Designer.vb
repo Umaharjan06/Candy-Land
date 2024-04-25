@@ -79,7 +79,7 @@ Partial Class frmCandyLandMain
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(77, 383)
+        btnDog.Location = New Point(77, 382)
         btnDog.Margin = New Padding(3, 2, 3, 2)
         btnDog.Name = "btnDog"
         btnDog.Size = New Size(44, 44)
@@ -93,7 +93,7 @@ Partial Class frmCandyLandMain
         btnFrog.BackgroundImageLayout = ImageLayout.Stretch
         btnFrog.FlatAppearance.BorderSize = 0
         btnFrog.FlatStyle = FlatStyle.Flat
-        btnFrog.Location = New Point(127, 383)
+        btnFrog.Location = New Point(127, 382)
         btnFrog.Margin = New Padding(3, 2, 3, 2)
         btnFrog.Name = "btnFrog"
         btnFrog.Size = New Size(44, 44)
@@ -436,7 +436,7 @@ Partial Class frmCandyLandMain
         ' lblComputerOutcome
         ' 
         lblComputerOutcome.AutoSize = True
-        lblComputerOutcome.Location = New Point(2, 383)
+        lblComputerOutcome.Location = New Point(2, 382)
         lblComputerOutcome.Margin = New Padding(2, 0, 2, 0)
         lblComputerOutcome.Name = "lblComputerOutcome"
         lblComputerOutcome.Size = New Size(41, 15)
@@ -477,6 +477,7 @@ Partial Class frmCandyLandMain
         Controls.Add(PictureBox1)
         Controls.Add(tblBoardGame)
         Controls.Add(MenuStrip1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
         Name = "frmCandyLandMain"
