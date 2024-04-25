@@ -405,16 +405,7 @@ Public Class frmCandyLandMain
         End If
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2" & vbNewLine & vbNewLine & "Developers:" & vbNewLine _
-       & "Lynn Cavanagh" & vbNewLine & "Emerson Kyle" & vbNewLine & "Emily Woo" & vbNewLine & "Unnati Maharjan",
-       MsgBoxStyle.Information, "About")
-    End Sub
 
-    Private Sub InstructionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem.Click
-        MsgBox("1. Choose Your Mode" & vbNewLine & "2. Choose Name and Character" & vbNewLine & "3. Press 'Roll' To Play!",
-        MsgBoxStyle.Information, "Instructions")
-    End Sub
 
     Sub PlayDiceRoll()
         My.Computer.Audio.Play(My.Resources.diceroll, AudioPlayMode.Background)
@@ -436,5 +427,35 @@ Public Class frmCandyLandMain
             My.Computer.Audio.Stop()
             isPlaying = False
         End If
+    End Sub
+
+    Private Sub InstructionsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem1.Click
+        MsgBox("Start by clicking the 'Roll!' button - your character will automatically move the number of spaces rolled
+
+Roll numbers for each player are displayed in the top right next to the player icons
+
+If you land at the bottom of a ladder you will get a boost to the top of the ladder!
+
+If you land at the top of a snake you will be sent back to the bottom of the slide
+
+Don't let the snakes get you. Happy climbing!", MsgBoxStyle.Information, "Instructions")
+    End Sub
+
+    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        MsgBox("
+Version 1.2.0
+
+A Syntax Stargazer Production
+
+Credits:
+Lynn Cavanagh
+Emerson Kyle
+Unnati Maharjan
+Emily Woo",
+MsgBoxStyle.Information, "About")
     End Sub
 End Class
