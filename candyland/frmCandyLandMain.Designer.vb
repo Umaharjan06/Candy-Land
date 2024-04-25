@@ -48,7 +48,9 @@ Partial Class frmCandyLandMain
         PictureBox1 = New PictureBox()
         MenuStrip1 = New MenuStrip()
         Panel2 = New Panel()
+        HowToPlayToolStripMenuItem = New ToolStripMenuItem()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
         ' 
@@ -381,6 +383,7 @@ Partial Class frmCandyLandMain
         ' 
         ' MenuStrip1
         ' 
+        MenuStrip1.Items.AddRange(New ToolStripItem() {HowToPlayToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(991, 24)
@@ -417,6 +420,12 @@ Partial Class frmCandyLandMain
         Panel2.Size = New Size(183, 606)
         Panel2.TabIndex = 181
         ' 
+        ' HowToPlayToolStripMenuItem
+        ' 
+        HowToPlayToolStripMenuItem.Name = "HowToPlayToolStripMenuItem"
+        HowToPlayToolStripMenuItem.Size = New Size(83, 20)
+        HowToPlayToolStripMenuItem.Text = "How to Play"
+        ' 
         ' frmCandyLandMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -433,6 +442,8 @@ Partial Class frmCandyLandMain
         Name = "frmCandyLandMain"
         Text = "Candy Land"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         ResumeLayout(False)
@@ -465,5 +476,6 @@ Partial Class frmCandyLandMain
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents HowToPlayToolStripMenuItem As ToolStripMenuItem
 
 End Class

@@ -323,4 +323,13 @@ Public Class frmCandyLandMain
     Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub HowToPlayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HowToPlayToolStripMenuItem.Click
+        MsgBox("Start by clicking the 'Roll!' button. The card below will display a random number between 1 and 5. Your character will automatically move the number of spaces rolled. 
+
+If it lands at the bottom of a ladder, your character will get a boost and willproceed from the top of the ladder. 
+
+However, if it lands at the top of a slide, your character will have to continue from the bottomof the slide. 
+Happy climbing! (or else)", MsgBoxStyle.Information, "How to Play")
+    End Sub
 End Class
