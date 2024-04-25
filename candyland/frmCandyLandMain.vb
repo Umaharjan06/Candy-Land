@@ -267,6 +267,7 @@ Public Class frmCandyLandMain
                 index += 1
             Next
         Next
+        btnRollNumber.Hide()
     End Sub
 
     Public Sub loadGame() ' resets the board w/ the same players
