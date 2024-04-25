@@ -47,8 +47,8 @@ Partial Class frmCandyLandMain
         lblComputerRoll = New Label()
         PictureBox1 = New PictureBox()
         MenuStrip1 = New MenuStrip()
-        Panel2 = New Panel()
         HowToPlayToolStripMenuItem = New ToolStripMenuItem()
+        Panel2 = New Panel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -61,7 +61,7 @@ Partial Class frmCandyLandMain
         btnCat.BackgroundImageLayout = ImageLayout.Stretch
         btnCat.FlatAppearance.BorderSize = 0
         btnCat.FlatStyle = FlatStyle.Flat
-        btnCat.Location = New Point(127, 318)
+        btnCat.Location = New Point(661, 80)
         btnCat.Margin = New Padding(3, 2, 3, 2)
         btnCat.Name = "btnCat"
         btnCat.Size = New Size(44, 44)
@@ -75,7 +75,7 @@ Partial Class frmCandyLandMain
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(46, 270)
+        btnDog.Location = New Point(29, 80)
         btnDog.Margin = New Padding(3, 2, 3, 2)
         btnDog.Name = "btnDog"
         btnDog.Size = New Size(44, 44)
@@ -89,7 +89,7 @@ Partial Class frmCandyLandMain
         btnFrog.BackgroundImageLayout = ImageLayout.Stretch
         btnFrog.FlatAppearance.BorderSize = 0
         btnFrog.FlatStyle = FlatStyle.Flat
-        btnFrog.Location = New Point(46, 270)
+        btnFrog.Location = New Point(89, 80)
         btnFrog.Margin = New Padding(3, 2, 3, 2)
         btnFrog.Name = "btnFrog"
         btnFrog.Size = New Size(44, 44)
@@ -103,7 +103,7 @@ Partial Class frmCandyLandMain
         btnBunny.BackgroundImageLayout = ImageLayout.Stretch
         btnBunny.FlatAppearance.BorderSize = 0
         btnBunny.FlatStyle = FlatStyle.Flat
-        btnBunny.Location = New Point(77, 318)
+        btnBunny.Location = New Point(139, 80)
         btnBunny.Margin = New Padding(3, 2, 3, 2)
         btnBunny.Name = "btnBunny"
         btnBunny.Size = New Size(44, 44)
@@ -177,7 +177,7 @@ Partial Class frmCandyLandMain
         btnFox.FlatAppearance.BorderSize = 0
         btnFox.FlatStyle = FlatStyle.Flat
         btnFox.ForeColor = Color.Transparent
-        btnFox.Location = New Point(17, 318)
+        btnFox.Location = New Point(720, 80)
         btnFox.Margin = New Padding(3, 2, 3, 2)
         btnFox.Name = "btnFox"
         btnFox.Size = New Size(44, 44)
@@ -390,6 +390,12 @@ Partial Class frmCandyLandMain
         MenuStrip1.TabIndex = 180
         MenuStrip1.Text = "MenuStrip1"
         ' 
+        ' HowToPlayToolStripMenuItem
+        ' 
+        HowToPlayToolStripMenuItem.Name = "HowToPlayToolStripMenuItem"
+        HowToPlayToolStripMenuItem.Size = New Size(83, 20)
+        HowToPlayToolStripMenuItem.Text = "How to Play"
+        ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.Transparent
@@ -397,13 +403,9 @@ Partial Class frmCandyLandMain
         Panel2.Controls.Add(btnFrogIcon)
         Panel2.Controls.Add(btnRoll)
         Panel2.Controls.Add(lblComputerRoll)
-        Panel2.Controls.Add(btnCat)
         Panel2.Controls.Add(lblPlayerRoll)
-        Panel2.Controls.Add(btnBunny)
         Panel2.Controls.Add(lblPlayer2Name)
-        Panel2.Controls.Add(btnFox)
         Panel2.Controls.Add(btnP2dog)
-        Panel2.Controls.Add(btnFrog)
         Panel2.Controls.Add(btnP2frog)
         Panel2.Controls.Add(lblUsername)
         Panel2.Controls.Add(btnRollNumber)
@@ -413,18 +415,11 @@ Partial Class frmCandyLandMain
         Panel2.Controls.Add(btnReplayGame)
         Panel2.Controls.Add(btnCatIcon)
         Panel2.Controls.Add(btnRestartGame)
-        Panel2.Controls.Add(btnDog)
         Panel2.Controls.Add(btnFoxIcon)
         Panel2.Location = New Point(794, 44)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(183, 606)
         Panel2.TabIndex = 181
-        ' 
-        ' HowToPlayToolStripMenuItem
-        ' 
-        HowToPlayToolStripMenuItem.Name = "HowToPlayToolStripMenuItem"
-        HowToPlayToolStripMenuItem.Size = New Size(83, 20)
-        HowToPlayToolStripMenuItem.Text = "How to Play"
         ' 
         ' frmCandyLandMain
         ' 
@@ -436,7 +431,12 @@ Partial Class frmCandyLandMain
         Controls.Add(Panel2)
         Controls.Add(PictureBox1)
         Controls.Add(tblBoardGame)
+        Controls.Add(btnCat)
         Controls.Add(MenuStrip1)
+        Controls.Add(btnFox)
+        Controls.Add(btnBunny)
+        Controls.Add(btnDog)
+        Controls.Add(btnFrog)
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
         Name = "frmCandyLandMain"

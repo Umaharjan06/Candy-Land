@@ -26,12 +26,12 @@ Partial Class frmGameSetUp
         cboGameType = New ComboBox()
         btnChooseMode = New Button()
         cboColorPicker = New ComboBox()
-        btnChooseColor = New Button()
+        btnSPChooseColor = New Button()
         txtNames = New TextBox()
-        btnName1 = New Button()
-        lblGameMode = New Label()
-        lblEnterName = New Label()
-        lblPlayerColor = New Label()
+        btnSinglePlayerName = New Button()
+        lblSetUp = New Label()
+        btnPlayer1Name = New Button()
+        btnP1ChooseColor = New Button()
         SuspendLayout()
         ' 
         ' cboGameType
@@ -71,18 +71,19 @@ Partial Class frmGameSetUp
         cboColorPicker.Size = New Size(127, 22)
         cboColorPicker.TabIndex = 2
         ' 
-        ' btnChooseColor
+        ' btnSPChooseColor
         ' 
-        btnChooseColor.BackColor = Color.LavenderBlush
-        btnChooseColor.Font = New Font("Verdana", 9.75F)
-        btnChooseColor.ForeColor = SystemColors.ControlDarkDark
-        btnChooseColor.Location = New Point(237, 172)
-        btnChooseColor.Margin = New Padding(1)
-        btnChooseColor.Name = "btnChooseColor"
-        btnChooseColor.Size = New Size(117, 47)
-        btnChooseColor.TabIndex = 3
-        btnChooseColor.Text = "Start!"
-        btnChooseColor.UseVisualStyleBackColor = False
+        btnSPChooseColor.BackColor = Color.LavenderBlush
+        btnSPChooseColor.Font = New Font("Verdana", 9.75F)
+        btnSPChooseColor.ForeColor = SystemColors.ControlDarkDark
+        btnSPChooseColor.Location = New Point(237, 173)
+        btnSPChooseColor.Margin = New Padding(1)
+        btnSPChooseColor.Name = "btnSPChooseColor"
+        btnSPChooseColor.Size = New Size(117, 47)
+        btnSPChooseColor.TabIndex = 3
+        btnSPChooseColor.Text = "Start!"
+        btnSPChooseColor.UseVisualStyleBackColor = False
+        btnSPChooseColor.Visible = False
         ' 
         ' txtNames
         ' 
@@ -93,57 +94,63 @@ Partial Class frmGameSetUp
         txtNames.Size = New Size(127, 22)
         txtNames.TabIndex = 4
         ' 
-        ' btnName1
+        ' btnSinglePlayerName
         ' 
-        btnName1.BackColor = Color.LavenderBlush
-        btnName1.FlatAppearance.BorderSize = 0
-        btnName1.Font = New Font("Verdana", 9.75F)
-        btnName1.ForeColor = SystemColors.ControlDarkDark
-        btnName1.Location = New Point(237, 173)
-        btnName1.Margin = New Padding(1)
-        btnName1.Name = "btnName1"
-        btnName1.Size = New Size(117, 46)
-        btnName1.TabIndex = 5
-        btnName1.Text = "Enter"
-        btnName1.UseVisualStyleBackColor = False
+        btnSinglePlayerName.BackColor = Color.LavenderBlush
+        btnSinglePlayerName.FlatAppearance.BorderSize = 0
+        btnSinglePlayerName.Font = New Font("Verdana", 9.75F)
+        btnSinglePlayerName.ForeColor = SystemColors.ControlDarkDark
+        btnSinglePlayerName.Location = New Point(237, 174)
+        btnSinglePlayerName.Margin = New Padding(1)
+        btnSinglePlayerName.Name = "btnSinglePlayerName"
+        btnSinglePlayerName.Size = New Size(117, 46)
+        btnSinglePlayerName.TabIndex = 5
+        btnSinglePlayerName.Text = "Enter"
+        btnSinglePlayerName.UseVisualStyleBackColor = False
+        btnSinglePlayerName.Visible = False
         ' 
-        ' lblGameMode
+        ' lblSetUp
         ' 
-        lblGameMode.AutoSize = True
-        lblGameMode.BackColor = Color.Transparent
-        lblGameMode.Font = New Font("Verdana", 9.75F)
-        lblGameMode.ForeColor = SystemColors.ControlDarkDark
-        lblGameMode.Location = New Point(132, 136)
-        lblGameMode.Name = "lblGameMode"
-        lblGameMode.Size = New Size(135, 16)
-        lblGameMode.TabIndex = 6
-        lblGameMode.Text = "Select game mode:"
+        lblSetUp.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        lblSetUp.BackColor = Color.Transparent
+        lblSetUp.Font = New Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblSetUp.ForeColor = SystemColors.ControlDarkDark
+        lblSetUp.Location = New Point(137, 136)
+        lblSetUp.Name = "lblSetUp"
+        lblSetUp.Size = New Size(140, 18)
+        lblSetUp.TabIndex = 9
+        lblSetUp.Text = "Select Game Mode:"
+        lblSetUp.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' lblEnterName
+        ' btnPlayer1Name
         ' 
-        lblEnterName.AutoSize = True
-        lblEnterName.BackColor = Color.Transparent
-        lblEnterName.Font = New Font("Verdana", 9.75F)
-        lblEnterName.ForeColor = SystemColors.ControlDarkDark
-        lblEnterName.Location = New Point(217, 136)
-        lblEnterName.Name = "lblEnterName"
-        lblEnterName.Size = New Size(49, 16)
-        lblEnterName.TabIndex = 7
-        lblEnterName.Text = "Name:"
-        lblEnterName.Visible = False
+        btnPlayer1Name.BackColor = Color.LavenderBlush
+        btnPlayer1Name.FlatAppearance.BorderSize = 0
+        btnPlayer1Name.Font = New Font("Verdana", 9.75F)
+        btnPlayer1Name.ForeColor = SystemColors.ControlDarkDark
+        btnPlayer1Name.Location = New Point(237, 174)
+        btnPlayer1Name.Margin = New Padding(1)
+        btnPlayer1Name.Name = "btnPlayer1Name"
+        btnPlayer1Name.Size = New Size(117, 46)
+        btnPlayer1Name.TabIndex = 10
+        btnPlayer1Name.Text = "Enter"
+        btnPlayer1Name.UseVisualStyleBackColor = False
+        btnPlayer1Name.Visible = False
         ' 
-        ' lblPlayerColor
+        ' btnP1ChooseColor
         ' 
-        lblPlayerColor.AutoSize = True
-        lblPlayerColor.BackColor = Color.Transparent
-        lblPlayerColor.Font = New Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblPlayerColor.ForeColor = SystemColors.ControlDarkDark
-        lblPlayerColor.Location = New Point(141, 136)
-        lblPlayerColor.Name = "lblPlayerColor"
-        lblPlayerColor.Size = New Size(125, 16)
-        lblPlayerColor.TabIndex = 8
-        lblPlayerColor.Text = "Select Character:"
-        lblPlayerColor.Visible = False
+        btnP1ChooseColor.BackColor = Color.LavenderBlush
+        btnP1ChooseColor.FlatAppearance.BorderSize = 0
+        btnP1ChooseColor.Font = New Font("Verdana", 9.75F)
+        btnP1ChooseColor.ForeColor = SystemColors.ControlDarkDark
+        btnP1ChooseColor.Location = New Point(237, 174)
+        btnP1ChooseColor.Margin = New Padding(1)
+        btnP1ChooseColor.Name = "btnP1ChooseColor"
+        btnP1ChooseColor.Size = New Size(117, 46)
+        btnP1ChooseColor.TabIndex = 11
+        btnP1ChooseColor.Text = "Enter"
+        btnP1ChooseColor.UseVisualStyleBackColor = False
+        btnP1ChooseColor.Visible = False
         ' 
         ' frmGameSetUp
         ' 
@@ -152,12 +159,12 @@ Partial Class frmGameSetUp
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(584, 301)
-        Controls.Add(lblPlayerColor)
-        Controls.Add(lblEnterName)
-        Controls.Add(lblGameMode)
-        Controls.Add(btnName1)
+        Controls.Add(btnP1ChooseColor)
+        Controls.Add(btnPlayer1Name)
+        Controls.Add(lblSetUp)
+        Controls.Add(btnSinglePlayerName)
         Controls.Add(txtNames)
-        Controls.Add(btnChooseColor)
+        Controls.Add(btnSPChooseColor)
         Controls.Add(cboColorPicker)
         Controls.Add(btnChooseMode)
         Controls.Add(cboGameType)
@@ -173,10 +180,10 @@ Partial Class frmGameSetUp
     Friend WithEvents cboGameType As ComboBox
     Friend WithEvents btnChooseMode As Button
     Friend WithEvents cboColorPicker As ComboBox
-    Friend WithEvents btnChooseColor As Button
+    Friend WithEvents btnSPChooseColor As Button
     Friend WithEvents txtNames As TextBox
-    Friend WithEvents btnName1 As Button
-    Friend WithEvents lblGameMode As Label
-    Friend WithEvents lblEnterName As Label
-    Friend WithEvents lblPlayerColor As Label
+    Friend WithEvents btnSinglePlayerName As Button
+    Friend WithEvents lblSetUp As Label
+    Friend WithEvents btnPlayer1Name As Button
+    Friend WithEvents btnP1ChooseColor As Button
 End Class

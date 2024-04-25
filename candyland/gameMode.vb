@@ -11,10 +11,7 @@ Module gameMode
     Public Sub Singleplayer_ColorPicker(colorChoice)
 
         If colorChoice = "Fox" Then
-            ' -- set computer to dog
-            btnComputer = frmCandyLandMain.btnDog
-            frmCandyLandMain.btnP2dog.Show()
-            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+            setComputerDog()
 
             btnMain = frmCandyLandMain.btnFox
             frmCandyLandMain.Show()
@@ -27,10 +24,8 @@ Module gameMode
             frmCandyLandMain.btnFoxIcon.Show()
 
         ElseIf colorChoice = "Bunny" Then
-            ' -- set computer to dog
-            btnComputer = frmCandyLandMain.btnDog
-            frmCandyLandMain.btnP2dog.Show()
-            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+            setComputerDog()
+
 
             btnMain = frmCandyLandMain.btnBunny
             frmCandyLandMain.Show()
@@ -43,10 +38,7 @@ Module gameMode
             frmCandyLandMain.btnBunnyIcon.Show()
 
         ElseIf colorChoice = "Frog" Then
-            ' -- set computer to dog
-            btnComputer = frmCandyLandMain.btnDog
-            frmCandyLandMain.btnP2dog.Show()
-            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+            setComputerDog()
 
             btnMain = frmCandyLandMain.btnFrog
             frmCandyLandMain.btnFrog.BackColor = Color.Transparent
@@ -61,12 +53,7 @@ Module gameMode
             frmCandyLandMain.btnFrogIcon.Show()
 
         ElseIf colorChoice = "Dog" Then
-            ' -- set computer to frog
-            btnComputer = frmCandyLandMain.btnFrog
-            frmCandyLandMain.btnFrog.BackColor = Color.Transparent
-            frmCandyLandMain.btnP2frog.BackColor = Color.Transparent
-            frmCandyLandMain.btnP2frog.Show()
-            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+            setComputerFrog()
 
             btnMain = frmCandyLandMain.btnDog
             frmCandyLandMain.Show()
@@ -79,12 +66,8 @@ Module gameMode
             frmCandyLandMain.btnDogIcon.Show()
 
         ElseIf colorChoice = "Cat" Then
-            ' -- set computer to frog
-            btnComputer = frmCandyLandMain.btnFrog
-            frmCandyLandMain.btnP2frog.BackColor = Color.Transparent
-            frmCandyLandMain.btnP2frog.Show()
-            frmCandyLandMain.lblPlayer2Name.Text = "Computer"
 
+            setComputerFrog()
             btnMain = frmCandyLandMain.btnCat
             frmCandyLandMain.Show()
             frmCandyLandMain.btnDog.Hide() ': frmCandyLandMain.btnFrog.Hide()
@@ -97,5 +80,29 @@ Module gameMode
         End If
     End Sub
 
+    Public Sub setCharacter(charChoice)
+
+
+
+
+    End Sub
+
+    ' -- SET COMPUTER FUNCTIONS
+    ' -- set's computer opponent to frog
+    Public Sub setComputerDog()
+        ' -- set computer to dog
+        btnComputer = frmCandyLandMain.btnDog
+        frmCandyLandMain.btnP2dog.Show()
+        frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+    End Sub
+
+    ' -- set's computer opponent to frog
+    Public Sub setComputerFrog()
+        ' -- set computer to frog
+        btnComputer = frmCandyLandMain.btnFrog
+        frmCandyLandMain.btnP2frog.Show()
+        frmCandyLandMain.lblPlayer2Name.Text = "Computer"
+        frmCandyLandMain.btnP2frog.BackColor = Color.Transparent
+    End Sub
 
 End Module
