@@ -18,24 +18,8 @@ Public Class frmCandyLandMain
     Public rollCount As Integer = 0
     Private isPlaying As Boolean = False
 
-    ' -- uses even or odd to determine if it's the player or computer's turn
-    ' -- player goes first so player is odd
-    Private Sub turns()
-        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
-        Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
-        Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
+    ' moving characters
 
-        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
-        displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
-        lblComputerRoll.Show()
-        lblComputerRoll.Text = x.ToString()
-        If currRow Mod 2 = 0 Then
-            SPMoveReversed(btnComputer, x)
-        ElseIf currRow Mod 2 = 1 Then
-            SPMove(btnComputer, x)
-        End If
-
-    End Sub
     Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
@@ -60,6 +44,65 @@ Public Class frmCandyLandMain
 
     End Sub
 
+    ' -- uses even or odd to determine if it's the player or computer's turn
+    ' -- player goes first so player is odd
+    Private Sub turns()
+        Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
+        Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
+        Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
+
+        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
+        displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
+        lblComputerRoll.Show()
+        lblComputerRoll.Text = x.ToString()
+        If currRow Mod 2 = 0 Then
+            SPMoveReversed(btnComputer, x)
+        ElseIf currRow Mod 2 = 1 Then
+            SPMove(btnComputer, x)
+        End If
+    End Sub
+
+    ' function for moving on odd rows
+    Private Sub SPMove(player As Button, steps As Integer)
+        Dim currCol As Integer = tblBoardGame.GetColumn(player)
+        Dim currRow As Integer = tblBoardGame.GetRow(player)
+        Dim maxCol As Integer = 9
+        Dim minCol As Integer = 0
+        Dim newcol As Integer = 0
+
+        ' -- should ideally add if gamemode = single player around this
+        loadComputer()
+
+        newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
+        If newcol <= maxCol Then 'if the roll is less than max columns
+            tblBoardGame.SetColumn(player, newcol)
+            chuteOrLadder(player, newcol, currRow)
+        ElseIf newcol > maxCol Then 'if roll is greater than max columns
+            If currCol = maxCol Then 'if the player is currently in the last column
+                'move up a row, then move columns
+                tblBoardGame.SetRow(player, currRow - 1)
+                tblBoardGame.SetColumn(player, currCol - steps + 1)
+                currRow = currRow - 1
+                newcol = maxCol - steps + 1
+                chuteOrLadder(player, newcol, currRow)
+            Else 'if the player is not in the last column
+                'the # of steps to get to the last column
+                Dim tempSteps As Integer = maxCol - currCol
+                Dim remainingSteps As Integer = steps - tempSteps
+                'move to the last column
+                tblBoardGame.SetColumn(player, currCol + tempSteps)
+                'move up the row
+                tblBoardGame.SetRow(player, currRow - 1)
+                currRow = currRow - 1
+                'move the remaining steps
+                tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
+                newcol = maxCol - remainingSteps + 1
+                chuteOrLadder(player, newcol, currRow)
+            End If
+        End If
+
+    End Sub
+    ' function for moving on even rows
     Private Sub SPMoveReversed(player As Button, steps As Integer)
         Dim currCol As Integer = tblBoardGame.GetColumn(player)
         Dim currRow As Integer = tblBoardGame.GetRow(player)
@@ -72,7 +115,6 @@ Public Class frmCandyLandMain
         ' -- should ideally add if gamemode = single player around this
         loadComputer()
 
-        'condense this code and make it more efficient pls thx
         If currRow <> 0 Then ' while not in the last row
             If newcol >= minCol Then ' if the new column is larger than or equal 0
                 tblBoardGame.SetColumn(player, newcol)
@@ -83,7 +125,6 @@ Public Class frmCandyLandMain
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
                     currRow = currRow - 1
-                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
@@ -94,7 +135,6 @@ Public Class frmCandyLandMain
                     newcol = minCol + remainingSteps
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
                     newcol = minCol + remainingSteps - 1
-                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 End If
             End If
@@ -114,6 +154,8 @@ Public Class frmCandyLandMain
 
     End Sub
 
+
+    ' chutes and ladders code
     Sub chuteOrLadder(player As Button, col As Integer, row As Integer)
         ladder(player, col, row)
         chute(player, col, row)
@@ -254,6 +296,8 @@ Public Class frmCandyLandMain
         End Select
     End Sub
 
+
+    ' winning condition code
     Private Sub whoWin(player As Button)
         If player.Equals(btnMain) Then
             PlayWinning()
@@ -268,46 +312,8 @@ Public Class frmCandyLandMain
         btnRoll.Enabled = False
     End Sub
 
-    Private Sub SPMove(player As Button, steps As Integer)
-        Dim currCol As Integer = tblBoardGame.GetColumn(player)
-        Dim currRow As Integer = tblBoardGame.GetRow(player)
-        Dim maxCol As Integer = 9
-        Dim minCol As Integer = 0
-        Dim newcol As Integer = 0
 
-        ' -- should ideally add if gamemode = single player around this
-        loadComputer()
-
-        newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
-        If newcol <= maxCol Then 'if the roll is less than max columns
-            tblBoardGame.SetColumn(player, newcol)
-            chuteOrLadder(player, newcol, currRow)
-        ElseIf newcol > maxCol Then 'if roll is greater than max columns
-            If currCol = maxCol Then 'if the player is currently in the last column
-                'move up a row, then move columns
-                tblBoardGame.SetRow(player, currRow - 1)
-                tblBoardGame.SetColumn(player, currCol - steps + 1)
-                currRow = currRow - 1
-                newcol = maxCol - steps + 1
-                chuteOrLadder(player, newcol, currRow)
-            Else 'if the player is not in the last column
-                'the # of steps to get to the last column
-                Dim tempSteps As Integer = maxCol - currCol
-                Dim remainingSteps As Integer = steps - tempSteps
-                'move to the last column
-                tblBoardGame.SetColumn(player, currCol + tempSteps)
-                'move up the row
-                tblBoardGame.SetRow(player, currRow - 1)
-                currRow = currRow - 1
-                'move the remaining steps
-                tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
-                newcol = maxCol - remainingSteps + 1
-                chuteOrLadder(player, newcol, currRow)
-            End If
-        End If
-
-    End Sub
-
+    ' board loading and management code
     Sub main() 'i believe this sets up the board
 
         ' Add your TableLayoutPanel to your form or container.
@@ -405,17 +411,21 @@ Public Class frmCandyLandMain
         End If
     End Sub
 
+
+    ' menu strip code
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2" & vbNewLine & vbNewLine & "Developers:" & vbNewLine _
+        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2.1" & vbNewLine & vbNewLine & "Developers:" & vbNewLine _
        & "Lynn Cavanagh" & vbNewLine & "Emerson Kyle" & vbNewLine & "Emily Woo" & vbNewLine & "Unnati Maharjan",
        MsgBoxStyle.Information, "About")
     End Sub
 
     Private Sub InstructionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem.Click
-        MsgBox("1. Choose Your Mode" & vbNewLine & "2. Choose Name and Character" & vbNewLine & "3. Press 'Roll' To Play!",
+        MsgBox("Click the 'Roll' button to move your character!" & vbNewLine & "If you're in single player then the computer will go after you" _
+        & vbNewLine & "Watch as your cute characters climb and fall on the board!",
         MsgBoxStyle.Information, "Instructions")
     End Sub
 
+    ' audio code
     Sub PlayDiceRoll()
         My.Computer.Audio.Play(My.Resources.diceroll, AudioPlayMode.Background)
     End Sub
@@ -437,4 +447,5 @@ Public Class frmCandyLandMain
             isPlaying = False
         End If
     End Sub
+
 End Class

@@ -34,6 +34,7 @@ Partial Class frmGameSetUp
         lblPlayerColor = New Label()
         btnHowToPlay = New Button()
         cbMusic = New CheckBox()
+        lblVersion = New Label()
         SuspendLayout()
         ' 
         ' cboGameType
@@ -168,12 +169,24 @@ Partial Class frmGameSetUp
         ' 
         cbMusic.AutoSize = True
         cbMusic.BackColor = Color.Transparent
-        cbMusic.Location = New Point(27, 580)
+        cbMusic.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cbMusic.Location = New Point(12, 569)
         cbMusic.Name = "cbMusic"
-        cbMusic.Size = New Size(109, 36)
+        cbMusic.Size = New Size(112, 33)
         cbMusic.TabIndex = 10
         cbMusic.Text = "Music"
         cbMusic.UseVisualStyleBackColor = False
+        ' 
+        ' lblVersion
+        ' 
+        lblVersion.AutoSize = True
+        lblVersion.BackColor = Color.Transparent
+        lblVersion.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblVersion.Location = New Point(12, 605)
+        lblVersion.Name = "lblVersion"
+        lblVersion.Size = New Size(90, 29)
+        lblVersion.TabIndex = 11
+        lblVersion.Text = "v1.2.1"
         ' 
         ' frmGameSetUp
         ' 
@@ -182,6 +195,7 @@ Partial Class frmGameSetUp
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1085, 642)
+        Controls.Add(lblVersion)
         Controls.Add(cbMusic)
         Controls.Add(btnHowToPlay)
         Controls.Add(lblPlayerColor)
@@ -213,4 +227,5 @@ Partial Class frmGameSetUp
     Friend WithEvents lblPlayerColor As Label
     Friend WithEvents btnHowToPlay As Button
     Friend WithEvents cbMusic As CheckBox
+    Friend WithEvents lblVersion As Label
 End Class
