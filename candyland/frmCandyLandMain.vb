@@ -455,7 +455,8 @@ Credits:
 Lynn Cavanagh
 Emerson Kyle
 Unnati Maharjan
-Emily Woo",
+Emily Woo
+Icons designed by FreePik",
 MsgBoxStyle.Information, "About")
     End Sub
 
