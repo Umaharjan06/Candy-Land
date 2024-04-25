@@ -38,6 +38,7 @@ Public Class frmCandyLandMain
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
         rollCount += 1
+        PlayDiceRoll()
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
@@ -203,6 +204,7 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub whoWin(player As Button)
+        PlayWinning()
         MsgBox("Congratulations!", MsgBoxStyle.Exclamation, "WINNER WINNER CHICKEN DINNER!") ' cant call button cause button doesnt have the name attached
         btnReplayGame.Show()
         btnRestartGame.Show()
@@ -341,5 +343,17 @@ Public Class frmCandyLandMain
     Private Sub InstructionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem.Click
         MsgBox("1. Choose Your Mode" & vbNewLine & "2. Choose Name and Character" & vbNewLine & "3. Press 'Roll' To Play!",
         MsgBoxStyle.Information)
+    End Sub
+
+    Sub PlayDiceRoll()
+        My.Computer.Audio.Play(My.Resources.diceroll, AudioPlayMode.Background)
+    End Sub
+
+    Sub PlayLosing()
+        My.Computer.Audio.Play(My.Resources.sadtrombone, AudioPlayMode.Background)
+    End Sub
+
+    Sub PlayWinning()
+        My.Computer.Audio.Play(My.Resources.cheering, AudioPlayMode.Background)
     End Sub
 End Class
