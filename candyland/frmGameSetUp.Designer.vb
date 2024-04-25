@@ -195,7 +195,7 @@ Partial Class frmGameSetUp
         ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Margin = New Padding(1)
         Name = "frmGameSetUp"
-        Text = "Game Set Up"
+        Text = "SlidesNClimbs"
         ResumeLayout(False)
         PerformLayout()
     End Sub

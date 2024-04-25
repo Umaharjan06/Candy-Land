@@ -79,7 +79,7 @@ Partial Class frmCandyLandMain
         btnDog.BackgroundImageLayout = ImageLayout.Stretch
         btnDog.FlatAppearance.BorderSize = 0
         btnDog.FlatStyle = FlatStyle.Flat
-        btnDog.Location = New Point(46, 270)
+        btnDog.Location = New Point(77, 383)
         btnDog.Margin = New Padding(3, 2, 3, 2)
         btnDog.Name = "btnDog"
         btnDog.Size = New Size(44, 44)
@@ -93,7 +93,7 @@ Partial Class frmCandyLandMain
         btnFrog.BackgroundImageLayout = ImageLayout.Stretch
         btnFrog.FlatAppearance.BorderSize = 0
         btnFrog.FlatStyle = FlatStyle.Flat
-        btnFrog.Location = New Point(46, 270)
+        btnFrog.Location = New Point(127, 383)
         btnFrog.Margin = New Padding(3, 2, 3, 2)
         btnFrog.Name = "btnFrog"
         btnFrog.Size = New Size(44, 44)
@@ -378,6 +378,7 @@ Partial Class frmCandyLandMain
         ' 
         ' MenuStrip1
         ' 
+        MenuStrip1.BackColor = Color.Snow
         MenuStrip1.ImageScalingSize = New Size(32, 32)
         MenuStrip1.Items.AddRange(New ToolStripItem() {HelpToolStripMenuItem, InstructionsToolStripMenuItem1})
         MenuStrip1.Location = New Point(0, 0)
@@ -479,7 +480,7 @@ Partial Class frmCandyLandMain
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
         Name = "frmCandyLandMain"
-        Text = "Candy Land"
+        Text = "SlidesNClimbs"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
