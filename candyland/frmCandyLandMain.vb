@@ -8,6 +8,7 @@ Imports System.Reflection.Metadata
 Imports System.Runtime
 Imports System.Runtime.CompilerServices
 Imports System.Security.Cryptography.X509Certificates
+Imports Accessibility
 Imports Windows.Win32.System
 
 Public Class frmCandyLandMain
@@ -304,25 +305,41 @@ Public Class frmCandyLandMain
     End Function
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        MsgBox("Would you like to exit the application?", MsgBoxStyle.Exclamation, MsgBoxStyle.YesNo)
-        End
+        Dim response As Integer = MsgBox("Would you like to exit the application?", MsgBoxStyle.Exclamation + vbYesNo, "Exit Game?")
+        If response = 6 Then
+            End
+        Else
+            response = 0
+        End If
     End Sub
 
     Private Sub btnReplayGame_Click(sender As Object, e As EventArgs) Handles btnReplayGame.Click
-        loadGame()
-        btnReplayGame.Hide()
+        Dim response As Integer = MsgBox("Are You Sure?", MsgBoxStyle.Exclamation + vbYesNo, "Replay Game")
+        If response = 6 Then
+            loadGame()
+            btnReplayGame.Hide()
+        Else
+            response = 0
+        End If
     End Sub
 
     Private Sub btnRestartGame_Click(sender As Object, e As EventArgs) Handles btnRestartGame.Click
-        MsgBox(MsgBoxStyle.YesNo, "Would you like to restart?")
-        reloadGame()
+        Dim response As Integer = MsgBox("Are You Sure?", MsgBoxStyle.Exclamation + vbYesNo, "Restart Game")
+        If response = 6 Then
+            reloadGame()
+        Else
+            response = 0
+        End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2" & vbNewLine _
+       & "Lynn Cavanagh" & vbNewLine & "Emerson Kyle" & vbNewLine & "Emily Woo" & vbNewLine & "Unnati Maharjan",
+       MsgBoxStyle.Information, "About")
     End Sub
 
-    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub InstructionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem.Click
+        MsgBox("1. Choose Your Mode" & vbNewLine & "2. Choose Name and Character" & vbNewLine & "3. Press 'Roll' To Play!",
+        MsgBoxStyle.Information)
     End Sub
 End Class
