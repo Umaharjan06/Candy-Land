@@ -32,6 +32,7 @@ Partial Class frmGameSetUp
         lblSetUp = New Label()
         btnPlayer1Name = New Button()
         btnP1ChooseColor = New Button()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' cboGameType
@@ -152,6 +153,15 @@ Partial Class frmGameSetUp
         btnP1ChooseColor.UseVisualStyleBackColor = False
         btnP1ChooseColor.Visible = False
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(12, 277)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(37, 15)
+        Label1.TabIndex = 12
+        Label1.Text = "v1.2.1"
+        ' 
         ' frmGameSetUp
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -159,6 +169,7 @@ Partial Class frmGameSetUp
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(584, 301)
+        Controls.Add(Label1)
         Controls.Add(btnP1ChooseColor)
         Controls.Add(btnPlayer1Name)
         Controls.Add(lblSetUp)
@@ -186,4 +197,5 @@ Partial Class frmGameSetUp
     Friend WithEvents lblSetUp As Label
     Friend WithEvents btnPlayer1Name As Button
     Friend WithEvents btnP1ChooseColor As Button
+    Friend WithEvents Label1 As Label
 End Class
