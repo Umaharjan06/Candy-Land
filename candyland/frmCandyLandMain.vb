@@ -83,6 +83,7 @@ Public Class frmCandyLandMain
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
                     currRow = currRow - 1
+                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
@@ -90,7 +91,10 @@ Public Class frmCandyLandMain
                     tblBoardGame.SetColumn(player, currCol - tempSteps)
                     tblBoardGame.SetRow(player, currRow - 1)
                     currRow = currRow - 1
+                    newcol = minCol + remainingSteps
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
+                    newcol = minCol + remainingSteps - 1
+                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 End If
             End If
@@ -284,6 +288,7 @@ Public Class frmCandyLandMain
                 tblBoardGame.SetRow(player, currRow - 1)
                 tblBoardGame.SetColumn(player, currCol - steps + 1)
                 currRow = currRow - 1
+                newcol = maxCol - steps + 1
                 chuteOrLadder(player, newcol, currRow)
             Else 'if the player is not in the last column
                 'the # of steps to get to the last column
@@ -296,6 +301,7 @@ Public Class frmCandyLandMain
                 currRow = currRow - 1
                 'move the remaining steps
                 tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
+                newcol = maxCol - remainingSteps + 1
                 chuteOrLadder(player, newcol, currRow)
             End If
         End If
