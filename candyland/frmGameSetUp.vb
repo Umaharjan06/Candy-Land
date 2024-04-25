@@ -87,4 +87,15 @@ Public Class frmGameSetUp
     Private Sub btnStart_Click_1(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub btnHowToPlay_Click(sender As Object, e As EventArgs) Handles btnHowToPlay.Click
+        MsgBox("How to Play:" & vbNewLine & vbNewLine &
+               "1. You need to first select a mode (Unfortunately only singleplayer has been implemented at this time)" _
+                & vbNewLine & vbNewLine & "2. You then need to select a name; and no you cannot leave it blank" & vbNewLine & vbNewLine &
+                "3. Then you may select your character; you have the choice of Fox, Frog, Dog, Cat, and Bunny" & vbNewLine &
+                vbNewLine & "4. Now, the game should be ready for you to play! Just press the roll button, and your selected player," &
+                "as well as a computer player will play the game. First to the top left wins. Have fun!" & vbNewLine & vbNewLine & vbNewLine &
+                "Note: You will be able to see the roll numbers for each player in the top right, next to their player icons",
+               MsgBoxStyle.Information, "How to Play")
+    End Sub
 End Class

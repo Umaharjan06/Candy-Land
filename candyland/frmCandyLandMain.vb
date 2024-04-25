@@ -335,14 +335,14 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2" & vbNewLine _
+        MsgBox("Syntax Stargazer" & vbNewLine & "Version 1.2" & vbNewLine & vbNewLine & "Developers:" & vbNewLine _
        & "Lynn Cavanagh" & vbNewLine & "Emerson Kyle" & vbNewLine & "Emily Woo" & vbNewLine & "Unnati Maharjan",
        MsgBoxStyle.Information, "About")
     End Sub
 
     Private Sub InstructionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstructionsToolStripMenuItem.Click
         MsgBox("1. Choose Your Mode" & vbNewLine & "2. Choose Name and Character" & vbNewLine & "3. Press 'Roll' To Play!",
-        MsgBoxStyle.Information)
+        MsgBoxStyle.Information, "Instructions")
     End Sub
 
     Sub PlayDiceRoll()

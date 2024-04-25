@@ -32,6 +32,7 @@ Partial Class frmGameSetUp
         lblGameMode = New Label()
         lblEnterName = New Label()
         lblPlayerColor = New Label()
+        btnHowToPlay = New Button()
         SuspendLayout()
         ' 
         ' cboGameType
@@ -59,7 +60,7 @@ Partial Class frmGameSetUp
         ' cboColorPicker
         ' 
         cboColorPicker.DropDownStyle = ComboBoxStyle.DropDownList
-        cboColorPicker.Font = New Font("Verdana", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cboColorPicker.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cboColorPicker.ForeColor = SystemColors.ControlDarkDark
         cboColorPicker.FormattingEnabled = True
         cboColorPicker.Items.AddRange(New Object() {"Fox", "Bunny", "Frog", "Dog", "Cat"})
@@ -82,7 +83,7 @@ Partial Class frmGameSetUp
         ' 
         ' txtNames
         ' 
-        txtNames.Font = New Font("Verdana", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNames.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtNames.Location = New Point(683, 366)
         txtNames.Name = "txtNames"
         txtNames.Size = New Size(302, 44)
@@ -142,13 +143,27 @@ Partial Class frmGameSetUp
         lblPlayerColor.Text = "Select Character:"
         lblPlayerColor.Visible = False
         ' 
+        ' btnHowToPlay
+        ' 
+        btnHowToPlay.BackColor = Color.LavenderBlush
+        btnHowToPlay.FlatAppearance.BorderSize = 0
+        btnHowToPlay.Font = New Font("Verdana", 9.75F)
+        btnHowToPlay.ForeColor = SystemColors.ControlDarkDark
+        btnHowToPlay.Location = New Point(1085, 731)
+        btnHowToPlay.Name = "btnHowToPlay"
+        btnHowToPlay.Size = New Size(280, 58)
+        btnHowToPlay.TabIndex = 9
+        btnHowToPlay.Text = "How To Play"
+        btnHowToPlay.UseVisualStyleBackColor = False
+        ' 
         ' frmGameSetUp
         ' 
-        AutoScaleDimensions = New SizeF(17.0F, 41.0F)
+        AutoScaleDimensions = New SizeF(17F, 41F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1419, 823)
+        Controls.Add(btnHowToPlay)
         Controls.Add(lblPlayerColor)
         Controls.Add(lblEnterName)
         Controls.Add(lblGameMode)
@@ -175,4 +190,5 @@ Partial Class frmGameSetUp
     Friend WithEvents lblGameMode As Label
     Friend WithEvents lblEnterName As Label
     Friend WithEvents lblPlayerColor As Label
+    Friend WithEvents btnHowToPlay As Button
 End Class
