@@ -25,7 +25,6 @@ Public Class frmCandyLandMain
         Dim currCol As Integer = tblBoardGame.GetColumn(btnComputer)
         Dim currRow As Integer = tblBoardGame.GetRow(btnComputer)
 
-        btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         lblComputerRoll.Show()
         lblComputerRoll.Text = x.ToString()
@@ -60,6 +59,46 @@ Public Class frmCandyLandMain
 
     End Sub
 
+    Private Sub SPMove(player As Button, steps As Integer)
+        Dim currCol As Integer = tblBoardGame.GetColumn(player)
+        Dim currRow As Integer = tblBoardGame.GetRow(player)
+        Dim maxCol As Integer = 9
+        Dim minCol As Integer = 0
+        Dim newcol As Integer = 0
+
+        ' -- should ideally add if gamemode = single player around this
+        loadComputer()
+
+        newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
+        If newcol <= maxCol Then 'if the roll is less than max columns
+            tblBoardGame.SetColumn(player, newcol)
+            chuteOrLadder(player, newcol, currRow)
+        ElseIf newcol > maxCol Then 'if roll is greater than max columns
+            If currCol = maxCol Then 'if the player is currently in the last column
+                'move up a row, then move columns
+                tblBoardGame.SetRow(player, currRow - 1)
+                tblBoardGame.SetColumn(player, currCol - steps + 1)
+                currRow = currRow - 1
+                newcol = maxCol - steps + 1
+                chuteOrLadder(player, newcol, currRow)
+            Else 'if the player is not in the last column
+                'the # of steps to get to the last column
+                Dim tempSteps As Integer = maxCol - currCol
+                Dim remainingSteps As Integer = steps - tempSteps
+                'move to the last column
+                tblBoardGame.SetColumn(player, currCol + tempSteps)
+                'move up the row
+                tblBoardGame.SetRow(player, currRow - 1)
+                currRow = currRow - 1
+                'move the remaining steps
+                tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
+                newcol = maxCol - remainingSteps + 1
+                chuteOrLadder(player, newcol, currRow)
+            End If
+        End If
+
+    End Sub
+
     Private Sub SPMoveReversed(player As Button, steps As Integer)
         Dim currCol As Integer = tblBoardGame.GetColumn(player)
         Dim currRow As Integer = tblBoardGame.GetRow(player)
@@ -83,7 +122,6 @@ Public Class frmCandyLandMain
                     tblBoardGame.SetRow(player, currRow - 1)
                     tblBoardGame.SetColumn(player, currCol + steps - 1)
                     currRow = currRow - 1
-                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 Else ' if the player is not in the last column
                     tempSteps = minCol + currCol
@@ -94,7 +132,6 @@ Public Class frmCandyLandMain
                     newcol = minCol + remainingSteps
                     tblBoardGame.SetColumn(player, minCol + remainingSteps - 1)
                     newcol = minCol + remainingSteps - 1
-                    MsgBox(currRow & " " & newcol)
                     chuteOrLadder(player, newcol, currRow)
                 End If
             End If
@@ -263,49 +300,10 @@ Public Class frmCandyLandMain
             MsgBox("You lost to the computer, better luck next time!",
                    MsgBoxStyle.Critical, "YOU LOST TO THE COMPUTER!")
         End If
+        btnRoll.BackColor = Color.Gray
         btnReplayGame.Show()
         btnRestartGame.Show()
         btnRoll.Enabled = False
-    End Sub
-
-    Private Sub SPMove(player As Button, steps As Integer)
-        Dim currCol As Integer = tblBoardGame.GetColumn(player)
-        Dim currRow As Integer = tblBoardGame.GetRow(player)
-        Dim maxCol As Integer = 9
-        Dim minCol As Integer = 0
-        Dim newcol As Integer = 0
-
-        ' -- should ideally add if gamemode = single player around this
-        loadComputer()
-
-        newcol = currCol + steps 'doesnt go past this when it goes all the way to the right
-        If newcol <= maxCol Then 'if the roll is less than max columns
-            tblBoardGame.SetColumn(player, newcol)
-            chuteOrLadder(player, newcol, currRow)
-        ElseIf newcol > maxCol Then 'if roll is greater than max columns
-            If currCol = maxCol Then 'if the player is currently in the last column
-                'move up a row, then move columns
-                tblBoardGame.SetRow(player, currRow - 1)
-                tblBoardGame.SetColumn(player, currCol - steps + 1)
-                currRow = currRow - 1
-                newcol = maxCol - steps + 1
-                chuteOrLadder(player, newcol, currRow)
-            Else 'if the player is not in the last column
-                'the # of steps to get to the last column
-                Dim tempSteps As Integer = maxCol - currCol
-                Dim remainingSteps As Integer = steps - tempSteps
-                'move to the last column
-                tblBoardGame.SetColumn(player, currCol + tempSteps)
-                'move up the row
-                tblBoardGame.SetRow(player, currRow - 1)
-                currRow = currRow - 1
-                'move the remaining steps
-                tblBoardGame.SetColumn(player, maxCol - remainingSteps + 1)
-                newcol = maxCol - remainingSteps + 1
-                chuteOrLadder(player, newcol, currRow)
-            End If
-        End If
-
     End Sub
 
     Sub main() 'i believe this sets up the board
