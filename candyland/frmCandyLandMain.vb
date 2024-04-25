@@ -205,7 +205,12 @@ Public Class frmCandyLandMain
 
     Private Sub whoWin(player As Button)
         PlayWinning()
-        MsgBox("Congratulations!", MsgBoxStyle.Exclamation, "WINNER WINNER CHICKEN DINNER!") ' cant call button cause button doesnt have the name attached
+        If player.Equals(btnMain) Then
+            MsgBox("Congratulations!", MsgBoxStyle.Exclamation, "WINNER WINNER CHICKEN DINNER!")
+        Else
+            MsgBox("You lost to the computer, better luck next time!",
+                   MsgBoxStyle.Critical, "YOU LOST TO THE COMPUTER!")
+        End If
         btnReplayGame.Show()
         btnRestartGame.Show()
         btnRoll.Enabled = False
