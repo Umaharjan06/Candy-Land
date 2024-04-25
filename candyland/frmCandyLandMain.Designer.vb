@@ -51,6 +51,7 @@ Partial Class frmCandyLandMain
         AboutToolStripMenuItem = New ToolStripMenuItem()
         InstructionsToolStripMenuItem = New ToolStripMenuItem()
         Panel2 = New Panel()
+        cbMusic = New CheckBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -382,7 +383,7 @@ Partial Class frmCandyLandMain
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(11, 4, 0, 4)
-        MenuStrip1.Size = New Size(1840, 46)
+        MenuStrip1.Size = New Size(1840, 44)
         MenuStrip1.TabIndex = 180
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -390,19 +391,19 @@ Partial Class frmCandyLandMain
         ' 
         HelpToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AboutToolStripMenuItem, InstructionsToolStripMenuItem})
         HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        HelpToolStripMenuItem.Size = New Size(84, 38)
+        HelpToolStripMenuItem.Size = New Size(84, 36)
         HelpToolStripMenuItem.Text = "Help"
         ' 
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(359, 44)
+        AboutToolStripMenuItem.Size = New Size(270, 44)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' InstructionsToolStripMenuItem
         ' 
         InstructionsToolStripMenuItem.Name = "InstructionsToolStripMenuItem"
-        InstructionsToolStripMenuItem.Size = New Size(359, 44)
+        InstructionsToolStripMenuItem.Size = New Size(270, 44)
         InstructionsToolStripMenuItem.Text = "Instructions"
         ' 
         ' Panel2
@@ -436,6 +437,17 @@ Partial Class frmCandyLandMain
         Panel2.Size = New Size(338, 1291)
         Panel2.TabIndex = 181
         ' 
+        ' cbMusic
+        ' 
+        cbMusic.AutoSize = True
+        cbMusic.BackColor = Color.Transparent
+        cbMusic.Location = New Point(1253, 229)
+        cbMusic.Name = "cbMusic"
+        cbMusic.Size = New Size(109, 36)
+        cbMusic.TabIndex = 182
+        cbMusic.Text = "Music"
+        cbMusic.UseVisualStyleBackColor = False
+        ' 
         ' frmCandyLandMain
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -443,6 +455,7 @@ Partial Class frmCandyLandMain
         AutoSize = True
         BackColor = Color.AliceBlue
         ClientSize = New Size(1840, 1442)
+        Controls.Add(cbMusic)
         Controls.Add(Panel2)
         Controls.Add(PictureBox1)
         Controls.Add(tblBoardGame)
@@ -489,5 +502,6 @@ Partial Class frmCandyLandMain
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InstructionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents cbMusic As CheckBox
 
 End Class

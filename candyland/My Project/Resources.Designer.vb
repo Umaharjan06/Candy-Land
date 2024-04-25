@@ -81,6 +81,15 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
+        Friend ReadOnly Property lofitrack() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("lofitrack", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
         Friend ReadOnly Property sadtrombone() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("sadtrombone", resourceCulture)

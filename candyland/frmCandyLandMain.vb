@@ -14,7 +14,7 @@ Imports Windows.Win32.System
 Public Class frmCandyLandMain
     Public Board = tblBoardGame
     Public rollCount As Integer = 0
-
+    Private isPlaying As Boolean = False
 
     ' -- uses even or odd to determine if it's the player or computer's turn
     ' -- player goes first so player is odd
@@ -38,7 +38,9 @@ Public Class frmCandyLandMain
         Dim currCol As Integer = tblBoardGame.GetColumn(btnMain)
         Dim currRow As Integer = tblBoardGame.GetRow(btnMain)
         rollCount += 1
-        PlayDiceRoll()
+        If isPlaying = False Then
+            PlayDiceRoll()
+        End If
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
@@ -204,10 +206,11 @@ Public Class frmCandyLandMain
     End Sub
 
     Private Sub whoWin(player As Button)
-        PlayWinning()
         If player.Equals(btnMain) Then
+            PlayWinning()
             MsgBox("Congratulations!", MsgBoxStyle.Exclamation, "WINNER WINNER CHICKEN DINNER!")
         Else
+            PlayLosing()
             MsgBox("You lost to the computer, better luck next time!",
                    MsgBoxStyle.Critical, "YOU LOST TO THE COMPUTER!")
         End If
@@ -290,6 +293,12 @@ Public Class frmCandyLandMain
             tblBoardGame.Controls.Add(gameMode.btnComputer, 0, 9) ' resets the computer piece but moves the player piece
             main()
         End If
+        If frmGameSetUp.getMusicStatus = True Then
+            cbMusic.Checked = True
+            My.Computer.Audio.Play(My.Resources.lofitrack, AudioPlayMode.BackgroundLoop)
+        ElseIf frmGameSetUp.getMusicStatus = False Then
+            cbMusic.Checked = False
+        End If
     End Sub
 
     Private Sub reloadGame() ' completely restarts game - sends user back to set up
@@ -299,6 +308,9 @@ Public Class frmCandyLandMain
         btnRestartGame.Hide()
         frmGameSetUp.loadSetUp()
         frmGameSetUp.Show()
+        If isPlaying = False Then
+            frmGameSetUp.isPlaying = False
+        End If
     End Sub
 
     ' -- adds computer piece to board
@@ -361,5 +373,15 @@ Public Class frmCandyLandMain
 
     Sub PlayWinning()
         My.Computer.Audio.Play(My.Resources.cheering, AudioPlayMode.Background)
+    End Sub
+
+    Private Sub cbMusic_CheckedChanged(sender As Object, e As EventArgs) Handles cbMusic.CheckedChanged
+        If cbMusic.Checked Then
+            My.Computer.Audio.Play(My.Resources.lofitrack, AudioPlayMode.BackgroundLoop)
+            isPlaying = True
+        ElseIf cbMusic.Checked = False Then
+            My.Computer.Audio.Stop()
+            isPlaying = False
+        End If
     End Sub
 End Class

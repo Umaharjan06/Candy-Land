@@ -3,6 +3,7 @@
 Public Class frmGameSetUp
     Public singlePlayerUsername As String
     Public gmSP As Boolean
+    Public isPlaying As Boolean = True
 
     ' -- "Enter" Game Mode button
     ' First Button
@@ -41,6 +42,8 @@ Public Class frmGameSetUp
         btnChooseColor.Hide()
         btnName1.Hide()
         txtNames.Hide()
+        cbMusic.Checked = True
+        My.Computer.Audio.Play(My.Resources.lofitrack, AudioPlayMode.BackgroundLoop)
     End Sub
 
     ' -- "Start!" Button
@@ -75,19 +78,6 @@ Public Class frmGameSetUp
     Public Function getUsername()
         Return singlePlayerUsername
     End Function
-
-    Private Sub txtNames_TextChanged(sender As Object, e As EventArgs) Handles txtNames.TextChanged
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblEnterName.Click
-
-    End Sub
-
-    Private Sub btnStart_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub btnHowToPlay_Click(sender As Object, e As EventArgs) Handles btnHowToPlay.Click
         MsgBox("How to Play:" & vbNewLine & vbNewLine &
                "1. You need to first select a mode (Unfortunately only singleplayer has been implemented at this time)" _
@@ -97,5 +87,20 @@ Public Class frmGameSetUp
                 "as well as a computer player will play the game. First to the top left wins. Have fun!" & vbNewLine & vbNewLine & vbNewLine &
                 "Note: You will be able to see the roll numbers for each player in the top right, next to their player icons",
                MsgBoxStyle.Information, "How to Play")
+    End Sub
+
+    Public Function getMusicStatus()
+        Return isPlaying
+    End Function
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbMusic.CheckedChanged
+        If cbMusic.Checked Then
+            My.Computer.Audio.Play(My.Resources.lofitrack, AudioPlayMode.BackgroundLoop)
+            isPlaying = True
+        ElseIf cbMusic.Checked = False Then
+            My.Computer.Audio.Stop()
+            isPlaying = False
+        End If
+
     End Sub
 End Class
