@@ -456,7 +456,7 @@ Partial Class frmCandyLandMain
         ' 
         cbMusic.AutoSize = True
         cbMusic.BackColor = Color.Transparent
-        cbMusic.Location = New Point(675, 107)
+        cbMusic.Location = New Point(722, 101)
         cbMusic.Margin = New Padding(2, 1, 2, 1)
         cbMusic.Name = "cbMusic"
         cbMusic.Size = New Size(58, 19)

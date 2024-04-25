@@ -42,7 +42,7 @@ Partial Class frmGameSetUp
         cboGameType.FormattingEnabled = True
         cboGameType.Items.AddRange(New Object() {"Single Player", "Multi-Player (2 players)", "Multi-Player (3 players)", "Multi-Player (4 players)"})
         cboGameType.Location = New Point(281, 134)
-        cboGameType.Margin = New Padding(1, 1, 1, 1)
+        cboGameType.Margin = New Padding(1)
         cboGameType.Name = "cboGameType"
         cboGameType.Size = New Size(127, 23)
         cboGameType.TabIndex = 0
@@ -53,7 +53,7 @@ Partial Class frmGameSetUp
         btnChooseMode.Font = New Font("Verdana", 9.75F)
         btnChooseMode.ForeColor = SystemColors.ControlDarkDark
         btnChooseMode.Location = New Point(237, 172)
-        btnChooseMode.Margin = New Padding(1, 1, 1, 1)
+        btnChooseMode.Margin = New Padding(1)
         btnChooseMode.Name = "btnChooseMode"
         btnChooseMode.Size = New Size(117, 47)
         btnChooseMode.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class frmGameSetUp
         cboColorPicker.FormattingEnabled = True
         cboColorPicker.Items.AddRange(New Object() {"Fox", "Bunny", "Frog", "Dog", "Cat"})
         cboColorPicker.Location = New Point(281, 134)
-        cboColorPicker.Margin = New Padding(1, 1, 1, 1)
+        cboColorPicker.Margin = New Padding(1)
         cboColorPicker.Name = "cboColorPicker"
         cboColorPicker.Size = New Size(127, 22)
         cboColorPicker.TabIndex = 2
@@ -79,7 +79,7 @@ Partial Class frmGameSetUp
         btnChooseColor.Font = New Font("Verdana", 9.75F)
         btnChooseColor.ForeColor = SystemColors.ControlDarkDark
         btnChooseColor.Location = New Point(237, 172)
-        btnChooseColor.Margin = New Padding(1, 1, 1, 1)
+        btnChooseColor.Margin = New Padding(1)
         btnChooseColor.Name = "btnChooseColor"
         btnChooseColor.Size = New Size(117, 47)
         btnChooseColor.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class frmGameSetUp
         ' 
         txtNames.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtNames.Location = New Point(281, 134)
-        txtNames.Margin = New Padding(1, 1, 1, 1)
+        txtNames.Margin = New Padding(1)
         txtNames.Name = "txtNames"
         txtNames.Size = New Size(127, 22)
         txtNames.TabIndex = 4
@@ -102,7 +102,7 @@ Partial Class frmGameSetUp
         btnName1.Font = New Font("Verdana", 9.75F)
         btnName1.ForeColor = SystemColors.ControlDarkDark
         btnName1.Location = New Point(237, 173)
-        btnName1.Margin = New Padding(1, 1, 1, 1)
+        btnName1.Margin = New Padding(1)
         btnName1.Name = "btnName1"
         btnName1.Size = New Size(117, 46)
         btnName1.TabIndex = 5
@@ -153,8 +153,8 @@ Partial Class frmGameSetUp
         btnHowToPlay.FlatAppearance.BorderSize = 0
         btnHowToPlay.Font = New Font("Verdana", 9.75F)
         btnHowToPlay.ForeColor = SystemColors.ControlDarkDark
-        btnHowToPlay.Location = New Point(457, 258)
-        btnHowToPlay.Margin = New Padding(1, 1, 1, 1)
+        btnHowToPlay.Location = New Point(457, 290)
+        btnHowToPlay.Margin = New Padding(1)
         btnHowToPlay.Name = "btnHowToPlay"
         btnHowToPlay.Size = New Size(117, 33)
         btnHowToPlay.TabIndex = 9
@@ -165,7 +165,7 @@ Partial Class frmGameSetUp
         ' 
         cbMusic.AutoSize = True
         cbMusic.BackColor = Color.Transparent
-        cbMusic.Location = New Point(15, 272)
+        cbMusic.Location = New Point(11, 304)
         cbMusic.Margin = New Padding(2, 1, 2, 1)
         cbMusic.Name = "cbMusic"
         cbMusic.Size = New Size(58, 19)
@@ -179,7 +179,7 @@ Partial Class frmGameSetUp
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(584, 301)
+        ClientSize = New Size(584, 333)
         Controls.Add(cbMusic)
         Controls.Add(btnHowToPlay)
         Controls.Add(lblPlayerColor)
@@ -193,7 +193,7 @@ Partial Class frmGameSetUp
         Controls.Add(cboGameType)
         DoubleBuffered = True
         ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Margin = New Padding(1, 1, 1, 1)
+        Margin = New Padding(1)
         Name = "frmGameSetUp"
         Text = "Game Set Up"
         ResumeLayout(False)
