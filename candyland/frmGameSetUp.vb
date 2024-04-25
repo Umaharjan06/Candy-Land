@@ -1,5 +1,4 @@
-﻿Imports System.Linq.Expressions
-Imports System.Security.Cryptography.X509Certificates
+﻿Imports System.Security.Cryptography.X509Certificates
 
 Public Class frmGameSetUp
     Public singlePlayerUsername As String
@@ -49,7 +48,7 @@ Public Class frmGameSetUp
     Private Sub btnChooseColor_Click(sender As Object, e As EventArgs) Handles btnChooseColor.Click
         Dim strColorChoice As String = ""
         If cboColorPicker.SelectedIndex = -1 Then
-            MsgBox("Please Pick A Character!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
+            MsgBox("Please Pick A Color!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
             Exit Sub
         Else
             strColorChoice = cboColorPicker.SelectedItem.ToString()

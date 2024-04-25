@@ -317,4 +317,12 @@ Public Class frmCandyLandMain
         MsgBox(MsgBoxStyle.YesNo, "Would you like to restart?")
         reloadGame()
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub frmCandyLandMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
