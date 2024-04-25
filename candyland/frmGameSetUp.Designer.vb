@@ -156,9 +156,11 @@ Partial Class frmGameSetUp
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(12, 277)
         Label1.Name = "Label1"
-        Label1.Size = New Size(37, 15)
+        Label1.Size = New Size(46, 14)
         Label1.TabIndex = 12
         Label1.Text = "v1.2.1"
         ' 
