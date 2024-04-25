@@ -51,6 +51,8 @@ Partial Class frmCandyLandMain
         AboutToolStripMenuItem = New ToolStripMenuItem()
         InstructionsToolStripMenuItem = New ToolStripMenuItem()
         Panel2 = New Panel()
+        lblComputerOutcome = New Label()
+        lblPlayerOutcome = New Label()
         cbMusic = New CheckBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
@@ -410,6 +412,8 @@ Partial Class frmCandyLandMain
         ' 
         Panel2.BackColor = Color.Transparent
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(lblComputerOutcome)
+        Panel2.Controls.Add(lblPlayerOutcome)
         Panel2.Controls.Add(btnFrogIcon)
         Panel2.Controls.Add(btnRoll)
         Panel2.Controls.Add(lblComputerRoll)
@@ -436,6 +440,24 @@ Partial Class frmCandyLandMain
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(338, 1291)
         Panel2.TabIndex = 181
+        ' 
+        ' lblComputerOutcome
+        ' 
+        lblComputerOutcome.AutoSize = True
+        lblComputerOutcome.Location = New Point(3, 817)
+        lblComputerOutcome.Name = "lblComputerOutcome"
+        lblComputerOutcome.Size = New Size(83, 32)
+        lblComputerOutcome.TabIndex = 180
+        lblComputerOutcome.Text = "Label1"
+        ' 
+        ' lblPlayerOutcome
+        ' 
+        lblPlayerOutcome.AutoSize = True
+        lblPlayerOutcome.Location = New Point(3, 674)
+        lblPlayerOutcome.Name = "lblPlayerOutcome"
+        lblPlayerOutcome.Size = New Size(83, 32)
+        lblPlayerOutcome.TabIndex = 179
+        lblPlayerOutcome.Text = "Label1"
         ' 
         ' cbMusic
         ' 
@@ -503,5 +525,7 @@ Partial Class frmCandyLandMain
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InstructionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents cbMusic As CheckBox
+    Friend WithEvents lblComputerOutcome As Label
+    Friend WithEvents lblPlayerOutcome As Label
 
 End Class

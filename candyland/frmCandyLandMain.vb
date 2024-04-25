@@ -8,6 +8,8 @@ Imports System.Reflection.Metadata
 Imports System.Runtime
 Imports System.Runtime.CompilerServices
 Imports System.Security.Cryptography.X509Certificates
+Imports System.Windows.Forms.Design
+Imports System.Windows.Forms.VisualStyles
 Imports Accessibility
 Imports Windows.Win32.System
 
@@ -41,6 +43,8 @@ Public Class frmCandyLandMain
         If isPlaying = False Then
             PlayDiceRoll()
         End If
+        lblPlayerOutcome.Hide()
+        lblComputerOutcome.Hide()
         btnRoll.BackColor = Color.Green ' changes the icon roll icon back to green
         displayMove.DisplayColor(btnRollNumber) ' shows the number that was rolled
         Dim x As Integer = displayMove.DisplayColor(btnRollNumber)
@@ -111,45 +115,76 @@ Public Class frmCandyLandMain
         chute(player, col, row)
     End Sub
 
+    Sub ladderAlert(player As Button)
+        Dim username As String = lblUsername.Text
+        If player.Equals(btnMain) Then
+            lblPlayerOutcome.Show()
+            lblPlayerOutcome.Text = username & " climbed a ladder!"
+        Else
+            lblComputerOutcome.Show()
+            lblComputerOutcome.Text = "The computer climbed a ladder!"
+        End If
+    End Sub
+
+    Sub chuteAlert(player As Button)
+        Dim username As String = lblUsername.Text
+        If player.Equals(btnMain) Then
+            lblPlayerOutcome.Show()
+            lblPlayerOutcome.Text = username & " fell down a chute!"
+        Else
+            lblComputerOutcome.Show()
+            lblComputerOutcome.Text = "The computer fell down a chute!"
+        End If
+    End Sub
+
     Sub ladder(player As Button, col As Integer, row As Integer)
         Select Case row
             Case 9
                 Select Case col
                     Case 1
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 1)
                     Case 3
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 1)
                         tblBoardGame.SetColumn(player, col + 2)
                     Case 7
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 3)
                         tblBoardGame.SetColumn(player, col + 2)
                 End Select
             Case 7
                 Select Case col
                     Case 0
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 2)
                         tblBoardGame.SetColumn(player, col + 1)
                     Case 7
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 6)
                         tblBoardGame.SetColumn(player, col - 3)
                 End Select
             Case 6
                 Select Case col
                     Case 4
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 1)
                         tblBoardGame.SetColumn(player, col - 1)
                 End Select
             Case 4
                 Select Case col
                     Case 9
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 1)
                         tblBoardGame.SetColumn(player, col - 4)
                 End Select
             Case 2
                 Select Case col
                     Case 9
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 2)
                     Case 0
+                        ladderAlert(player)
                         tblBoardGame.SetRow(player, row - 2)
                         whoWin(player)
                 End Select
@@ -161,45 +196,55 @@ Public Class frmCandyLandMain
             Case 8
                 Select Case col
                     Case 3
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 1)
                         tblBoardGame.SetColumn(player, col + 1)
                 End Select
             Case 5
                 Select Case col
                     Case 6
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 2)
                         tblBoardGame.SetColumn(player, col - 1)
                     Case 7
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 4)
                         tblBoardGame.SetColumn(player, col + 2)
                 End Select
             Case 4
                 Select Case col
                     Case 3
+                        chuteAlert(player)
                         tblBoardGame.SetColumn(player, col + 4)
                 End Select
             Case 3
                 Select Case col
                     Case 1
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 4)
                         tblBoardGame.SetColumn(player, col + 1)
                     Case 3
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 1)
                         tblBoardGame.SetColumn(player, col - 3)
                 End Select
             Case 1
                 Select Case col
                     Case 5
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 6)
                         tblBoardGame.SetColumn(player, col - 2)
                 End Select
             Case 0
                 Select Case col
                     Case 6
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 2)
                     Case 4
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 2)
                     Case 2
+                        chuteAlert(player)
                         tblBoardGame.SetRow(player, row + 2)
                 End Select
         End Select
@@ -287,6 +332,8 @@ Public Class frmCandyLandMain
         btnRoll.Enabled = True
         btnRoll.BackColor = Color.Snow
         lblUsername.Text = frmGameSetUp.getUsername()
+        lblPlayerOutcome.Hide()
+        lblComputerOutcome.Hide()
         ' -- add the icon of the player
         If frmGameSetUp.gmSP = True Then
             tblBoardGame.Controls.Add(gameMode.btnMain, 0, 9)
