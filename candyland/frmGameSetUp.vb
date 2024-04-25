@@ -80,12 +80,12 @@ Public Class frmGameSetUp
         Else
             singlePlayerUsername = txtNames.Text
             ' -- add username to array
-            usernames(0) = txtNames.Text
-            usernamesIndex += 1
-            ' -- change label text
-            lblSetUp.Text = "Select Character:"
-            'lblGameMode.Hide()
+            storeUsername(txtNames.Text)
+
+            ' -- hide old
             txtNames.Hide() : btnPlayer1Name.Hide()
+            ' -- show new
+            lblSetUp.Text = "Select Character:"
             btnP1ChooseColor.Show()
             cboColorPicker.Show()
         End If
@@ -94,13 +94,13 @@ Public Class frmGameSetUp
     ' -- "Start!" Button
     ' -- Third / Final button
     Private Sub btnChooseColor_Click(sender As Object, e As EventArgs) Handles btnSPChooseColor.Click
-        Dim strColorChoice As String = ""
+        Dim strColorChoice = ""
         If cboColorPicker.SelectedIndex = -1 Then
-            MsgBox("Please Pick A Color!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
+            MsgBox("Please Pick A Character!", MsgBoxStyle.Critical, "Error! You need to pick a character!")
             Exit Sub
         Else
-            strColorChoice = cboColorPicker.SelectedItem.ToString()
-            Singleplayer_ColorPicker(strColorChoice)
+            strColorChoice = cboColorPicker.SelectedItem.ToString
+            setCharacter(strColorChoice)
         End If
         frmCandyLandMain.loadGame()
 
@@ -129,36 +129,8 @@ Public Class frmGameSetUp
     End Sub
 
 
-
-
     Public Function getUsername()
         Return singlePlayerUsername
     End Function
-
-    Private Sub txtNames_TextChanged(sender As Object, e As EventArgs) Handles txtNames.TextChanged
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-    Private Sub btnStart_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub lblGameMode_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-    Private Sub lblPlayerColor_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
 End Class

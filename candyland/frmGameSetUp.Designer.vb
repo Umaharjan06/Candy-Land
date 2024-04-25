@@ -76,7 +76,7 @@ Partial Class frmGameSetUp
         btnSPChooseColor.BackColor = Color.LavenderBlush
         btnSPChooseColor.Font = New Font("Verdana", 9.75F)
         btnSPChooseColor.ForeColor = SystemColors.ControlDarkDark
-        btnSPChooseColor.Location = New Point(237, 173)
+        btnSPChooseColor.Location = New Point(388, 244)
         btnSPChooseColor.Margin = New Padding(1)
         btnSPChooseColor.Name = "btnSPChooseColor"
         btnSPChooseColor.Size = New Size(117, 47)
@@ -100,7 +100,7 @@ Partial Class frmGameSetUp
         btnSinglePlayerName.FlatAppearance.BorderSize = 0
         btnSinglePlayerName.Font = New Font("Verdana", 9.75F)
         btnSinglePlayerName.ForeColor = SystemColors.ControlDarkDark
-        btnSinglePlayerName.Location = New Point(237, 174)
+        btnSinglePlayerName.Location = New Point(269, 245)
         btnSinglePlayerName.Margin = New Padding(1)
         btnSinglePlayerName.Name = "btnSinglePlayerName"
         btnSinglePlayerName.Size = New Size(117, 46)
@@ -128,7 +128,7 @@ Partial Class frmGameSetUp
         btnPlayer1Name.FlatAppearance.BorderSize = 0
         btnPlayer1Name.Font = New Font("Verdana", 9.75F)
         btnPlayer1Name.ForeColor = SystemColors.ControlDarkDark
-        btnPlayer1Name.Location = New Point(237, 174)
+        btnPlayer1Name.Location = New Point(237, 172)
         btnPlayer1Name.Margin = New Padding(1)
         btnPlayer1Name.Name = "btnPlayer1Name"
         btnPlayer1Name.Size = New Size(117, 46)
@@ -143,7 +143,7 @@ Partial Class frmGameSetUp
         btnP1ChooseColor.FlatAppearance.BorderSize = 0
         btnP1ChooseColor.Font = New Font("Verdana", 9.75F)
         btnP1ChooseColor.ForeColor = SystemColors.ControlDarkDark
-        btnP1ChooseColor.Location = New Point(237, 174)
+        btnP1ChooseColor.Location = New Point(237, 172)
         btnP1ChooseColor.Margin = New Padding(1)
         btnP1ChooseColor.Name = "btnP1ChooseColor"
         btnP1ChooseColor.Size = New Size(117, 46)
